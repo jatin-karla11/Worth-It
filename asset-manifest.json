@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Worth-It/static/css/main.eb209bc9.chunk.css",
+    "main.js": "/Worth-It/static/js/main.fd5f259c.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.fd5f259c.chunk.js.map",
+    "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
+    "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
+    "static/css/2.ea6b7726.chunk.css": "/Worth-It/static/css/2.ea6b7726.chunk.css",
+    "static/js/2.ddd05cf4.chunk.js": "/Worth-It/static/js/2.ddd05cf4.chunk.js",
+    "static/js/2.ddd05cf4.chunk.js.map": "/Worth-It/static/js/2.ddd05cf4.chunk.js.map",
+    "index.html": "/Worth-It/index.html",
+    "precache-manifest.5bff076c5d20c3e017cfe9a56bed54c1.js": "/Worth-It/precache-manifest.5bff076c5d20c3e017cfe9a56bed54c1.js",
+    "service-worker.js": "/Worth-It/service-worker.js",
+    "static/css/2.ea6b7726.chunk.css.map": "/Worth-It/static/css/2.ea6b7726.chunk.css.map",
+    "static/css/main.eb209bc9.chunk.css.map": "/Worth-It/static/css/main.eb209bc9.chunk.css.map",
+    "static/js/2.ddd05cf4.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.ddd05cf4.chunk.js.LICENSE.txt",
+    "static/media/worth.jpg": "/Worth-It/static/media/worth.0efb5662.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d684b042.js",
+    "static/css/2.ea6b7726.chunk.css",
+    "static/js/2.ddd05cf4.chunk.js",
+    "static/css/main.eb209bc9.chunk.css",
+    "static/js/main.fd5f259c.chunk.js"
+  ]
+}
