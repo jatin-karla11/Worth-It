@@ -21,6 +21,13 @@ const MainApp=()=>{
         <Route exact path="/signin" component={Signin}/>
         <Redirect to="/" />
     </Switch>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     <Footer/>
     </>);
 };
