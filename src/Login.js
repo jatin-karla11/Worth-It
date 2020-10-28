@@ -1,9 +1,24 @@
 import React from 'react';
-
+import fire from './fire'
+import firebase from 'firebase' 
 const Login=(props)=>{
-    
+
+  
     const {email,setEmail,password,setPassword,handleLogin,
-        handleSignup,hasAccount,setHasAccount,emailError,passwordError,modalDismiss}=props;
+      handleSignup,hasAccount,setHasAccount,emailError,passwordError,modalDismiss}=props;
+    var user;
+      const googleSignIn=()=>{
+        var base_provider=new firebase.auth.GoogleAuthProvider()
+        fire.auth().signInWithPopup(base_provider).then(function(result){
+          user = result.user;
+          console.log(result)
+          console.log("Success login with google")
+        }).catch(function(err){
+          console.log(err)
+          console.log("Failed login")
+        })
+      }
+    console.log(user)
     return(<>
         <button type="button" id="yo" className="btn-get-started" data-toggle="modal" data-target="#exampleModal">
   Sign in
@@ -49,7 +64,7 @@ const Login=(props)=>{
       <div class="modal-footer ">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         {/* <button type="button" class="btn btn-primary">Save changes</button> */}
-        <button>Sign in with Google</button>
+        <button onClick={googleSignIn}>Sign in with Google</button>
       </div>
     </div>
   </div>

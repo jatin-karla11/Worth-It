@@ -83,7 +83,7 @@ const Common=(props)=>{
         }
       })
     };
-    console.log(user)
+    // console.log(user)
     useEffect(()=>{
       authListener();
     },[]);
