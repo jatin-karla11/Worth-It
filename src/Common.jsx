@@ -6,9 +6,12 @@ import Login from './Login';
 import Home from './Home';
 import Signin from './Signin';
 import Service from './Service';
+import  { Redirect } from 'react-router-dom'
+import $ from 'jquery';
 
 const Common=(props)=>{
-    const [user,setUser]=useState('');
+  const [modalDismiss,setmodalDismiss]=useState('')  
+  const [user,setUser]=useState('');
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
     const [emailError,setEmailError]=useState('');
@@ -42,6 +45,8 @@ const Common=(props)=>{
             break;
           }
         })
+        
+            
     };
 
     const handleSignup=()=>{
@@ -71,12 +76,14 @@ const Common=(props)=>{
         if(user){
           clearInputs();
           setUser(user);
+          // setmodalDismiss({modalDismiss:"modal"})
+          $('.modal-backdrop').removeClass("modal-backdrop");  
         }else{
           setUser('');
         }
       })
     };
-
+    console.log(user)
     useEffect(()=>{
       authListener();
     },[]);
@@ -98,7 +105,7 @@ const Common=(props)=>{
     {/* <NavLink to={props.visit} className="btn-get-started">{props.btname}</NavLink> */}
 {user?(<Signin handleLogout={handleLogout}/>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
 handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
-emailError={emailError} passwordError={passwordError}  />)}
+emailError={emailError} passwordError={passwordError} modalDismiss={modalDismiss}  />)}
 
                  </div>
                     </div>
