@@ -3,11 +3,13 @@ import worth from './images/worth.jpg';
 const Sdata=[
     {
         imgsrc:worth,
-        title:"web development",
+        title:"Groceries",
+        too:"/groceries"
     },
     {
         imgsrc:worth,
         title:'app development',
+        to:"/appdev"
     },
     {
         imgsrc:worth,

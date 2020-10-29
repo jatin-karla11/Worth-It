@@ -18,7 +18,7 @@ const Login=(props)=>{
           console.log("Failed login")
         })
       }
-    console.log(user)
+    // console.log(user)
     return(<>
         <button type="button" id="yo" className="btn-get-started" data-toggle="modal" data-target="#exampleModal">
   Sign in
@@ -29,7 +29,7 @@ const Login=(props)=>{
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Sign-In</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -60,11 +60,13 @@ const Login=(props)=>{
                     </>
                 )}
             </div>
+            <p>OR</p>
+            <button onClick={googleSignIn}>Sign in with Google</button>
       </div>
       <div class="modal-footer ">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         {/* <button type="button" class="btn btn-primary">Save changes</button> */}
-        <button onClick={googleSignIn}>Sign in with Google</button>
+        
       </div>
     </div>
   </div>

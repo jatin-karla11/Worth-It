@@ -8,6 +8,7 @@ import Signin from './Signin';
 import Service from './Service';
 import  { Redirect } from 'react-router-dom'
 import $ from 'jquery';
+import firebase from 'firebase'
 
 const Common=(props)=>{
   const [modalDismiss,setmodalDismiss]=useState('')  
@@ -97,7 +98,7 @@ const Common=(props)=>{
                 <div className="col-10 mx-auto">
                     <div className="row">
                     <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                        <h1>{props.name} <strong className="brand-name">Worth-It</strong>!</h1>
+    <h1>{props.name} <strong className="brand-name">Worth-It {user.displayName}</strong>!</h1>
                         <h2 className="my-3">
                             Team of 1
                         </h2>
@@ -118,6 +119,8 @@ emailError={emailError} passwordError={passwordError} modalDismiss={modalDismiss
     </div>
     </section>
     </>);
+
+    
 };
 
 export default Common;

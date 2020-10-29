@@ -2,9 +2,24 @@ import React from 'react';
 import worth from './worth.jpg';
 import {NavLink} from 'react-router-dom';
 import MoodIcon from '@material-ui/icons/Mood';
+import fire from './fire'
 
 const Navbar = ()=>{
-    return(
+
+  // var user = fire.auth().currentUser;
+  //   var name, email, photoUrl, uid, emailVerified;
+    
+  //   if (user != null) {
+  //     name = user.displayName;
+  //     email = user.email;
+  //     photoUrl = user.photoURL;
+  //     emailVerified = user.emailVerified;
+  //     uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+  //                      // this value to authenticate with your backend server, if
+  //                      // you have one. Use User.getToken() instead.
+  //   }
+
+  return(
         <>
         <div className="container-fluid nav_bg">
             <div className='row'>
@@ -20,8 +35,12 @@ const Navbar = ()=>{
     <span className="navbar-toggler-icon"></span>
   </button>
 
+      
+
+
   <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav ml-auto">
+
       <li className="nav-item active">
         <NavLink exact activeClassName="menu_active" className="nav-link" to="/">Home <span className="sr-only">(current)</span></NavLink>
       </li>
