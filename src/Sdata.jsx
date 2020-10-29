@@ -1,31 +1,36 @@
 import worth from './images/worth.jpg';
+import chocolate from './images/Chocolate.jpg';
 
 const Sdata=[
     {
         imgsrc:worth,
         title:"Groceries",
-        too:"/groceries"
+        to:"/grocery"
     },
     {
         imgsrc:worth,
-        title:'app development',
-        to:"/appdev"
+        title:'Dream Catchers',
+        to:"/dreamcatchers"
+    },
+    {
+        imgsrc:chocolate,
+        title:'Chocalate Store',
+        to:"/chocolatestore"
     },
     {
         imgsrc:worth,
-        title:'yohi'
+        title:'Sweets',
+        to:"/sweetstore"
     },
     {
         imgsrc:worth,
-        title:'yohi'
+        title:'Dairy Items',
+        to:"/dairy"
     },
     {
         imgsrc:worth,
-        title:'yohi'
-    },
-    {
-        imgsrc:worth,
-        title:'yohi'
+        title:'Bracelets',
+        to:"/bracelet"
     }
 ];
 

@@ -10,6 +10,9 @@ import Signin from './Signin';
 import { Switch,Route,Redirect } from 'react-router-dom';
 import Footer from './Footer';
 import Grocery from './Grocery'
+import Chocolates from './Chocolates';
+import Dream from './Dream'
+import Dairy from './Dairy' 
 
 const MainApp=()=>{
     return (<>
@@ -20,7 +23,12 @@ const MainApp=()=>{
         <Route exact path="/service" component={Service}/>
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/signin" component={Signin}/>
-        <Route exact path="/groceries" component={Grocery}/>
+        <Route exact path="/grocery" component={Grocery}/>
+        <Route exact path="/chocolatestore" component={Chocolates}/>
+        <Route exact path="/dreamcatchers" component={Dream}/>
+        <Route exact path="/dairy" component={Dairy}/>
+        {/* <Route exact path="/grocery" component={Grocery}/>
+        <Route exact path="/grocery" component={Grocery}/> */}
         <Redirect to="/" />
     </Switch>
     <br></br>

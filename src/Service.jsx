@@ -18,6 +18,7 @@ const Service=()=>{
                                  key={ind}
                                  imgsrc={val.imgsrc}
                                  title={val.title}
+                                 to={val.to}
                                  />
                              })
                          }

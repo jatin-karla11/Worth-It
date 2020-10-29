@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(234,237,237) !important;
 }
 
 code {
@@ -17,6 +18,13 @@ code {
   flex: 1;
   align-items: center !important;
   box-shadow:0px 2px 7px 03px teal;
+  position: fixed;
+}
+#fix{
+  
+  position: fixed;
+  z-index: 2;
+  top:0;
 }
 .navbar-brand{
   font-size: 1.9rem !important;
@@ -76,6 +84,17 @@ code {
 #header .animated{
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+.basket{
+  display: flex;
+  align-items: center;
+  color: teal;
+  margin-top: 10px;
+}
+.basket_count{
+  margin-top: 10px;
+  margin-right: 15px;
+  font-size: x-large;
+}
 @-webkit-keyframes up-down{
   0%{
     transform :translateY(10px);
@@ -107,7 +126,13 @@ code {
   *{
     padding-top: 3px;}
   
-  .navbar{
+    #fix{
+      background-color: rgb(234,237,237);
+      position: fixed;
+      z-index: 2;
+      top: 0;
+    }
+    .navbar{
     background-color: #fff ;
     display: flex;
     flex: 1;

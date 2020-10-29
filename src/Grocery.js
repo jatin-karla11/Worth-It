@@ -1,9 +1,10 @@
 import React from 'react'
+import './Product.css'
 
 function Grocery() {
     return (
-        <div>
-            hello
+        <div className="main_div">
+            Grocery
         </div>
     )
 }

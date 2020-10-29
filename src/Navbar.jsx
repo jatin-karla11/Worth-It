@@ -3,8 +3,13 @@ import worth from './worth.jpg';
 import {NavLink} from 'react-router-dom';
 import MoodIcon from '@material-ui/icons/Mood';
 import fire from './fire'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+// import Nav from './Nav'
+// import $ from 'jquery'
+// import {Helmet} from "react-helmet";
 
 const Navbar = ()=>{
+  
 
   // var user = fire.auth().currentUser;
   //   var name, email, photoUrl, uid, emailVerified;
@@ -21,7 +26,8 @@ const Navbar = ()=>{
 
   return(
         <>
-        <div className="container-fluid nav_bg">
+        
+        <div className="container-fluid nav_bg" id="fix">
             <div className='row'>
                 <div className="col-12 mx-auto">
 
@@ -54,30 +60,8 @@ const Navbar = ()=>{
         <NavLink exact activeClassName="menu_active" className="nav-link" to="/contact">Contact</NavLink>
       </li>
       <li className="nav-item">
-      {/* <button type="button" className="btn-get-started" data-toggle="modal" data-target="#exampleModal">
-  Sign-in
-</button>
-
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> */}
+      <ShoppingCartIcon className="basket" fontSize="large"/>
+      <span className="basket_count">0</span>
       </li>
       
       {/* <li className="nav-item dropdown">
@@ -99,6 +83,7 @@ const Navbar = ()=>{
 </div>
             </div>
         </div>
+        
         </>
     );
 };
