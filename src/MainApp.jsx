@@ -13,6 +13,7 @@ import Grocery from './Grocery'
 import Chocolates from './Chocolates';
 import Dream from './Dream'
 import Dairy from './Dairy' 
+import Checkout from './Checkout'
 
 const MainApp=()=>{
     return (<>
@@ -28,6 +29,7 @@ const MainApp=()=>{
         <Route exact path="/chocolatestore" component={Chocolates}/>
         <Route exact path="/dreamcatchers" component={Dream}/>
         <Route exact path="/dairy" component={Dairy}/>
+        <Route exact path="/checkout" component={Checkout}/>
         {/* <Route exact path="/grocery" component={Grocery}/>
         <Route exact path="/grocery" component={Grocery}/> */}
         <Redirect to="/" />

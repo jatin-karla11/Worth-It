@@ -1,9 +1,10 @@
 import React from 'react';
 import worth from './worth.jpg';
-import {NavLink} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import MoodIcon from '@material-ui/icons/Mood';
 import fire from './fire'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { useStateValue } from './StateProvider';
 // import Nav from './Nav'
 // import $ from 'jquery'
 // import {Helmet} from "react-helmet";
@@ -23,6 +24,8 @@ const Navbar = ()=>{
   //                      // this value to authenticate with your backend server, if
   //                      // you have one. Use User.getToken() instead.
   //   }
+
+  const[{basket},dispatch]=useStateValue();
 
   return(
         <>
@@ -59,10 +62,12 @@ const Navbar = ()=>{
       <li className="nav-item">
         <NavLink exact activeClassName="menu_active" className="nav-link" to="/contact">Contact</NavLink>
       </li>
+      <Link to="/checkout">
       <li className="nav-item">
       <ShoppingCartIcon className="basket" fontSize="large"/>
-      <span className="basket_count">0</span>
+  <span className="basket_count">{basket?.length}</span>
       </li>
+      </Link>
       
       {/* <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

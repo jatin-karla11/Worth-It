@@ -1,0 +1,27 @@
+.login_container{
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content{
+    align-items: center;
+    justify-content: center;
+
+}
+.login_button{
+    background: #17a2b8;
+    border: 2px solid;
+    margin-top: 10px;
+    border-color: darkcyan;
+    color: whitesmoke;
+}
+.input{
+    width: 350px;
+    background-color: #dddddd;
+}
+
+@media screen and (max-width:768px) and (orientation:portrait){
+    .input{
+        width: 250px;
+    }
+}

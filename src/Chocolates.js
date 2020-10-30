@@ -30,24 +30,28 @@ function Chocolates() {
             title="chocolate1" 
             price={550} 
             image="https://wallpaperaccess.com/full/116027.jpg"/>
-        <Product 
+                 </div>
+    <div className="shop_row">
+    <Product 
             id="975275"
             title="chocolate1" 
-            price={550} 
+            price={550}   
             image="https://wallpaperaccess.com/full/116027.jpg"/>
-         </div>
-    <div className="shop_row">
+
     <Product 
             id="975276"
             title="chocolate1" 
             price={550} 
             image="https://wallpaperaccess.com/full/116027.jpg"/>
+    
+        {/* Product */}
+    </div>
+    <div className="shop_row">
     <Product 
             id="975277"
             title="chocolate1" 
             price={550} 
             image="https://wallpaperaccess.com/full/116027.jpg"/>
-        {/* Product */}
     </div>
     </div>
     )

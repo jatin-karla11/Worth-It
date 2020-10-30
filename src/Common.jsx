@@ -31,7 +31,8 @@ const Common=(props)=>{
       setPasswordError('');
     };
 
-    const handleLogin=()=>{
+    const handleLogin=(e)=>{
+      e.preventDefault()
       clearErrors();
       fire
         .auth()
@@ -52,7 +53,8 @@ const Common=(props)=>{
             
     };
 
-    const handleSignup=()=>{
+    const handleSignup=(e)=>{
+      e.preventDefault()
       clearErrors();
       fire
         .auth()
@@ -114,6 +116,7 @@ emailError={emailError} passwordError={passwordError} modalDismiss={modalDismiss
                     </div>
                     <div className="col-lg-6 order-1 order-lg-2 header-img ">
                         {/* <img src={props.imgsrc} className="img-fluid animated" alt="home img"/> */}
+                        <div style={{height:"40px"}}></div>
                         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
