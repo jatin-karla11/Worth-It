@@ -9,6 +9,8 @@ import Service from './Service';
 import  { Redirect } from 'react-router-dom'
 import $ from 'jquery';
 import firebase from 'firebase'
+import worth1 from './images/worth1.jpg';
+import worth2 from './images/worth2.jpg';
 
 const Common=(props)=>{
   const [modalDismiss,setmodalDismiss]=useState('')  
@@ -111,7 +113,28 @@ emailError={emailError} passwordError={passwordError} modalDismiss={modalDismiss
                  </div>
                     </div>
                     <div className="col-lg-6 order-1 order-lg-2 header-img ">
-                        <img src={props.imgsrc} className="img-fluid animated" alt="home img"/>
+                        {/* <img src={props.imgsrc} className="img-fluid animated" alt="home img"/> */}
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={props.imgsrc} class="d-block w-100" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <img src={worth1} class="d-block w-100" alt="..." />
+    </div>
+    <div class="carousel-item">
+      <img src={worth2} class="d-block w-100" alt="..." />
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
                     </div>
                     </div>
                 </div>

@@ -117,8 +117,8 @@ code {
 .card{
   display: inline;
 }
-.yo{
-  
+.Gap{
+  height: 60px;
 }
 
 
@@ -131,6 +131,7 @@ code {
       position: fixed;
       z-index: 2;
       top: 0;
+      
     }
     .navbar{
     background-color: #fff ;
