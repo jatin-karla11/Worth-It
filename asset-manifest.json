@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/Worth-It/static/css/main.6bbd226b.chunk.css",
-    "main.js": "/Worth-It/static/js/main.804ba1bf.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.804ba1bf.chunk.js.map",
+    "main.css": "/Worth-It/static/css/main.bfe5aaa4.chunk.css",
+    "main.js": "/Worth-It/static/js/main.808ead4e.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.808ead4e.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.ea6b7726.chunk.css": "/Worth-It/static/css/2.ea6b7726.chunk.css",
-    "static/js/2.179e3ad0.chunk.js": "/Worth-It/static/js/2.179e3ad0.chunk.js",
-    "static/js/2.179e3ad0.chunk.js.map": "/Worth-It/static/js/2.179e3ad0.chunk.js.map",
+    "static/js/2.86dca29e.chunk.js": "/Worth-It/static/js/2.86dca29e.chunk.js",
+    "static/js/2.86dca29e.chunk.js.map": "/Worth-It/static/js/2.86dca29e.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.a739c0c14ae480d26cf217e509c9b2d8.js": "/Worth-It/precache-manifest.a739c0c14ae480d26cf217e509c9b2d8.js",
+    "precache-manifest.26353842fca5583cce6dfb37561d10b6.js": "/Worth-It/precache-manifest.26353842fca5583cce6dfb37561d10b6.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.ea6b7726.chunk.css.map": "/Worth-It/static/css/2.ea6b7726.chunk.css.map",
-    "static/css/main.6bbd226b.chunk.css.map": "/Worth-It/static/css/main.6bbd226b.chunk.css.map",
-    "static/js/2.179e3ad0.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.179e3ad0.chunk.js.LICENSE.txt",
+    "static/css/main.bfe5aaa4.chunk.css.map": "/Worth-It/static/css/main.bfe5aaa4.chunk.css.map",
+    "static/js/2.86dca29e.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.86dca29e.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/chocolate1.jpg": "/Worth-It/static/media/chocolate1.babc4391.jpg",
+    "static/media/dc.jpg": "/Worth-It/static/media/dc.5ef8fdee.jpg",
     "static/media/worth.jpg": "/Worth-It/static/media/worth.0efb5662.jpg",
     "static/media/worth1.jpg": "/Worth-It/static/media/worth1.1b113a81.jpg",
     "static/media/worth2.jpg": "/Worth-It/static/media/worth2.25b7ac7f.jpg"
@@ -23,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.ea6b7726.chunk.css",
-    "static/js/2.179e3ad0.chunk.js",
-    "static/css/main.6bbd226b.chunk.css",
-    "static/js/main.804ba1bf.chunk.js"
+    "static/js/2.86dca29e.chunk.js",
+    "static/css/main.bfe5aaa4.chunk.css",
+    "static/js/main.808ead4e.chunk.js"
   ]
 }
