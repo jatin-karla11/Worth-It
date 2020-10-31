@@ -12,11 +12,15 @@ import firebase from 'firebase'
 import worth1 from './images/worth1.jpg';
 import worth2 from './images/worth2.jpg';
 import {auth} from './fire'
+import {useStateValue} from './StateProvider'
+
 
 const Common=(props)=>{
 
+  const [{basket,user1},dispatch]=useStateValue();
+
   const history=useHistory();  
-  const [user,setUser]=useState('');
+  //const [user,setUser]=useState('');
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
     const [emailError,setEmailError]=useState('');
@@ -91,15 +95,24 @@ const Common=(props)=>{
 
     const authListener=()=>{
       fire.auth().onAuthStateChanged(user=>{
+        // console.log("the user is>>>" ,user);
         if(user){
           clearInputs();
-          setUser(user);
+          //setUser(user);
+          dispatch({
+            type:'SET_USER',
+            user1:user
+          })
           // setmodalDismiss({modalDismiss:"modal"})
           $('body').removeClass('modal-open');
 $('.modal-backdrop').remove();
   
         }else{
-          setUser('');
+          //setUser('');
+          dispatch({
+            type:'SET_USER',
+            user1:null
+          })
         }
       })
     };
@@ -117,7 +130,7 @@ $('.modal-backdrop').remove();
                 <div className="col-10 mx-auto">
                     <div className="row">
                     <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-    <h1>{props.name} <strong className="brand-name">Worth-It {user.displayName}</strong>!</h1>
+    <h1>{props.name} <strong className="brand-name">Worth-It</strong>!</h1>
                         <h2 className="my-3">
                             Team of 1
                         </h2>
@@ -125,7 +138,7 @@ $('.modal-backdrop').remove();
                         
                         {/* Signin handleLogout={handleLogout} */}
     {/* <NavLink to={props.visit} className="btn-get-started">{props.btname}</NavLink> */}
-{user?(<><Link to="/service"><button className="goto">Go to Stores</button></Link><Signin handleLogout={handleLogout}/></>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
+{user1?(<><Link to="/service"><button className="goto">Go to Stores</button></Link><Signin handleLogout={handleLogout}/></>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
 handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
 emailError={emailError} passwordError={passwordError}   />)}
 

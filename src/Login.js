@@ -2,9 +2,10 @@ import React from 'react';
 import fire from './fire'
 import firebase from 'firebase' 
 import './Login.css'
+import { useStateValue } from './StateProvider';
 
 const Login=(props)=>{
-
+  const [{basket,user1},dispatch]=useStateValue();
   
     const {email,setEmail,password,setPassword,handleLogin,
       handleSignup,hasAccount,setHasAccount,emailError,passwordError,modalDismiss}=props;
@@ -12,7 +13,7 @@ const Login=(props)=>{
       const googleSignIn=()=>{
         var base_provider=new firebase.auth.GoogleAuthProvider()
         fire.auth().signInWithPopup(base_provider).then(function(result){
-          user = result.user;
+          user1 = result.user;
           console.log(result)
           console.log("Success login with google")
         }).catch(function(err){
@@ -20,7 +21,9 @@ const Login=(props)=>{
           console.log("Failed login")
         })
       }
-    // console.log(user)
+      
+     //console.log(user)
+     
     return(<>
         <button type="button" id="yo" className="btn-get-started" data-toggle="modal" data-target="#exampleModal">
   Sign in
