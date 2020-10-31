@@ -22,7 +22,7 @@
 
 @media screen and (max-width:768px) and (orientation:portrait){
     .input{
-        max-width: 280px;
+        max-width: 260px;
         font-size: 16px !important;
     }
 }

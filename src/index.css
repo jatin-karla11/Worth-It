@@ -65,16 +65,11 @@ code {
   font-size: 24px;
 }
 .goto{
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding:10px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: darkcyan;
-  border: 2px solid darkgray;
-  text-decoration: none;
+  background: #17a2b8;
+    border: 2px solid;
+    margin-top: 10px;
+    border-color: darkcyan;
+    color: whitesmoke;
 }
 #header .btn-get-started{
   font-weight: 500;

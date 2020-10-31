@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import worth from './images/worth.jpg';
-import {Link, NavLink} from 'react-router-dom';
+import {Link, NavLink,useHistory} from 'react-router-dom';
 import fire from './fire';
 import Login from './Login';
 import Home from './Home';
@@ -11,9 +11,11 @@ import $ from 'jquery';
 import firebase from 'firebase'
 import worth1 from './images/worth1.jpg';
 import worth2 from './images/worth2.jpg';
+import {auth} from './fire'
 
 const Common=(props)=>{
-  const [modalDismiss,setmodalDismiss]=useState('')  
+
+  const history=useHistory();  
   const [user,setUser]=useState('');
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
@@ -34,9 +36,14 @@ const Common=(props)=>{
     const handleLogin=(e)=>{
       e.preventDefault()
       clearErrors();
-      fire
-        .auth()
+      
+       auth
         .signInWithEmailAndPassword(email,password)
+        .then((auth)=>{
+          if(auth){
+            history.push('/service');
+          }
+        })
         .catch(err=>{
           switch(err.code){
             case "auth/invalid-email":
@@ -56,9 +63,15 @@ const Common=(props)=>{
     const handleSignup=(e)=>{
       e.preventDefault()
       clearErrors();
-      fire
-        .auth()
+      
+        
+        auth
         .createUserWithEmailAndPassword(email,password)
+        .then((auth)=>{
+          if(auth){
+            history.push('/service');
+          }
+        })
         .catch(err=>{
           switch(err.code){
             case "auth/email-already-in-use":
@@ -73,7 +86,7 @@ const Common=(props)=>{
     };
     
     const handleLogout=()=>{
-      fire.auth().signOut();
+      auth.signOut();
     };
 
     const authListener=()=>{
@@ -82,7 +95,9 @@ const Common=(props)=>{
           clearInputs();
           setUser(user);
           // setmodalDismiss({modalDismiss:"modal"})
-          $('.modal-backdrop').removeClass("modal-backdrop");  
+          $('body').removeClass('modal-open');
+$('.modal-backdrop').remove();
+  
         }else{
           setUser('');
         }
@@ -107,11 +122,12 @@ const Common=(props)=>{
                             Team of 1
                         </h2>
                         <div className="mt-3">
+                        
                         {/* Signin handleLogout={handleLogout} */}
     {/* <NavLink to={props.visit} className="btn-get-started">{props.btname}</NavLink> */}
 {user?(<><Link to="/service"><button className="goto">Go to Stores</button></Link><Signin handleLogout={handleLogout}/></>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
 handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
-emailError={emailError} passwordError={passwordError} modalDismiss={modalDismiss}  />)}
+emailError={emailError} passwordError={passwordError}   />)}
 
                  </div>
                     </div>
