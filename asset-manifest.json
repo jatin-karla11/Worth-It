@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Worth-It/static/css/main.11d85bd2.chunk.css",
+    "main.css": "/Worth-It/static/css/main.0ea0f519.chunk.css",
     "main.js": "/Worth-It/static/js/main.f57b01bf.chunk.js",
     "main.js.map": "/Worth-It/static/js/main.f57b01bf.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
@@ -9,10 +9,10 @@
     "static/js/2.86dca29e.chunk.js": "/Worth-It/static/js/2.86dca29e.chunk.js",
     "static/js/2.86dca29e.chunk.js.map": "/Worth-It/static/js/2.86dca29e.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.7933815dd5ea8b7881e812d16b2df764.js": "/Worth-It/precache-manifest.7933815dd5ea8b7881e812d16b2df764.js",
+    "precache-manifest.a5e9351c6f1ffcd6769b34b6912e113c.js": "/Worth-It/precache-manifest.a5e9351c6f1ffcd6769b34b6912e113c.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.ea6b7726.chunk.css.map": "/Worth-It/static/css/2.ea6b7726.chunk.css.map",
-    "static/css/main.11d85bd2.chunk.css.map": "/Worth-It/static/css/main.11d85bd2.chunk.css.map",
+    "static/css/main.0ea0f519.chunk.css.map": "/Worth-It/static/css/main.0ea0f519.chunk.css.map",
     "static/js/2.86dca29e.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.86dca29e.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/chocolate1.jpg": "/Worth-It/static/media/chocolate1.babc4391.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.d684b042.js",
     "static/css/2.ea6b7726.chunk.css",
     "static/js/2.86dca29e.chunk.js",
-    "static/css/main.11d85bd2.chunk.css",
+    "static/css/main.0ea0f519.chunk.css",
     "static/js/main.f57b01bf.chunk.js"
   ]
 }
