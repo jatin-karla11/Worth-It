@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import worth from './images/worth.jpg';
-import {NavLink} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import fire from './fire';
 import Login from './Login';
 import Home from './Home';
@@ -107,8 +107,9 @@ const Common=(props)=>{
                             Team of 1
                         </h2>
                         <div className="mt-3">
+                        {/* Signin handleLogout={handleLogout} */}
     {/* <NavLink to={props.visit} className="btn-get-started">{props.btname}</NavLink> */}
-{user?(<Signin handleLogout={handleLogout}/>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
+{user?(<Link to="/service"><button className="goto">Go to Stores</button></Link>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
 handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
 emailError={emailError} passwordError={passwordError} modalDismiss={modalDismiss}  />)}
 

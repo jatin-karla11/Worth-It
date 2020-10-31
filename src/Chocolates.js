@@ -2,21 +2,28 @@ import React from 'react'
 import './Product.css'
 import Product from './Product'
 import './shop.css'
+import dc from './images/dc.jpg'
 
 function Chocolates() {
+
     return (
+        <>
+        
         <div className="shop">
+        <div className="shop-title">
+            Chocolates by xyz
+        </div>
         <div className="shop_row">
             <Product 
             id="975271"
-            title="chocolate1" 
+            title="Dream-Catcher1" 
             price={550} 
-            image="https://wallpaperaccess.com/full/116027.jpg"/>
+            image={dc}/>
             <Product 
             id="975272"
-            title="chocolate1" 
-            price={550} 
-            image="https://wallpaperaccess.com/full/116027.jpg"/>
+            title="Dream-Catcher2" 
+            price={750} 
+            image={dc}/>
             {/* Product */}
         </div>
         <div className="shop_row">
@@ -54,6 +61,7 @@ function Chocolates() {
             image="https://wallpaperaccess.com/full/116027.jpg"/>
     </div>
     </div>
+    </>
     )
 }
 

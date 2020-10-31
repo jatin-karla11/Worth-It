@@ -6,10 +6,15 @@ import fire from './fire'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useStateValue } from './StateProvider';
 // import Nav from './Nav'
-// import $ from 'jquery'
+import $ from 'jquery'
 // import {Helmet} from "react-helmet";
 
 const Navbar = ()=>{
+  const jQueryCode=()=>{
+                  
+    $('.navbar-collapse').removeClass('show');
+
+  }
   
 
   // var user = fire.auth().currentUser;
@@ -51,20 +56,20 @@ const Navbar = ()=>{
     <ul className="navbar-nav ml-auto">
 
       <li className="nav-item active">
-        <NavLink exact activeClassName="menu_active" className="nav-link" to="/">Home <span className="sr-only">(current)</span></NavLink>
+        <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link js-scroll-trigger" to="/">Home <span className="sr-only">(current)</span></NavLink>
       </li>
       <li className="nav-item">
-        <NavLink exact activeClassName="menu_active" className="nav-link" to="/service">Services</NavLink>
+        <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link js-scroll-trigger" to="/service">Services</NavLink>
       </li>
       <li className="nav-item">
-        <NavLink exact activeClassName="menu_active" className="nav-link" to="/about">About</NavLink>
+        <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link js-scroll-trigger" to="/about">About</NavLink>
       </li>
       <li className="nav-item">
-        <NavLink exact activeClassName="menu_active" className="nav-link" to="/contact">Contact</NavLink>
+        <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link js-scroll-trigger" to="/contact">Contact</NavLink>
       </li>
-      <Link to="/checkout">
+      <Link to="/checkout" onClick={jQueryCode}>
       <li className="nav-item">
-      <ShoppingCartIcon className="basket" fontSize="large"/>
+      <ShoppingCartIcon className="basket js-scroll-trigger" fontSize="large"/>
   <span className="basket_count">{basket?.length}</span>
       </li>
       </Link>
