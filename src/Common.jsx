@@ -109,7 +109,7 @@ const Common=(props)=>{
                         <div className="mt-3">
                         {/* Signin handleLogout={handleLogout} */}
     {/* <NavLink to={props.visit} className="btn-get-started">{props.btname}</NavLink> */}
-{user?(<Link to="/service"><button className="goto">Go to Stores</button></Link>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
+{user?(<><Link to="/service"><button className="goto">Go to Stores</button></Link><Signin handleLogout={handleLogout}/></>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
 handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
 emailError={emailError} passwordError={passwordError} modalDismiss={modalDismiss}  />)}
 
