@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.css';
 import worth from './worth.jpg';
 import {Link, NavLink} from 'react-router-dom';
 import MoodIcon from '@material-ui/icons/Mood';
