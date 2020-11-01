@@ -21,16 +21,16 @@ code {
 position: relative;
     
 }
-/* #fix{
+#fix{
   
   position: fixed;
   z-index: 2;
   top:0;
-} */
+}
 .navbar-brand{
   font-size: 1.9rem !important;
   color: darkcyan !important;
-  padding: 20px;
+  /* padding: 20px; */
   margin-left: 20px;
 }
 .navbar a{
