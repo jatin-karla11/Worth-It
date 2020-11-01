@@ -5,7 +5,7 @@ import Subtotal from './Subtotal'
 import CheckoutProduct from './CheckoutProduct'
 
 function Checkout() {
-
+    
     const [{basket,user1},dispatch]=useStateValue();
 
     return (

@@ -130,7 +130,7 @@ $('.modal-backdrop').remove();
                 <div className="col-10 mx-auto">
                     <div className="row">
                     <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-    <h1>{props.name} <strong className="brand-name">Worth-It</strong>!</h1>
+    <span className="home-msg"><b>{props.name}</b> <strong className="brand-name">Worth-It, {!user1?'Guest':user1.email}</strong>!</span>
                         <h2 className="my-3">
                             Team of 1
                         </h2>

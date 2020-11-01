@@ -132,6 +132,9 @@ position: relative;
 .Gap{
   height: 60px;
 }
+.home-msg{
+  font-size: 40px;
+}
 
 
 @media screen and (max-width:768px) and (orientation:portrait){
@@ -172,5 +175,8 @@ position: relative;
   }
   .img-fluid{
     margin-top: 50px;
+  }
+  .home-msg{
+    font-size: xx-large;
   }
 }

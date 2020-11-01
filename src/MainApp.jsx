@@ -15,6 +15,7 @@ import Chocolates from './Chocolates';
 import Dream from './Dream'
 import Dairy from './Dairy' 
 import Checkout from './Checkout'
+import Payment from './Payment';
 
 const MainApp=()=>{
     return (<>
@@ -31,6 +32,7 @@ const MainApp=()=>{
         <Route exact path="/dreamcatchers" component={Dream}/>
         <Route exact path="/dairy" component={Dairy}/>
         <Route exact path="/checkout" component={Checkout}/>
+        <Route exact path="/payment" component={Payment} />
         {/* <Route exact path="/grocery" component={Grocery}/>
         <Route exact path="/grocery" component={Grocery}/> */}
         <Redirect to="/" />
