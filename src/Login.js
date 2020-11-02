@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import fire from './fire'
 import firebase from 'firebase' 
 import './Login.css'
 import { useStateValue } from './StateProvider';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 
 const Login=(props)=>{
-  const [{basket,user1},dispatch]=useStateValue();
+
   
-    const {email,setEmail,password,setPassword,handleLogin,
+    function passwordeye() {
+      var x=document.getElementById("inputpass");
+      var y=document.getElementById("hide1");
+      var z=document.getElementById("hide2");
+      if(x.type==="password"){
+        x.type="text";
+        y.style.display="block";
+        z.style.display="none";
+      }
+      else{
+        x.type="password";
+        y.style.display="none";
+        z.style.display="block";
+      }
+    }
+  
+  const [{basket,user1},dispatch]=useStateValue();
+
+      const {email,setEmail,password,setPassword,handleLogin,
       handleSignup,hasAccount,setHasAccount,emailError,passwordError,modalDismiss}=props;
     var user;
       const googleSignIn=()=>{
@@ -50,8 +70,12 @@ const Login=(props)=>{
             <p className="errorMsg">{emailError}</p>
             <label><strong>Passsword</strong></label><br></br>
             <input type="password" className="input" 
-            required value={password} 
+            id="inputpass" required value={password} 
             onChange={e=>setPassword(e.target.value)} />
+            <span onClick={passwordeye}>
+            <VisibilityIcon id="hide1"/>
+            <VisibilityOffIcon id="hide2"/>
+            </span>
             <p className="errorMsg">{passwordError}</p>
             <div className="btnContainer">
                 {hasAccount?(
@@ -78,6 +102,7 @@ const Login=(props)=>{
   </div>
 </div>
 </div>
+
     </>);
 };
 

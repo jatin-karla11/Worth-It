@@ -172,6 +172,78 @@ emailError={emailError} passwordError={passwordError}   />)}
                     </div>
                 </div>
             </div>
+            {/* <br></br>
+            <br></br>
+            <br></br>
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+        <div class="card">
+            <div class="sliderText">
+                <h3>Slide one</h3>
+            </div>
+            <div class="content">
+                <p>
+                    hey there i am jatin. i really hate friends also i hate everything ..what about you guys?
+                </p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="sliderText">
+                    <h3>Slide Two</h3>
+                </div>
+                <div class="content">
+                    <p>
+                        hey there i am jatin. i really hate friends also i hate everything ..what about you guys?
+                    </p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>Slide Three</h3>
+                    </div>
+                    <div class="content">
+                        <p>
+                            hey there i am jatin. i really hate friends also i hate everything ..what about you guys?
+                        </p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="sliderText">
+                            <h3>Slide Four</h3>
+                        </div>
+                        <div class="content">
+                            <p>
+                                hey there i am jatin. i really hate friends also i hate everything ..what about you guys?
+                            </p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="sliderText">
+                                <h3>Slide Five</h3>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    hey there i am jatin. i really hate friends also i hate everything ..what about you guys?
+                                </p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                        </div>
+    </div>
+    </div> */}
     </div>
     </section>
     </>);
