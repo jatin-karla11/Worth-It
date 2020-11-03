@@ -23,8 +23,8 @@ const Footer=()=>{
                                 <a href="#"><span className="fab fa-instagram"></span></a>
                                 <a href="#"><span className="fab fa-github"></span></a>
                                 <a href="#"><span className="fab fa-linkedin"></span></a>
-                                <a href="#"><span className="fas fa-phone"></span></a>
-                                <a href="#"><span className="fab fa-whatsapp"></span></a>
+                                <a href="tel:9752763949"><span className="fas fa-phone"></span></a>
+                                <a href="https://wa.me/+919752763949"><span className="fab fa-whatsapp"></span></a>
                             </div>
                         </div>
                     </div>
@@ -39,9 +39,10 @@ const Footer=()=>{
                             <span className="fas fa-phone-alt"></span>
                                 <span className="text">09752763949</span>
                             </div>
+                            {/* mailto:admin@binarycurve.com?Subject=Hey%20Binary%20Curve */}
                             <div className="email">
                             <span className="fas fa-envelope"></span>
-                                <span className="text">jatinkarla8@gmail.com</span>
+                                <span className="text">worthwrhfy@gmail.com</span>
                             </div>
                         </div>
                     </div>
