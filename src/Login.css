@@ -22,9 +22,12 @@
 #hide1{
     display:none;
 }
+input{
+    font-size: 20px;
+}
 @media screen and (max-width:768px) and (orientation:portrait){
-    .input{
+    input{
         max-width: 260px;
-        font-size: 16px !important;
+        font-size: 20px !important;
     }
 }
