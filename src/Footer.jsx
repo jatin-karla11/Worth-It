@@ -11,6 +11,7 @@ import './Footer.css'
 const Footer=()=>{
     return(
         <>
+        <div className="container-fluid">
             <footer>
                 <div className="main-content">
                     <div className="left box">
@@ -22,6 +23,8 @@ const Footer=()=>{
                                 <a href="#"><span className="fab fa-instagram"></span></a>
                                 <a href="#"><span className="fab fa-github"></span></a>
                                 <a href="#"><span className="fab fa-linkedin"></span></a>
+                                <a href="#"><span className="fas fa-phone"></span></a>
+                                <a href="#"><span className="fab fa-whatsapp"></span></a>
                             </div>
                         </div>
                     </div>
@@ -63,11 +66,12 @@ const Footer=()=>{
                 </div>
                 <div className="bottom">
                     <center>
-                        <span className="credit">Created By <a href="#">beast</a> | </span>
+                        <span className="credit">Created By <a href="#"><strong>beast</strong></a> | </span>
                         <span className="far fa-copyright"></span><span> 2020 All rights reserved.</span>
                     </center>
                 </div>
             </footer>
+            </div>
         </>
     )
 };

@@ -140,13 +140,19 @@ code {
   font-size: 40px;
   font-family: 'Itim', cursive;
 }
-
+.basketMobile{
+  display: none;
+  
+}
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
   * {
     padding-top: 3px;
   }
-
+  .basketMobile{
+    display: block;
+    
+  }
   .collapse {
     padding: 15px;
   }

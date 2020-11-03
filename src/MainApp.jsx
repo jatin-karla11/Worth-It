@@ -8,7 +8,7 @@ import Service from './Service';
 import Contact from './Contact';
 import Navbar from './Navbar';
 import Signin from './Signin';
-import { Switch,Route,Redirect } from 'react-router-dom';
+import { Switch,Route,Redirect, Link } from 'react-router-dom';
 import Footer from './Footer';
 import Grocery from './Grocery'
 import Chocolates from './Chocolates';
@@ -16,11 +16,16 @@ import Dream from './Dream'
 import Dairy from './Dairy' 
 import Checkout from './Checkout'
 import Payment from './Payment';
+import { useStateValue } from './StateProvider';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const MainApp=()=>{
+    const [{basket,user1},dispatch]=useStateValue();
     return (<>
     <Navbar/>
     <div className="Gap"></div>
+    {(basket.length>0)?<center><div className="basketMobile"><Link to="/checkout" ><ShoppingCartIcon className="basket" fontSize="large"/>
+  <span className="basket_count">{basket?.length}</span></Link></div></center>:""}
     <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
