@@ -55,7 +55,7 @@ const Footer=()=>{
                                 </div>
                                 <div className="msg">
                                     <div className="text">Message *</div>
-                                    <textarea cols="25" rows="2" required></textarea>
+                                    <textarea cols="25" rows="4" required></textarea>
                                 </div>
                                 <div className="btn11">
                                     <button type="submit">Send</button>
