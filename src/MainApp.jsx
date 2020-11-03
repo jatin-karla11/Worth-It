@@ -25,7 +25,7 @@ const MainApp=()=>{
     <Navbar/>
     <div className="Gap"></div>
     {(basket.length>0)?<center><div className="basketMobile"><Link to="/checkout" ><ShoppingCartIcon className="basket" fontSize="large"/>
-  <span className="basket_count">{basket?.length}</span></Link></div></center>:""}
+  <span className="basket_count"><small>{basket?.length}</small></span></Link></div></center>:""}
     <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
