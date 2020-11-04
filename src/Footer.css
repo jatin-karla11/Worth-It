@@ -100,8 +100,8 @@ footer{
       border: 1px solid lightgray;
       color: #d9d9d9;
   }
-  .right form input:focus,
-  .right form textarea:focus{
+  .right form input,
+  .right form textarea{
       outline-color: #3498db;
   }
   .right form input{

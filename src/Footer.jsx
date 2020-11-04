@@ -17,12 +17,12 @@ const Footer=()=>{
                     <div className="left box">
                         <h2>About us</h2>
                         <div className="content">
-                            <p>hey there who the fuck are you i dont even care about anything what the fuck you would expecy</p>
+                            <p>hey there, we are here for you.. </p>
                             <div className="social">
-                                <a href="#"><span className="fab fa-facebook-f"></span></a>
-                                <a href="#"><span className="fab fa-instagram"></span></a>
-                                <a href="#"><span className="fab fa-github"></span></a>
-                                <a href="#"><span className="fab fa-linkedin"></span></a>
+                                {/* <a href="#"><span className="fab fa-facebook-f"></span></a> */}
+                                <a href="https://www.instagram.com/jatin.karla11/"><span className="fab fa-instagram"></span></a>
+                                <a href="https://github.com/jatin-karla11"><span className="fab fa-github"></span></a>
+                                <a href="https://www.linkedin.com/in/jatin-karla11/"><span className="fab fa-linkedin"></span></a>
                                 <a href="tel:9752763949"><span className="fas fa-phone"></span></a>
                                 <a href="https://wa.me/+919752763949"><span className="fab fa-whatsapp"></span></a>
                             </div>
@@ -56,7 +56,7 @@ const Footer=()=>{
                                 </div>
                                 <div className="msg">
                                     <div className="text">Message *</div>
-                                    <textarea cols="25" rows="4" required></textarea>
+                                    <textarea cols="25" rows="3" required></textarea>
                                 </div>
                                 <div className="btn11">
                                     <button type="submit">Send</button>
