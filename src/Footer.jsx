@@ -36,12 +36,12 @@ const Footer=()=>{
                                 <span className="text">55, Sanjay Nagar</span>
                             </div>
                             <div className="phone">
-                            <span className="fas fa-phone-alt"></span>
+                            <a href="tel:9752763949"><span className="fas fa-phone-alt"></span></a>
                                 <span className="text">09752763949</span>
                             </div>
                             {/* mailto:admin@binarycurve.com?Subject=Hey%20Binary%20Curve */}
                             <div className="email">
-                            <span className="fas fa-envelope"></span>
+                            <a href="mailto:worthwrhfy@gmail.com?Subject=Hey%20Worth-It"><span className="fas fa-envelope"></span></a>
                                 <span className="text">worthwrhfy@gmail.com</span>
                             </div>
                         </div>
