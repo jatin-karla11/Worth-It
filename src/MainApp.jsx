@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-// import "bootstrap/js/dist/modal"
+
 import './index.css';
 import Home from './Home';
 import About from './About';
@@ -24,11 +24,14 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 // import {Paper} from '@material-ui/core'
 
 import AutoPop from './AutoPop'
+import {CubeGrid} from 'styled-loaders-react'
 
 function ad(){
   setTimeout(()=>{
+    
     //  $("#exampleModal2").show();
     //  $("#exampleModal2").css("opacity",1)
+    
   },5000);
 }
 
@@ -39,8 +42,11 @@ const MainApp=()=>{
     //     type:"dark"
     //   }
     // })
-
+    const [loading,setLoading]=useState('true');
     useEffect(() => {
+      setTimeout(()=>{
+        setLoading()
+      },5000)
       // setTimeout(() => {
       //   // console.log('This will run after 1 second!')
       //    $('#exampleModal2').modal();
@@ -51,9 +57,13 @@ const MainApp=()=>{
     }, []);
 
     return (
+       
       <>
     {/* // <ThemeProvider theme={theme}>
     //   <Paper> */}
+    {loading?<div className="load">
+    <CubeGrid color="darkcyan" /></div>:
+    <>
     <Navbar/>
     <div className="Gap"></div>
     {(basket.length>0)?<center><div className="basketMobile"><Link to="/checkout" ><ShoppingCartIcon className="basket" fontSize="large"/>
@@ -101,6 +111,9 @@ const MainApp=()=>{
     </div>
   </div>
 </div>
+</>
+    }
+    
     </>
     // </Paper>
     // </ThemeProvider> 
