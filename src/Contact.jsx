@@ -33,26 +33,26 @@ const Contact=()=>{
     <input required type="text"
     name="fullname" value={data.fullname} onChange={InputEvent}
     class="form-control" id="exampleInput" aria-describedby="emailHelp"/>
-    </div>
+    </div><br></br>
     <div class="form-group">
     <label for="exampleInput">Contact Number</label>
     <input required type="number" maxLength='10' 
     name="phone" value={data.phone} onChange={InputEvent}
     class="form-control" id="exampleInput" aria-describedby="emailHelp"/>
-    </div>
+    </div><br></br>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input required type="email" 
     name="email" value={data.email} onChange={InputEvent}
     class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
+  </div><br></br>
   <div class="form-group">
     <label for="exampleInput">Message</label>
     <textarea rows="3" 
     name="mssg" value={data.mssg} onChange={InputEvent}
     class="form-control" id="exampleInput" aria-describedby="emailHelp"></textarea>
-    </div>
+    </div><br></br>
   <button type="submit" class="btn btn-outline-info">Submit</button>
 </form>
             </div>

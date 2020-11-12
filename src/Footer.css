@@ -1,12 +1,12 @@
 .fab{
-    color: #d9d9d9;
+    color: black;
 }
 footer{
     
-    color:#d9d9d9;
+    color:black;
     bottom: 0px;
     width: 100%;
-    background: rgb(32, 31, 31);
+    background: white;
     box-shadow: 10px 10px 100px teal;
   }
   .main-content{
@@ -52,7 +52,7 @@ footer{
   .left .content .social a span{
       height: 40px;
       width: 40px;
-      background: #1a1a1a;
+      background: white;
       line-height: 40px;
       text-align: center;
       font-size: 22px;
@@ -60,11 +60,11 @@ footer{
       transition: 0.3s;
   }
   .left .content .social a span:hover{
-      background: teal;
+      background: rgb(116, 214, 214);
   }
   .center .content .fas{
       font-size: 1.4375rem;
-      background: #1a1a1a;
+      background: white;
       height: 45px;
       width: 45px;
       line-height: 45px;
@@ -74,7 +74,7 @@ footer{
       cursor: pointer;
   }
   .center .content .fas:hover{
-      background: teal;
+      background: rgb(116, 214, 214);
   }
   .center .content .text{
       font-size: 1.0625rem;
@@ -87,7 +87,7 @@ footer{
   .right form .text{
       font-size: 1.0625rem;
       margin-bottom: 2px;
-      color: #d9d9d9; 
+      color: black; 
   }
   .right form .msg{
       margin-top: 10px;
@@ -95,10 +95,10 @@ footer{
   .right form input, .right form textarea{
       width: 100%;
       font-size: 22px !important;
-      background: #151515;
+      background: #faf9f9;
       padding-left: 10px;
       border: 1px solid lightgray;
-      color: #d9d9d9;
+      color: black;
   }
   .right form input:focus,
   .right form textarea:focus{
@@ -115,19 +115,19 @@ footer{
       width: 100%;
       border: none;
       outline: none;
-      background: teal;
+      background: rgb(116, 214, 214);
       font-size: 1.0625rem;
       font-weight: 500;
       cursor: pointer;
       transition: 0.3s;
   }
   .right form .btn11 button:hover{
-      background: white;
+      background: rgb(32, 209, 186);
   }
   .bottom center{
       padding: 5px;
       font-size: 0.9375rem;
-      background: #151515;
+      background:white;
   }
   .bottom center span{
       color: #656565;
