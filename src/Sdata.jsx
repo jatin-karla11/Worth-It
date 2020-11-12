@@ -19,8 +19,8 @@ const Sdata=[
     },
     {
         imgsrc:worth,
-        title:'Sweets',
-        to:"/sweetstore"
+        title:'Mediline Diagnostics',
+        to:"https://medilinediagnostics.in/"
     },
     {
         imgsrc:worth,

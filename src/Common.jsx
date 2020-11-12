@@ -132,10 +132,10 @@ $('.modal-backdrop').remove();
                 <div className="col-10 mx-auto">
                     <div className="row">
                     <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
-    <span className="home-msg"><b>{props.name}</b> <strong className="brand-name">Worth-It, {!user1?'Guest':user1.email}</strong>!</span>
-                        <h2 className="my-3">
-                            Team of 1
-                        </h2>
+    <span className="home-msg"><b>{props.name}</b> <strong className="brand-name">Worth-It, <span className="emailguest">{!user1?'Guest':user1.email}</span></strong>!</span>
+                        <span className="my-3" id="mssg1">
+                            Sign-In for better experience..
+                        </span>
                         <div className="mt-3">
                         
                         {/* Signin handleLogout={handleLogout} */}
