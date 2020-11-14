@@ -35,8 +35,8 @@ function Payment() {
             return
         }
 
-        const data=await fetch('https://worthit-backend.herokuapp.com/',{method:'POST'}).then((t)=>t.json())
-
+        const data=await fetch('https://worthit-backend.herokuapp.com/razorpay',{method:'POST'}).then((t)=>t.json())
+        
         console.log(data)
 
         const options = {
