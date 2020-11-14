@@ -10,7 +10,7 @@ import Service from './Service';
 import Contact from './Contact';
 import Navbar from './Navbar';
 import Signin from './Signin';
-import { Switch,Route,Redirect, Link } from 'react-router-dom';
+import { HashRouter,Switch,Route,Redirect, Link } from 'react-router-dom';
 import Footer from './Footer';
 import Grocery from './Grocery'
 import Chocolates from './Chocolates';
@@ -77,6 +77,7 @@ const MainApp=()=>{
     <div className="Gap"></div>
     {(basket.length>0)?<center><div className="basketMobile"><Link to="/checkout" ><ShoppingCartIcon className="basket" fontSize="large"/>
   <span className="basket_count"><small>{basket?.length}</small></span></Link></div></center>:""}
+    <HashRouter>
     <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
@@ -94,6 +95,7 @@ const MainApp=()=>{
         <Route exact path="/grocery" component={Grocery}/> */}
         <Redirect to="/" />
     </Switch>
+    </HashRouter>
     <br></br>
     <br></br>
     <br></br>
