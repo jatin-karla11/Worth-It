@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import $ from 'jquery';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-
+import san1 from './images/san1.jpg';
 import './index.css';
 import Home from './Home';
 import About from './About';
@@ -22,9 +22,10 @@ import { useStateValue } from './StateProvider';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 // import { ThemeProvider,createMuiTheme } from "@material-ui/core/styles"
 // import {Paper} from '@material-ui/core'
-
+import {Modal,Button} from 'react-bootstrap'
 import AutoPop from './AutoPop'
 import {CubeGrid} from 'styled-loaders-react'
+import MD from './MD';
 
 function ad(){
   setTimeout(()=>{
@@ -32,7 +33,7 @@ function ad(){
     //  $("#exampleModal2").show();
     //  $("#exampleModal2").css("opacity",1)
     
-  },5000);
+  },10000);
 }
 
 const MainApp=()=>{
@@ -42,17 +43,25 @@ const MainApp=()=>{
     //     type:"dark"
     //   }
     // })
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     const [loading,setLoading]=useState('true');
     useEffect(() => {
       setTimeout(()=>{
         setLoading()
-      },5000)
+      },3000)
       // setTimeout(() => {
       //   // console.log('This will run after 1 second!')
       //    $('#exampleModal2').modal();
       //   // alert("helllll") 
       // }, 10000);
-      ad();
+      setTimeout(()=>{
+        handleShow();
+      },10000)
+      // ad();
       
     }, []);
 
@@ -80,6 +89,7 @@ const MainApp=()=>{
         <Route exact path="/dairy" component={Dairy}/>
         <Route exact path="/checkout" component={Checkout}/>
         <Route exact path="/payment" component={Payment} />
+        <Route exact path="/md" component={MD}/>
         {/* <Route exact path="/grocery" component={Grocery}/>
         <Route exact path="/grocery" component={Grocery}/> */}
         <Redirect to="/" />
@@ -92,7 +102,21 @@ const MainApp=()=>{
     <br></br>
     <br></br>
     <Footer/>
-    
+    <Modal className="ad1" show={show} onHide={handleClose}>
+        <Modal.Header>
+          <Modal.Title>Effective Sanitizer</Modal.Title>
+        </Modal.Header>
+      <Modal.Body><img className="sanitizer" src={san1}/><br></br>
+      <center><strong>Variants- 100ml-500ml-5L</strong><br></br><br></br>
+      <Link to="/md"><Button onClick={handleClose} variant="info">View Store</Button></Link></center>
+      </Modal.Body>
+        <Modal.Footer>
+          
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>    
+        </Modal.Footer>
+      </Modal>
     {/* <div class="modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
   <div class="modal-dialog">
     <div class="modal-content">

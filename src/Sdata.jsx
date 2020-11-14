@@ -20,7 +20,7 @@ const Sdata=[
     {
         imgsrc:worth,
         title:'Mediline Diagnostics',
-        to:"https://medilinediagnostics.in/"
+        to:"/md"
     },
     {
         imgsrc:worth,

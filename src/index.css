@@ -154,10 +154,21 @@ code {
   font-size: x-large;
   font-weight: 500;
 }
+.sanitizer{
+  height: 300px;
+  width: 300px;
+}
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
   * {
     padding-top: 3px;
+  }
+  .ad1{
+    margin: 0 auto;
+  }
+  .sanitizer{
+    height: 200px;
+    width: 200px;
   }
   .basketMobile{
     margin-top: 400px;
