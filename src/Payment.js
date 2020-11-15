@@ -31,7 +31,7 @@ function Payment() {
         const res=await loadScript('https://checkout.razorpay.com/v1/checkout.js')
 
         if(!res){
-            alert("Razorpay SDK failed to load.Are you online?")
+            alert("Razorpay SDK failed to load.Are you online? check out")
             return
         }
 
@@ -40,7 +40,7 @@ function Payment() {
         console.log(data)
 
         const options = {
-            "key": __DEV__?"rzp_test_so1UY4l640zHli":"PRODUCTION_KEY", 
+            "key": __DEV__?"rzp_test_so1UY4l640zHli":"rzp_test_so1UY4l640zHli", 
             // "amount": "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
             // "currency": "INR",
             currency:data.currency,
