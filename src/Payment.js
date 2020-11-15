@@ -30,6 +30,13 @@ function Payment() {
     const value=getBasketTotal(basket)
     async function displayRazorpay(){
 
+        const response = await fetch('https://worthit-backend.herokuapp.com/value', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ amount: value,array:basket }),
+          })
+          console.log("helloooooo")
+        //   console.log(await response.json())
         const res=await loadScript('https://checkout.razorpay.com/v1/checkout.js')
 
         if(!res){
