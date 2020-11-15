@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css'
 import { useStateValue } from './StateProvider'
+import { getBasketTotal } from './reducer';
 import worth1 from './images/worth1.jpg';
 
 function loadScript(src){
@@ -25,7 +26,8 @@ const __DEV__=document.domain==="localhost"
 
 function Payment() {
     const [{basket,user1},dispatch]=useStateValue();
-    
+    const name=user1?.email
+    const value=getBasketTotal(basket)
     async function displayRazorpay(){
 
         const res=await loadScript('https://checkout.razorpay.com/v1/checkout.js')
@@ -36,7 +38,8 @@ function Payment() {
         }
 
         const data=await fetch('https://worthit-backend.herokuapp.com/razorpay',{method:'POST'}).then((t)=>t.json())
-        
+        // https://worthit-backend.herokuapp.com/razorpay
+        //http://localhost:1337/razorpay
         console.log(data)
 
         const options = {
@@ -48,7 +51,7 @@ function Payment() {
             order_id:data.id,
             "name": "Donation",
             "description": "Thankyou for nothing",
-            "image": {worth1},
+            "image": worth1,
             // "order_id": "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "handler": function (response){
                 alert(response.razorpay_payment_id);
@@ -56,15 +59,15 @@ function Payment() {
                 alert(response.razorpay_signature)
             },
             "prefill": {
-                "name": "Gaurav Kumar",
-                "email": "gaurav.kumar@example.com",
-                "contact": "9999999999"
+                
+                "email": `${name}`,
+                
             },
             "notes": {
                 "address": "Razorpay Corporate Office"
             },
             "theme": {
-                "color": "#3399cc"
+                "color": "teal"
             }
         };
         const paymentObject = new window.Razorpay(options);

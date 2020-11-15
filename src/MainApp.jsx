@@ -60,7 +60,7 @@ const MainApp=()=>{
       // }, 10000);
       setTimeout(()=>{
         handleShow();
-      },10000)
+      },50000)
       // ad();
       
     }, []);
