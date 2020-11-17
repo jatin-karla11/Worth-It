@@ -60,6 +60,9 @@ const Navbar = ()=>{
         <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/service">Services</NavLink>
       </li>
       <li className="nav-item">
+        <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/orders">Your Orders</NavLink>
+      </li>
+      <li className="nav-item">
         <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/about">About</NavLink>
       </li>
       <li className="nav-item">

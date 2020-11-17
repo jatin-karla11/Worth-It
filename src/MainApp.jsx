@@ -26,6 +26,7 @@ import {Modal,Button} from 'react-bootstrap'
 import AutoPop from './AutoPop'
 import {CubeGrid} from 'styled-loaders-react'
 import MD from './MD';
+import OrderHistory from './OrderHistory';
 
 function ad(){
   setTimeout(()=>{
@@ -91,6 +92,7 @@ const MainApp=()=>{
         <Route exact path="/checkout" component={Checkout}/>
         <Route exact path="/payment" component={Payment} />
         <Route exact path="/md" component={MD}/>
+        <Route exact path="/orders" component={OrderHistory} />
         {/* <Route exact path="/grocery" component={Grocery}/>
         <Route exact path="/grocery" component={Grocery}/> */}
         
