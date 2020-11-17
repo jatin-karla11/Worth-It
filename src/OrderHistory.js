@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import { useStateValue } from './StateProvider';
 
 function OrderHistory() {
+    const [{basket,user1},dispatch]=useStateValue();
+    const name=user1?.email
     const [orders,setOrders]=useState([]);
     useEffect(() => {
         getOrder();
@@ -8,7 +11,9 @@ function OrderHistory() {
 
     const getOrder=()=>{
         // alert("getOrderHistory called")
-        fetch('https://worthit-backend.herokuapp.com/getOrderHistory').then(response => response.json()).then(data => setOrders(data));
+        // alert(name)
+        fetch('https://worthit-backend.herokuapp.com/getOrderHistory',{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:name})}).then(response => response.json()).then(data => setOrders(data));
             
           
     }
