@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useStateValue } from './StateProvider';
+import "./OrderHistory.css";
 
 function OrderHistory() {
     const [{basket,user1},dispatch]=useStateValue();
@@ -27,7 +28,7 @@ function OrderHistory() {
             <br></br>
             {orders.map((order)=>(<>
                 <p>email: {order.email}</p>
-            <p>{order.items.map(item=><span>{item.title}, </span>)}</p>
+            <p>{order.items.map(item=><span>{item.title}-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p>date: {order.date.toString()}</p>
             <p>order id: {order.orderId}</p>
             <p>payment id: {order.paymentId}</p><hr></hr>

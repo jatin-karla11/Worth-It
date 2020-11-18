@@ -1,0 +1,10 @@
+.orderimage{
+    height: 150px;
+    width: 150px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .orderimage{
+        height: 70px;
+        width: 70px;
+    }
+}
