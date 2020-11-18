@@ -1,0 +1,10 @@
+.fill{
+    width: 67vw;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .fill{
+        width: 250px;
+    }
+}

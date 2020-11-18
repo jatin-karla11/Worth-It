@@ -29,6 +29,7 @@ import MD from './MD';
 import OrderHistory from './OrderHistory';
 import AllProducts from './AllProducts';
 import Vindhy from './Vindhy';
+import AddProduct from './AddProduct';
 
 function ad(){
   setTimeout(()=>{
@@ -97,6 +98,7 @@ const MainApp=()=>{
         <Route exact path="/orders" component={OrderHistory} />
         <Route exact path="/allProducts" component={AllProducts} />
         <Route exact path="/vindhy" component={Vindhy}/>
+        <Route exact path="/addProduct" component={AddProduct}/>
         {/* <Route exact path="/grocery" component={Grocery}/> */}
         
         <Redirect to="/" />
