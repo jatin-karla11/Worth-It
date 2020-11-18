@@ -10,7 +10,12 @@ body {
 }
 .card-img-top{
   height: 300px;
+  border: 2px double black;
   width: 300px;
+}
+.card-body{
+  border: 1px solid black;
+  
 }
 .load{
   height: 100vh;
@@ -166,6 +171,9 @@ code {
 @media screen and (max-width: 768px) and (orientation: portrait) {
   * {
     padding-top: 3px;
+  }
+  .card-body{
+     
   }
   .ad1{
     margin: 0 auto;
