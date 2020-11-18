@@ -140,10 +140,10 @@ $('.modal-backdrop').remove();
                         
                         {/* Signin handleLogout={handleLogout} */}
     {/* <NavLink to={props.visit} className="btn-get-started">{props.btname}</NavLink> */}
-{user1?(<><Link to="/service"><button className="goto">Go to Stores</button></Link><Signin handleLogout={handleLogout}/></>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
+{user1?(<><Link to="/service"><button className="goto">Go to Stores</button></Link><Signin handleLogout={handleLogout}/><br></br><br></br></>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}
 handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
 emailError={emailError} passwordError={passwordError}   />)}
-
+<br></br><Link to="/allProducts"><button className="btn-get-started">View all products</button></Link>
                  </div>
                     </div>
                     <div className="col-lg-6 order-1 order-lg-2 header-img ">

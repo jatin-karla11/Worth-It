@@ -11,6 +11,10 @@
     max-height: 400px;
     min-width: 100px;
 }
+/* .product_image{
+    height: 300px;
+    width: 300px;
+} */
 .product_info{
     height: 100px;
     margin-bottom: 15px;

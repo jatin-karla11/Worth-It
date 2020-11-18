@@ -9,6 +9,8 @@ const Home=()=>{
     imgsrc={worth}
     visit="/" 
     btname="Sign-In"/>
+    
+    
     </>);
 };
 

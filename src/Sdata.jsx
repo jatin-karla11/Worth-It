@@ -1,37 +1,45 @@
 import worth from './images/worth.jpg';
 import chocolate from './images/Chocolate.jpg';
+import dc from './images/dc.jpg'
+import md from './images/md.jpg'
+import dairy from './images/dairy.jpg'
+import vindhy from './images/vindhy.jpg'
+import grocery1 from './images/grocery1.jpg'
 
 const Sdata=[
+    
     {
-        imgsrc:worth,
+        imgsrc:dc,
+        title:'Dream Catchers',
+        to:"/dreamcatchers"
+    },
+    {
+        imgsrc:grocery1,
         title:"Groceries",
         to:"/grocery"
     },
     {
-        imgsrc:worth,
-        title:'Dream Catchers',
-        to:"/dreamcatchers"
+        imgsrc:vindhy,
+        title:'Bracelets',
+        to:"/vindhy"
+    }
+    ,
+    {
+        imgsrc:md,
+        title:'Mediline Diagnostics',
+        to:"/md"
+    },
+    {
+        imgsrc:dairy,
+        title:'Dairy Items',
+        to:"/dairy"
     },
     {
         imgsrc:chocolate,
         title:'Chocalate Store',
         to:"/chocolatestore"
-    },
-    {
-        imgsrc:worth,
-        title:'Mediline Diagnostics',
-        to:"/md"
-    },
-    {
-        imgsrc:worth,
-        title:'Dairy Items',
-        to:"/dairy"
-    },
-    {
-        imgsrc:worth,
-        title:'Bracelets',
-        to:"/bracelet"
     }
+    
 ];
 
 export default Sdata;

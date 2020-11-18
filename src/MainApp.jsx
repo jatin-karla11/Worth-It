@@ -27,6 +27,8 @@ import AutoPop from './AutoPop'
 import {CubeGrid} from 'styled-loaders-react'
 import MD from './MD';
 import OrderHistory from './OrderHistory';
+import AllProducts from './AllProducts';
+import Vindhy from './Vindhy';
 
 function ad(){
   setTimeout(()=>{
@@ -93,8 +95,9 @@ const MainApp=()=>{
         <Route exact path="/payment" component={Payment} />
         <Route exact path="/md" component={MD}/>
         <Route exact path="/orders" component={OrderHistory} />
-        {/* <Route exact path="/grocery" component={Grocery}/>
-        <Route exact path="/grocery" component={Grocery}/> */}
+        <Route exact path="/allProducts" component={AllProducts} />
+        <Route exact path="/vindhy" component={Vindhy}/>
+        {/* <Route exact path="/grocery" component={Grocery}/> */}
         
         <Redirect to="/" />
     </Switch>
