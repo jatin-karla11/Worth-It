@@ -10,11 +10,11 @@ body {
 }
 .card-img-top{
   height: 300px;
-  border: 2px double black;
+  /* border: 2px double black; */
   width: 300px;
 }
 .card-body{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   
 }
 .load{
