@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import MainApp from './MainApp';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import { StateProvider } from './StateProvider';
 import reducer, { initialState } from './reducer';
 
@@ -14,9 +14,9 @@ ReactDOM.render(
   <React.StrictMode>
     <>
     <StateProvider initialState={initialState} reducer={reducer}>
-    <BrowserRouter>
+    <HashRouter>
     <MainApp />
-    </BrowserRouter>
+    </HashRouter>
     </StateProvider>
     </>
   </React.StrictMode>,

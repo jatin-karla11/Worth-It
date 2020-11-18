@@ -10,7 +10,7 @@ import Service from './Service';
 import Contact from './Contact';
 import Navbar from './Navbar';
 import Signin from './Signin';
-import { HashRouter,Switch,Route,Redirect, Link } from 'react-router-dom';
+import { Switch,Route,Redirect, Link } from 'react-router-dom';
 import Footer from './Footer';
 import Grocery from './Grocery'
 import Chocolates from './Chocolates';
