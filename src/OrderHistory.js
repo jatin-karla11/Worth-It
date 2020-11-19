@@ -42,12 +42,12 @@ function OrderHistory() {
             <div id="bgoh">
             {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
             {orders.map((order)=>(<>
-                <p>Email: {order.email}</p>
-            <p>{order.items.map(item=><span>{item.title}(₹{item.price})-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
-            <p>Date: {order.date.toString()}</p>
-            <p>Order total: {order.totalAmount}</p>
-            <p>Order id: {order.orderId}</p>
-            <p>Payment id: {order.paymentId}</p><hr></hr>
+                <p><strong>Email: {order.email}</strong></p>
+            <p>{order.items.map(item=><span><strong>{item.title}(₹{item.price})</strong>-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
+            <p><strong>Date: {order.date.toString()}</strong></p>
+            <p><strong>Order total: {order.totalAmount}</strong></p>
+            <p><strong>Order id: {order.orderId}</strong></p>
+            <p><strong>Payment id: {order.paymentId}</strong></p><hr></hr>
             {/* <button onClick={addAll}>Re-Order</button> */}
             </>
             ))}    </>}

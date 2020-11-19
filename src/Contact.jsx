@@ -22,7 +22,7 @@ const Contact=()=>{
     };
     return (<>
     <div className="my-5">
-        <h1 className="text-center">Contact Us</h1>
+        <h1 className="text-center">Join Us</h1>
     </div>
     <div className="container contact_div">
         <div className="row">

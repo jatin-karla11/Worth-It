@@ -93,7 +93,7 @@ footer{
       margin-top: 10px;
   }
   .right form input, .right form textarea{
-      width: 100%;
+      /* width: 100%; */
       font-size: 22px !important;
       background: #faf9f9;
       padding-left: 10px;
