@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/Worth-It/static/css/main.1ba7cf92.chunk.css",
-    "main.js": "/Worth-It/static/js/main.bb3e369a.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.bb3e369a.chunk.js.map",
+    "main.css": "/Worth-It/static/css/main.ec7933f8.chunk.css",
+    "main.js": "/Worth-It/static/js/main.339c4bee.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.339c4bee.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8de70ac3.chunk.css": "/Worth-It/static/css/2.8de70ac3.chunk.css",
-    "static/js/2.6b716720.chunk.js": "/Worth-It/static/js/2.6b716720.chunk.js",
-    "static/js/2.6b716720.chunk.js.map": "/Worth-It/static/js/2.6b716720.chunk.js.map",
+    "static/js/2.1327b820.chunk.js": "/Worth-It/static/js/2.1327b820.chunk.js",
+    "static/js/2.1327b820.chunk.js.map": "/Worth-It/static/js/2.1327b820.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.0d00b807cf19cc6921923add1406a78f.js": "/Worth-It/precache-manifest.0d00b807cf19cc6921923add1406a78f.js",
+    "precache-manifest.f5c9c4565c2cff5987f9505917deadc4.js": "/Worth-It/precache-manifest.f5c9c4565c2cff5987f9505917deadc4.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8de70ac3.chunk.css.map": "/Worth-It/static/css/2.8de70ac3.chunk.css.map",
-    "static/css/main.1ba7cf92.chunk.css.map": "/Worth-It/static/css/main.1ba7cf92.chunk.css.map",
-    "static/js/2.6b716720.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.6b716720.chunk.js.LICENSE.txt",
+    "static/css/main.ec7933f8.chunk.css.map": "/Worth-It/static/css/main.ec7933f8.chunk.css.map",
+    "static/js/2.1327b820.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.1327b820.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/T-C.png": "/Worth-It/static/media/T-C.48c93369.png",
-    "static/media/chocolate1.jpg": "/Worth-It/static/media/chocolate1.babc4391.jpg",
     "static/media/dairy.jpg": "/Worth-It/static/media/dairy.e72536ef.jpg",
     "static/media/dc.jpg": "/Worth-It/static/media/dc.5ef8fdee.jpg",
     "static/media/grocery1.jpg": "/Worth-It/static/media/grocery1.3f6bff26.jpg",
@@ -30,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8de70ac3.chunk.css",
-    "static/js/2.6b716720.chunk.js",
-    "static/css/main.1ba7cf92.chunk.css",
-    "static/js/main.bb3e369a.chunk.js"
+    "static/js/2.1327b820.chunk.js",
+    "static/css/main.ec7933f8.chunk.css",
+    "static/js/main.339c4bee.chunk.js"
   ]
 }
