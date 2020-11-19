@@ -18,7 +18,7 @@ const Contact=()=>{
     };
     const formSubmit=(e)=>{
         e.preventDefault();
-        alert(`${data.fullname}`);
+        // alert(`${data.fullname}`);
     };
     return (<>
     <div className="my-5">
@@ -27,7 +27,7 @@ const Contact=()=>{
     <div className="container contact_div">
         <div className="row">
             <div className="col-md-6 col-10 mx-auto">
-            <form onSubmit={formSubmit}>
+            <form action="mailto:worthwrhfy@gmail.com?Subject=Hey%20Worth-It">
             <div class="form-group">
     <label for="exampleInput">Full Name</label>
     <input required type="text"

@@ -6,6 +6,7 @@ function OrderHistory() {
     const [{basket,user1},dispatch]=useStateValue();
     const name=user1?.email
     const [orders,setOrders]=useState([]);
+    const [reorder,setReorder]=useState("");
     useEffect(() => {
         getOrder();
     }, [])
@@ -32,6 +33,10 @@ function OrderHistory() {
     //     })
     // }
 
+    const yo=()=>{
+        alert(reorder);
+    }
+    var orderid="";
     return (
         <div className="container-fluid">
             <br></br>
@@ -47,8 +52,12 @@ function OrderHistory() {
             <p><strong>Date: {order.date.toString()}</strong></p>
             <p><strong>Order total: {order.totalAmount}</strong></p>
             <p><strong>Order id: {order.orderId}</strong></p>
-            <p><strong>Payment id: {order.paymentId}</strong></p><hr></hr>
-            {/* <button onClick={addAll}>Re-Order</button> */}
+            {orderid=order.orderId}
+            <p><strong>Payment id: {order.paymentId}</strong></p>
+            {/* <button onClick={()=>{setReorder(orderid)
+            yo()
+        }}>Re-Order</button> */}
+            <hr></hr>
             </>
             ))}    </>}
             
