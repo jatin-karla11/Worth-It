@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useStateValue } from './StateProvider';
-import "./OrderHistory.css";
 
-function OrderHistory() {
+function AllOrders() {
+
     const [{basket,user1},dispatch]=useStateValue();
     const name=user1?.email
     const [orders,setOrders]=useState([]);
     useEffect(() => {
-        getOrder();
+        adminOrder();
     }, [])
 
-    const getOrder=()=>{
+    const adminOrder=()=>{
         // alert("getOrderHistory called")
         // alert(name)
-        fetch('https://worthit-backend.herokuapp.com/getOrderHistory',{method: 'POST',
+        fetch('https://worthit-backend.herokuapp.com/getOrderAdmin',{method: 'POST',
         headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:name})}).then(response => response.json()).then(data => setOrders(data));
             
           
@@ -24,9 +24,8 @@ function OrderHistory() {
             <br></br>
             <br></br>
             <br></br>
-            <strong>Your order history!</strong><hr></hr>
+            <strong>All orders!</strong><hr></hr>
             <br></br>
-            {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
             {orders.map((order)=>(<>
                 <p>email: {order.email}</p>
             <p>{order.items.map(item=><span>{item.title}-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
@@ -34,10 +33,9 @@ function OrderHistory() {
             <p>order id: {order.orderId}</p>
             <p>payment id: {order.paymentId}</p><hr></hr>
             </>
-            ))}    </>}
-              
+            ))}
         </div>
     )
 }
 
-export default OrderHistory
+export default AllOrders

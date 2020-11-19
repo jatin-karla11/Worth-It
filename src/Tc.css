@@ -1,0 +1,9 @@
+.tc{
+    background-color: rgb(171, 221, 216);
+    padding: 20px;
+    box-shadow: 0px 5px 20px 10px rgb(113, 168, 162) ;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .tc{}
+}

@@ -16,7 +16,6 @@ const Navbar = ()=>{
     $('.navbar-collapse').removeClass('show');
 
   }
-  
 
   // var user = fire.auth().currentUser;
   //   var name, email, photoUrl, uid, emailVerified;
@@ -31,7 +30,7 @@ const Navbar = ()=>{
   //                      // you have one. Use User.getToken() instead.
   //   }
 
-  const[{basket},dispatch]=useStateValue();
+  const[{basket,user1},dispatch]=useStateValue();
 
   return(
         <>
@@ -39,7 +38,7 @@ const Navbar = ()=>{
         <div className="container-fluid nav_bg" id="fix">
             <div className='row'>
                 <div className="col-12 mx-auto">
-
+ 
                 
             <nav className="navbar navbar-expand-lg navbar-light">
   <NavLink className="navbar-brand" to="/">
@@ -59,9 +58,12 @@ const Navbar = ()=>{
       <li className="nav-item">
         <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/service">Services</NavLink>
       </li>
-      <li className="nav-item">
+      {(user1?.email==="adminmhu@gmail.com")?<><li className="nav-item">
+        <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/allorders">All orders</NavLink>
+      </li></>:<><li className="nav-item">
         <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/orders">Your Orders</NavLink>
-      </li>
+      </li></>}
+      
       <li className="nav-item">
         <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/about">About</NavLink>
       </li>
