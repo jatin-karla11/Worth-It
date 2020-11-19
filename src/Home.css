@@ -1,0 +1,27 @@
+.item{
+    height: 260px;
+    padding: 15px;
+    
+}
+.slideHome{
+    height: 220px;
+    width: 220px;
+}
+.imgslider{
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .item{
+        height: 110px;
+        /* border: 1px solid black; */
+        padding: 0px;
+        margin: 0px 10px;
+        width: 110px;
+    }
+    .slideHome{
+        height: 90px;
+        width: 90px;
+        
+    }
+}
