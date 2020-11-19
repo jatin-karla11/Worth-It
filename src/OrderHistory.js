@@ -19,23 +19,40 @@ function OrderHistory() {
           
     }
 
+    // const addAll=()=>{
+    //     //dispatch an item to the data layer
+    //     dispatch({
+    //         type:'ADD_TO_BASKET',
+    //         item:{
+    //             id:id,
+    //             title:title,
+    //             image:image,
+    //             price:price
+    //         }
+    //     })
+    // }
+
     return (
         <div className="container-fluid">
             <br></br>
             <br></br>
+            
+            <strong><center><h2>Your order history!</h2></center></strong><hr></hr>
             <br></br>
-            <strong>Your order history!</strong><hr></hr>
-            <br></br>
+            <div id="bgoh">
             {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
             {orders.map((order)=>(<>
-                <p>email: {order.email}</p>
-            <p>{order.items.map(item=><span>{item.title}-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
-            <p>date: {order.date.toString()}</p>
-            <p>order id: {order.orderId}</p>
-            <p>payment id: {order.paymentId}</p><hr></hr>
+                <p>Email: {order.email}</p>
+            <p>{order.items.map(item=><span>{item.title}(₹{item.price})-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
+            <p>Date: {order.date.toString()}</p>
+            <p>Order total: {order.totalAmount}</p>
+            <p>Order id: {order.orderId}</p>
+            <p>Payment id: {order.paymentId}</p><hr></hr>
+            {/* <button onClick={addAll}>Re-Order</button> */}
             </>
             ))}    </>}
-              
+            
+              </div>
         </div>
     )
 }

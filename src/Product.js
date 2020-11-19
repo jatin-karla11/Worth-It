@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Product.css"
-import chocolate1 from './images/chocolate1.jpg'
 import { useStateValue } from './StateProvider'
 
 function Product({id,title,image,price}) {

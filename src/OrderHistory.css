@@ -2,6 +2,10 @@
     height: 150px;
     width: 150px;
 }
+#bgoh{
+    background-color: rgb(207, 224, 224);
+    padding: 20px;
+}
 @media screen and (max-width: 768px) and (orientation: portrait) {
     .orderimage{
         height: 70px;
