@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 import {HashRouter} from "react-router-dom";
 import { StateProvider } from './StateProvider';
 import reducer, { initialState } from './reducer';
+import ScrollToTop from './ScrollToTop';
 
 
 ReactDOM.render(
@@ -15,6 +16,7 @@ ReactDOM.render(
     <>
     <StateProvider initialState={initialState} reducer={reducer}>
     <HashRouter>
+      <ScrollToTop/>
     <MainApp />
     </HashRouter>
     </StateProvider>
