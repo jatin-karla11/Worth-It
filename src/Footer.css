@@ -156,10 +156,10 @@ footer{
           font-size: 20px;
       }
       .right form .btn11 button{
-          width: 300px;
+          width: 100%;
       }
       .right form input, .right form textarea{
-          width: 300px;
+          width: 100%;
           font-size: 20px;
       }
   }
