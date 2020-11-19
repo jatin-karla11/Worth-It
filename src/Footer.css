@@ -93,7 +93,7 @@ footer{
       margin-top: 10px;
   }
   .right form input, .right form textarea{
-      width: 300px;
+      width: 100%;
       font-size: 22px !important;
       background: #faf9f9;
       padding-left: 10px;
@@ -147,11 +147,19 @@ footer{
       .main-content{
           flex-wrap: wrap;
           flex-direction: column;
+          /* max-width: 100px; */
       }
       .main-content .box{
           margin: 5px 0;
       }
       input,textarea{
+          font-size: 20px;
+      }
+      .right form .btn11 button{
+          width: 300px;
+      }
+      .right form input, .right form textarea{
+          width: 300px;
           font-size: 20px;
       }
   }
