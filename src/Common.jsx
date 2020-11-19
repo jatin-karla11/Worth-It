@@ -3,9 +3,7 @@ import worth from './images/worth.jpg';
 import {Link, NavLink,useHistory} from 'react-router-dom';
 import fire from './fire';
 import Login from './Login';
-import Home from './Home';
 import Signin from './Signin';
-import Service from './Service';
 import  { Redirect } from 'react-router-dom'
 import $ from 'jquery';
 import firebase from 'firebase'
@@ -121,6 +119,7 @@ $('.modal-backdrop').remove();
     // console.log(user)
     useEffect(()=>{
       authListener();
+      
     },[]);
 
     return (
@@ -151,7 +150,7 @@ emailError={emailError} passwordError={passwordError}   />)}
                         <div style={{height:"40px"}}></div>
                         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-interval="4000">
       <img src={worth1} class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">

@@ -15,12 +15,13 @@ const Service=()=>{
                     <div className="row gy-4">
                          {
                              Sdata.map((val,ind)=>{
-                                 return <Card
+                                 return(<> <Card
                                  key={ind}
                                  imgsrc={val.imgsrc}
                                  title={val.title}
                                  to={val.to}
                                  />
+                                 </>)
                              })
                          }
                     </div>

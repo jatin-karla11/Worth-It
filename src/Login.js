@@ -91,7 +91,7 @@ const Login=(props)=>{
                 )}
             </div>
             <center><p>OR</p>
-            <button className="login_button" onClick={googleSignIn}>Sign in with Google</button></center>
+            <button className="login_button" onClick={googleSignIn}>Sign in with Google <i class="fab fa-google"></i></button></center>
       </div>
       <div class="modal-footer ">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
