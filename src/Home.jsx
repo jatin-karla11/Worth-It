@@ -20,7 +20,7 @@ const responsive = {
 };
 
 const items = [
-    <div className="item"><Link to="/dreamcatchers"><img className="slideHome" src={dc}/></Link></div>,
+    <div className="item"><Link to="/dreamcatchers"><img className="slideHome" src={dc}/><br></br></Link></div>,
     <div className="item"><Link to="/vindhy"><img className="slideHome" src={vindhy}/></Link></div>,
     <div className="item"><Link to="/grocery"><img className="slideHome" src={grocery1}/></Link></div>,
     <div className="item"><Link to="/dairy"><img className="slideHome" src={dairy}/></Link></div>,
