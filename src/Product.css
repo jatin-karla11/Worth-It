@@ -50,4 +50,7 @@
         object-fit: contain;
         margin-bottom: 15px;
     }
+    .product_info{
+        font-size: small;
+    }
 }

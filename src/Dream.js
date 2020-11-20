@@ -15,7 +15,8 @@ function Dream() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="Dream-Catcher1" 
+            title="Dream-Catcher1"
+            description="xyxxxxxzzzzz" 
             price={550} 
             image={dc}/>
             <Product 

@@ -20,7 +20,7 @@ const Sdata=[
     },
     {
         imgsrc:vindhy,
-        title:'Bracelets',
+        title:'Vindhy Store',
         to:"/vindhy"
     }
     ,
