@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 const Contact=()=>{
+    const [enqs,setEnqs]=useState([]);
     const [data,setData]=useState({
-        fullname:'',
+        name:'',
         phone:'',
         email:'',
-        mssg:''
+        message:''
     });
     const InputEvent=(event)=>{
         const {name,value}=event.target;
@@ -18,7 +19,10 @@ const Contact=()=>{
     };
     const formSubmit=(e)=>{
         e.preventDefault();
-        // alert(`${data.fullname}`);
+        alert(`${data.name} the enquiry is sent successfully!`);
+        // alert(data.phone)
+        fetch('https://worthit-backend.herokuapp.com/setEnquiry',{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({data:data})}).then(response => response.json()).then(data => setEnqs(data));
     };
     return (<>
     <div className="my-5">
@@ -27,11 +31,11 @@ const Contact=()=>{
     <div className="container contact_div">
         <div className="row">
             <div className="col-md-6 col-10 mx-auto">
-            <form action="mailto:worthwrhfy@gmail.com?Subject=Hey%20Worth-It">
+            <form onSubmit={formSubmit}>
             <div class="form-group">
     <label for="exampleInput">Full Name</label>
     <input required type="text"
-    name="fullname" value={data.fullname} onChange={InputEvent}
+    name="name" value={data.fullname} onChange={InputEvent}
     class="form-control" id="exampleInput" aria-describedby="emailHelp"/>
     </div>
     <div class="form-group">
@@ -48,12 +52,13 @@ const Contact=()=>{
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInput">Message</label>
-    <textarea rows="3" 
-    name="mssg" value={data.mssg} onChange={InputEvent}
+    <label for="exampleInput">Type of Service/Product</label>
+    <textarea rows="3" placeholder="enter your message here.."
+    name="message" value={data.mssg} onChange={InputEvent}
     class="form-control" id="exampleInput" aria-describedby="emailHelp"></textarea>
     </div>
-  <button type="submit" class="btn btn-outline-info">Submit</button>
+    <br></br>
+  <button type="submit" class="btn btn-outline-dark" style={{width:"100%"}}>Submit</button>
 </form>
             </div>
         </div>

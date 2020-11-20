@@ -60,7 +60,11 @@ const Navbar = ()=>{
       </li>
       {(user1?.email==="adminmhu@gmail.com")?<><li className="nav-item">
         <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/allorders">All orders</NavLink>
-      </li></>:<><li className="nav-item">
+      </li>
+      <li className="nav-item">
+        <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/queries">User Queries</NavLink>
+      </li>
+      </>:<><li className="nav-item">
         <NavLink exact activeClassName="menu_active" onClick={jQueryCode} className="nav-link" to="/orders">Your Orders</NavLink>
       </li></>}
       

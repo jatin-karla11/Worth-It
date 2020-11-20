@@ -32,6 +32,7 @@ import Vindhy from './Vindhy';
 import AddProduct from './AddProduct';
 import Tc from './Tc';
 import AllOrders from './AllOrders';
+import Queries from './Queries';
 
 function ad(){
   setTimeout(()=>{
@@ -103,6 +104,7 @@ const MainApp=()=>{
         <Route exact path="/addProduct" component={AddProduct}/>
         <Route exact path="/tc" component={Tc}/>
         <Route exact path="/allorders" component={AllOrders}/>
+        <Route exact path="/queries" component={Queries}/>
         {/* <Route exact path="/grocery" component={Grocery}/> */}
         
         <Redirect to="/" />
