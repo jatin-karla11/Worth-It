@@ -48,11 +48,13 @@ function OrderHistory() {
             {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
             {orders.map((order)=>(<>
                 <p><strong>Email: {order.email}</strong></p>
+                <p><strong>Contact: {order.contact}</strong></p>
+                <p><strong>Delivery Address: {order.address}</strong></p>
             <p>{order.items.map(item=><span><strong>{item.title}(₹{item.price})</strong>-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p><strong>Date: {order.date.toString()}</strong></p>
             <p><strong>Order total: {order.totalAmount}</strong></p>
             <p><strong>Order id: {order.orderId}</strong></p>
-            {orderid=order.orderId}
+            {/* {orderid=order.orderId} */}
             <p><strong>Payment id: {order.paymentId}</strong></p>
             {/* <button onClick={()=>{setReorder(orderid)
             yo()

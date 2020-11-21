@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import "./OrderHistory.css";
+import { useStateValue } from './StateProvider';
 
 function Queries() {
 
@@ -8,13 +9,15 @@ function Queries() {
     useEffect(() => {
         getQueries();
     }, [])
+    const [{basket,user1},dispatch]=useStateValue();
+    const name=user1?.email
 
     const getQueries=()=>{
         // alert("getOrderHistory called")
         // alert(name)
         // alert("yo")
         fetch('https://worthit-backend.herokuapp.com/getEnquiry',{method: 'POST',
-        headers: { 'Content-Type': 'application/json' },body:JSON.stringify()}).then(response => response.json()).then(data => setQueries(data));
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:name})}).then(response => response.json()).then(data => setQueries(data));
             
           
     }

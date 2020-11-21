@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css'
@@ -37,7 +37,9 @@ function Payment() {
         const response1 = await fetch('https://worthit-backend.herokuapp.com/setOrderHistory', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ array:basket,orderid:orderId,paymentid:paymentId,email:name }),
+            body: JSON.stringify({ array:basket,orderid:orderId,
+                paymentid:paymentId,email:name,
+            contact:contact,address:address }),
           })
           dispatch({
               type:"EMPTY_BASKET"
@@ -106,8 +108,9 @@ function Payment() {
         //     console.log("failed payment")
         // }
     }
-    
-    
+    const [address,setAddress]=useState("");
+    const [contact,setContact]=useState("");
+
     return (
         <div className="container-fluid">
             <div className="payment">
@@ -123,8 +126,11 @@ function Payment() {
                         </div>
                         <div className="payment_address">
                             <p>{user1?.email}</p>
-                            <p>Bombay gym</p>
-                            <p>Aastha cinema</p>
+                            {/* <p>Bombay gym</p>
+                            <p>Aastha cinema</p> */}
+                            <input type="text" onChange={(e)=>{setContact(e.target.value)}} placeholder="enter your contact number" style={{width:"250px"}}/><br></br>
+                            <textarea type="text" onChange={(e)=>{setAddress(e.target.value)}} placeholder="enter your delivery address" style={{width:"250px"}}/>
+                            
                         </div>
                     </div>
                     <div className="payment_section">

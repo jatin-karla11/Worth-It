@@ -51,16 +51,16 @@ function Vindhy() {
             id="975274"
             title="Golden Plated Rudraksha Om Trishul Damroo Designer Bahubali Kada Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
-            price={200} 
-            image={vindhy4}/>
+            price={299} 
+            image={vindhy5}/>
                  </div>
     <div className="shop_row">
     <Product 
             id="975275"
             title="Vindhy's Shiva Kada Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
-            price={299}   
-            image={vindhy5}/>
+            price={200}   
+            image={vindhy4}/>
 
     <Product 
             id="975276"

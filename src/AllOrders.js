@@ -9,7 +9,7 @@ function AllOrders() {
     const [orders,setOrders]=useState([]);
     useEffect(() => {
         adminOrder();
-    }, [])
+    }, []) 
 
     const adminOrder=()=>{
         // alert("getOrderHistory called")
@@ -30,6 +30,8 @@ function AllOrders() {
             <div id="bgoh">
             {orders.map((order)=>(<>
                 <p>email: {order.email}</p>
+                <p><strong>Contact: {order.contact}</strong></p>
+                <p><strong>Delivery Address: {order.address}</strong></p>
             <p>{order.items.map(item=><span>{item.title}-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p>date: {order.date.toString()}</p>
             <p>order id: {order.orderId}</p>
