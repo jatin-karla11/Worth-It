@@ -10,8 +10,9 @@ function Grocery() {
         
         <div className="shop">
         <div className="shop-title">
-            Groceries by xyz
+            Groceries by Mahadev General Store
         </div>
+        <marquee>Groceries will be delivered on the next day of order placing..</marquee>
         <div className="shop_row">
             <Product 
             id="975271" 
