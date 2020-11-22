@@ -6,6 +6,7 @@ import dairy from './images/dairy.jpg'
 import vindhy from './images/vindhy.jpg'
 import mithas from './images/mithas.jpg'
 import grocery1 from './images/grocery1.jpg'
+import pizza from './images/pizza.jpg'
 
 const Sdata=[
     
@@ -39,6 +40,11 @@ const Sdata=[
         imgsrc:mithas,
         title:'Mithas',
         to:"/mithas"
+    },
+    {
+        imgsrc:pizza,
+        title:'Pizza Store',
+        to:"/pizza"
     }
     
 ];

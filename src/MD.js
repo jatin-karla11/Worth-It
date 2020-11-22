@@ -37,8 +37,8 @@ function MD() {
             image={md3}/>
         <Product 
             id="975274"
-            title="Biolab's 100ml spray- alcohol based sanitizer" 
-            price={550} 
+            title="Biolab's 1 Litre spray- alcohol based sanitizer" 
+            price={240} 
             image={md4}/>
                  </div>
     

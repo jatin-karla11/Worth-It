@@ -123,7 +123,7 @@ const MainApp=()=>{
           <Modal.Title>Effective Sanitizer</Modal.Title>
         </Modal.Header>
       <Modal.Body><img className="sanitizer" src={san1}/><br></br>
-      <center><strong>Variants- 100ml-500ml-5L</strong><br></br><br></br>
+      <center><strong>Variants- 100ml-500ml-1L-5L</strong><br></br><br></br>
       <Link to="/md"><Button onClick={handleClose} variant="info">View Store</Button></Link></center>
       </Modal.Body>
         <Modal.Footer>
