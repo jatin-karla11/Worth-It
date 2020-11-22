@@ -1,4 +1,7 @@
 import React from 'react'
+import './Product.css'
+import Product from './Product'
+import './shop.css'
 import pizza from './images/pizza.jpg'
 
 function Pizza() {
