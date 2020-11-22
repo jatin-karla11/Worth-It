@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "668655876ada30f4c21ec08ddc18859a",
+    "revision": "a6f150b99502e4d1d830eb5a24b78d8f",
     "url": "/Worth-It/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Worth-It/static/css/2.8de70ac3.chunk.css"
   },
   {
-    "revision": "d5a75e4b62664cff5c30",
+    "revision": "697113076a02d7f6141a",
     "url": "/Worth-It/static/css/main.8bdee97b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Worth-It/static/js/2.31e0181e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d5a75e4b62664cff5c30",
-    "url": "/Worth-It/static/js/main.110695bf.chunk.js"
+    "revision": "697113076a02d7f6141a",
+    "url": "/Worth-It/static/js/main.7117f084.chunk.js"
   },
   {
     "revision": "d56963c23782be421219",
