@@ -61,7 +61,7 @@ function Payment() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ array:basket,orderid:orderId,
                 paymentid:paymentId,email:name,
-            contact:contact,address:address }),
+            contact:contact,address:address,amount1:value }),
           })
           dispatch({
               type:"EMPTY_BASKET"
