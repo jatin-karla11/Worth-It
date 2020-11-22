@@ -17,8 +17,7 @@ function OrderHistory() {
         fetch('https://worthit-backend.herokuapp.com/getOrderHistory',{method: 'POST',
         headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:name})}).then(response => response.json()).then(data => setOrders(data));
             
-          
-    }
+            }
 
     // const addAll=()=>{
     //     //dispatch an item to the data layer
@@ -46,7 +45,10 @@ function OrderHistory() {
             <br></br>
             <div id="bgoh">
             {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
+            {/* {console.log(orders)} */}
+            {(!orders.length)?<marquee>"You have not ordered anything yet!"</marquee>:<>
             {orders.map((order)=>(<>
+            
                 <p><strong>Email: {order.email}</strong></p>
                 <p><strong>Contact: {order.contact}</strong></p>
                 <p><strong>Cash on delivery: {order.checked}</strong></p>
@@ -54,6 +56,7 @@ function OrderHistory() {
             <p>{order.items.map(item=><span><strong>{item.title}(₹{item.price})</strong>-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p><strong>Date: {order.date.toString()}</strong></p>
             <p><strong>Order total: {order.totalAmount}</strong></p>
+            <p><strong>Delivery Charges: {(order.totalAmount)>499?"Free delivery!!!":"Rs.30"}</strong></p>
             <p><strong>Order id: {order.orderId}</strong></p>
             {/* {orderid=order.orderId} */}
             <p><strong>Payment id: {order.paymentId}</strong></p>
@@ -62,7 +65,8 @@ function OrderHistory() {
         }}>Re-Order</button> */}
             <hr></hr>
             </>
-            ))}    </>}
+            ))}</>}
+                </>}
             
               </div>
         </div>

@@ -150,8 +150,8 @@ function Payment() {
                             <p>{user1?.email}</p>
                             {/* <p>Bombay gym</p>
                             <p>Aastha cinema</p> */}
-                            <input type="text" onChange={(e)=>{setContact(e.target.value)}} placeholder="enter your contact number" style={{width:"250px"}}/><br></br>
-                            <textarea type="text" onChange={(e)=>{setAddress(e.target.value)}} placeholder="enter your delivery address" style={{width:"250px"}}/>
+                            <input required type="text" onChange={(e)=>{setContact(e.target.value)}} placeholder="enter your contact number" style={{width:"250px"}}/><br></br>
+                            <textarea required type="text" onChange={(e)=>{setAddress(e.target.value)}} placeholder="enter your delivery address" style={{width:"250px"}}/>
                             
                         </div>
                     </div>
@@ -175,8 +175,9 @@ function Payment() {
                             <h3>Payment Method</h3>
                         </div>
                         <div className="payment_details">
-                            <strong>Total: {value}</strong>
+                            <strong>Total of items: {value}</strong>
                             <br></br>
+                            {(value>499)?<strong>Free delivery!!!</strong>:<strong>Delivery Charge Rs.30/-</strong>}
                             <br></br>
                             <label><strong>Cash on delivery</strong></label><input type="checkbox" onChange={()=>{if(!checked){setChecked(true)}else{setChecked(false)}}}/>
                             <br></br>{checked?<button onClick={afterCOD}>Place Order</button>:""}<br></br><hr></hr>
