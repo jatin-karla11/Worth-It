@@ -23,7 +23,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 // import { ThemeProvider,createMuiTheme } from "@material-ui/core/styles"
 // import {Paper} from '@material-ui/core'
 import {Modal,Button} from 'react-bootstrap'
-import AutoPop from './AutoPop'
+import Pizza from './Pizza'
 import {CubeGrid} from 'styled-loaders-react'
 import MD from './MD';
 import OrderHistory from './OrderHistory';
@@ -105,6 +105,7 @@ const MainApp=()=>{
         <Route exact path="/tc" component={Tc}/>
         <Route exact path="/allorders" component={AllOrders}/>
         <Route exact path="/queries" component={Queries}/>
+        <Route exact path="/pizza" component={Pizza}/>
         {/* <Route exact path="/grocery" component={Grocery}/> */}
         
         <Redirect to="/" />

@@ -181,7 +181,7 @@ function Payment() {
                             <br></br>
                             <label><strong>Cash on delivery</strong></label><input type="checkbox" onChange={()=>{if(!checked){setChecked(true)}else{setChecked(false)}}}/>
                             <br></br>{checked?<button onClick={afterCOD}>Place Order</button>:""}<br></br><hr></hr>
-                            <span>Tap pay online using UPIs, Netbanking, Cards.</span>
+                            <span>Tap to pay online using UPIs, Netbanking, Cards.</span>
                             <br></br><br></br>
                             <button style={{background:"lightcyan"}} onClick={displayRazorpay}>Pay Online :)</button>
                         </div>
