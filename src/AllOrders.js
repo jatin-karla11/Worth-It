@@ -35,7 +35,7 @@ function AllOrders() {
                 <p><strong>Cash on delivery: {order.checked}</strong></p>
             <p>{order.items.map(item=><span>{item.title}-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p>date: {order.date.toString()}</p>
-            <p><strong>Order total: {order.totalAmount}</strong></p>
+            <p><strong>Order total: {order.amount1}</strong></p>
             <p><strong>Delivery Charges: {(order.totalAmount)>499?"Free delivery!!!":"Rs.30"}</strong></p>
             <p>order id: {order.orderId}</p>
             <p>payment id: {order.paymentId}</p><hr></hr>

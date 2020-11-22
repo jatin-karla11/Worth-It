@@ -72,6 +72,14 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
+            id="975273" 
+            title="Boondi Ke laddu"
+            price={100} 
+            image={boondikeladdu}/>
+           
+        </div>
+        <div className="shop_row">
+            <Product 
             id="975275" 
             title="Mohan Thal"
             price={100} 
