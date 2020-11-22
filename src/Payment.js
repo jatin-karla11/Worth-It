@@ -36,12 +36,17 @@ function Payment() {
 
     async function afterCOD(){
         alert("Order Placed!!!")
+        const response = await fetch('https://worthit-backend.herokuapp.com/value', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ amount: value,array:basket }),
+          })
         const response1 = await fetch('https://worthit-backend.herokuapp.com/setOrderHistory', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ array:basket,orderid:orderId,
                 paymentid:paymentId,email:name,
-            contact:contact,address:address,checked:checked }),
+            contact:contact,address:address,checked:checked}),
           })
           dispatch({
               type:"EMPTY_BASKET"
