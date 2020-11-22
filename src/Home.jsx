@@ -26,7 +26,7 @@ const items = [
     <div className="item"><Link to="/grocery"><img className="slideHome" src={grocery1}/></Link></div>,
     <div className="item"><Link to="/dairy"><img className="slideHome" src={dairy}/></Link></div>,
     <div className="item"><Link to="/md"><img className="slideHome" src={md}/></Link></div>,
-    <div className="item"><Link to="/chocolate"><img className="slideHome" src={mithas}/></Link></div>,
+    <div className="item"><Link to="/mithas"><img className="slideHome" src={mithas}/></Link></div>,
     <div className="item"><Link to="/tc"><img className="slideHome" src={TC}/></Link></div>,
 ];
 
