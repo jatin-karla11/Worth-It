@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Worth-It/static/css/main.8bdee97b.chunk.css",
-    "main.js": "/Worth-It/static/js/main.74ab58df.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.74ab58df.chunk.js.map",
+    "main.js": "/Worth-It/static/js/main.110695bf.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.110695bf.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8de70ac3.chunk.css": "/Worth-It/static/css/2.8de70ac3.chunk.css",
-    "static/js/2.d46177b0.chunk.js": "/Worth-It/static/js/2.d46177b0.chunk.js",
-    "static/js/2.d46177b0.chunk.js.map": "/Worth-It/static/js/2.d46177b0.chunk.js.map",
+    "static/js/2.31e0181e.chunk.js": "/Worth-It/static/js/2.31e0181e.chunk.js",
+    "static/js/2.31e0181e.chunk.js.map": "/Worth-It/static/js/2.31e0181e.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.0c2fc26ded16db4686f18458af3ee2a8.js": "/Worth-It/precache-manifest.0c2fc26ded16db4686f18458af3ee2a8.js",
+    "precache-manifest.e6d7c41581b0a082f30b19634647e83a.js": "/Worth-It/precache-manifest.e6d7c41581b0a082f30b19634647e83a.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8de70ac3.chunk.css.map": "/Worth-It/static/css/2.8de70ac3.chunk.css.map",
     "static/css/main.8bdee97b.chunk.css.map": "/Worth-It/static/css/main.8bdee97b.chunk.css.map",
-    "static/js/2.d46177b0.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.d46177b0.chunk.js.LICENSE.txt",
+    "static/js/2.31e0181e.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.31e0181e.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/Khoprapak.jpg": "/Worth-It/static/media/Khoprapak.62d713fc.jpg",
     "static/media/T-C.png": "/Worth-It/static/media/T-C.48c93369.png",
@@ -21,10 +21,12 @@
     "static/media/besanladdu.jpg": "/Worth-It/static/media/besanladdu.5c47b121.jpg",
     "static/media/besanpapdi.jpg": "/Worth-It/static/media/besanpapdi.147800aa.jpg",
     "static/media/boondikeladdu.jpg": "/Worth-It/static/media/boondikeladdu.0e53e80e.jpg",
+    "static/media/butter.jpg": "/Worth-It/static/media/butter.a5de6f4e.jpg",
     "static/media/coconutladdu.jpg": "/Worth-It/static/media/coconutladdu.35dc64ec.jpg",
     "static/media/dairy.jpg": "/Worth-It/static/media/dairy.e72536ef.jpg",
     "static/media/dc.jpg": "/Worth-It/static/media/dc.5ef8fdee.jpg",
     "static/media/dryfruitchikki.jpg": "/Worth-It/static/media/dryfruitchikki.505ab322.jpg",
+    "static/media/freshcream.jpg": "/Worth-It/static/media/freshcream.a1213fcf.jpg",
     "static/media/gajarhalwa.jpg": "/Worth-It/static/media/gajarhalwa.e40b6ecb.jpg",
     "static/media/ghee.jpg": "/Worth-It/static/media/ghee.8615a071.jpg",
     "static/media/grocery1.jpg": "/Worth-It/static/media/grocery1.3f6bff26.jpg",
@@ -81,8 +83,8 @@
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8de70ac3.chunk.css",
-    "static/js/2.d46177b0.chunk.js",
+    "static/js/2.31e0181e.chunk.js",
     "static/css/main.8bdee97b.chunk.css",
-    "static/js/main.74ab58df.chunk.js"
+    "static/js/main.110695bf.chunk.js"
   ]
 }
