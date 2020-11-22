@@ -56,7 +56,7 @@ function OrderHistory() {
             <p>{order.items.map(item=><span><strong>{item.title}(₹{item.price})</strong>-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p><strong>Date: {order.date.toString()}</strong></p>
             {/* <p>{order.items.map(item=>{var total=0; total+=item.price;})}</p> */}
-            <p><strong>Order total: {order.amount1}</strong></p>
+            <p><strong>Order total: {order.totalAmount}</strong></p>
             <p><strong>Delivery Charges: {(order.totalAmount)>499?"Free delivery!!!":"Rs.30"}</strong></p>
             <p><strong>Order id: {order.orderId}</strong></p>
             {/* {orderid=order.orderId} */}
