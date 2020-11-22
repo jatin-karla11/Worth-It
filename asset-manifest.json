@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Worth-It/static/css/main.8bdee97b.chunk.css",
-    "main.js": "/Worth-It/static/js/main.d49caae5.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.d49caae5.chunk.js.map",
+    "main.js": "/Worth-It/static/js/main.0cca8115.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.0cca8115.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8de70ac3.chunk.css": "/Worth-It/static/css/2.8de70ac3.chunk.css",
-    "static/js/2.2adf3401.chunk.js": "/Worth-It/static/js/2.2adf3401.chunk.js",
-    "static/js/2.2adf3401.chunk.js.map": "/Worth-It/static/js/2.2adf3401.chunk.js.map",
+    "static/js/2.67fc882a.chunk.js": "/Worth-It/static/js/2.67fc882a.chunk.js",
+    "static/js/2.67fc882a.chunk.js.map": "/Worth-It/static/js/2.67fc882a.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.6d06b9f370501388d83c0234293bda9a.js": "/Worth-It/precache-manifest.6d06b9f370501388d83c0234293bda9a.js",
+    "precache-manifest.ee169e7997d4711f8e678820afea9dbf.js": "/Worth-It/precache-manifest.ee169e7997d4711f8e678820afea9dbf.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8de70ac3.chunk.css.map": "/Worth-It/static/css/2.8de70ac3.chunk.css.map",
     "static/css/main.8bdee97b.chunk.css.map": "/Worth-It/static/css/main.8bdee97b.chunk.css.map",
-    "static/js/2.2adf3401.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.2adf3401.chunk.js.LICENSE.txt",
+    "static/js/2.67fc882a.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.67fc882a.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/T-C.png": "/Worth-It/static/media/T-C.48c93369.png",
     "static/media/besanladdu.jpg": "/Worth-It/static/media/besanladdu.5c47b121.jpg",
@@ -28,6 +28,7 @@
     "static/media/md2.jpg": "/Worth-It/static/media/md2.9fb35efb.jpg",
     "static/media/md3.jpg": "/Worth-It/static/media/md3.18dbff1d.jpg",
     "static/media/md4.jpg": "/Worth-It/static/media/md4.0058370b.jpg",
+    "static/media/mithas.jpg": "/Worth-It/static/media/mithas.548165e3.jpg",
     "static/media/mohanthal.jpg": "/Worth-It/static/media/mohanthal.6258ea26.jpg",
     "static/media/moongdalhalwa.jpg": "/Worth-It/static/media/moongdalhalwa.dab3f4db.jpg",
     "static/media/paneer.jpg": "/Worth-It/static/media/paneer.0c4c5d31.jpg",
@@ -55,8 +56,8 @@
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8de70ac3.chunk.css",
-    "static/js/2.2adf3401.chunk.js",
+    "static/js/2.67fc882a.chunk.js",
     "static/css/main.8bdee97b.chunk.css",
-    "static/js/main.d49caae5.chunk.js"
+    "static/js/main.0cca8115.chunk.js"
   ]
 }
