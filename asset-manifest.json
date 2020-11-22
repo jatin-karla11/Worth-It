@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Worth-It/static/css/main.8bdee97b.chunk.css",
-    "main.js": "/Worth-It/static/js/main.0cca8115.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.0cca8115.chunk.js.map",
+    "main.js": "/Worth-It/static/js/main.a8d9f0e4.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.a8d9f0e4.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8de70ac3.chunk.css": "/Worth-It/static/css/2.8de70ac3.chunk.css",
     "static/js/2.67fc882a.chunk.js": "/Worth-It/static/js/2.67fc882a.chunk.js",
     "static/js/2.67fc882a.chunk.js.map": "/Worth-It/static/js/2.67fc882a.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.ee169e7997d4711f8e678820afea9dbf.js": "/Worth-It/precache-manifest.ee169e7997d4711f8e678820afea9dbf.js",
+    "precache-manifest.22e23e359ad0d236529a695ace1b5abb.js": "/Worth-It/precache-manifest.22e23e359ad0d236529a695ace1b5abb.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8de70ac3.chunk.css.map": "/Worth-It/static/css/2.8de70ac3.chunk.css.map",
     "static/css/main.8bdee97b.chunk.css.map": "/Worth-It/static/css/main.8bdee97b.chunk.css.map",
@@ -58,6 +58,6 @@
     "static/css/2.8de70ac3.chunk.css",
     "static/js/2.67fc882a.chunk.js",
     "static/css/main.8bdee97b.chunk.css",
-    "static/js/main.0cca8115.chunk.js"
+    "static/js/main.a8d9f0e4.chunk.js"
   ]
 }
