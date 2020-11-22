@@ -36,8 +36,8 @@ const Sdata=[
     },
     {
         imgsrc:chocolate,
-        title:'Chocalate Store',
-        to:"/chocolatestore"
+        title:'Mithas',
+        to:"/mithas"
     }
     
 ];

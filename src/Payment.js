@@ -7,6 +7,7 @@ import { getBasketTotal } from './reducer';
 import worth1 from './images/worth1.jpg';
 import { useHistory } from 'react-router-dom';
 
+
 function loadScript(src){
     return new Promise(resolve=>{
     const script=document.createElement('script')
@@ -31,6 +32,7 @@ function Payment() {
     const [{basket,user1},dispatch]=useStateValue();
     const name=user1?.email
     const value=getBasketTotal(basket)
+    const [checked, setChecked] =useState(false);
 
     async function afterpayment(){
         alert("payment done!");
@@ -156,7 +158,11 @@ function Payment() {
                             <strong>Total: {value}</strong>
                             <br></br>
                             <br></br>
-                            <button onClick={displayRazorpay}>Pay with Razorpay</button>
+                            <label><strong>Cash on delivery</strong></label><input type="checkbox" onChange={()=>{if(!checked){setChecked(true)}else{setChecked(false)}}}/>
+                            <br></br>{checked?<button>Place Order</button>:""}<br></br><hr></hr>
+                            <span>Tap pay online using UPIs, Netbanking, Cards.</span>
+                            <br></br><br></br>
+                            <button style={{background:"lightcyan"}} onClick={displayRazorpay}>Pay Online :)</button>
                         </div>
                     </div>
                 </div>
