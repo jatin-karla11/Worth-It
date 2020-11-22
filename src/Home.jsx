@@ -11,6 +11,7 @@ import md from './images/md.jpg'
 import dairy from './images/dairy.jpg'
 import vindhy from './images/vindhy.jpg'
 import grocery1 from './images/grocery1.jpg'
+import mithas from './images/mithas.jpg'
 import TC from './images/T-C.png'
 
 const responsive = {
@@ -25,7 +26,7 @@ const items = [
     <div className="item"><Link to="/grocery"><img className="slideHome" src={grocery1}/></Link></div>,
     <div className="item"><Link to="/dairy"><img className="slideHome" src={dairy}/></Link></div>,
     <div className="item"><Link to="/md"><img className="slideHome" src={md}/></Link></div>,
-    <div className="item"><Link to="/chocolate"><img className="slideHome" src={chocolate}/></Link></div>,
+    <div className="item"><Link to="/chocolate"><img className="slideHome" src={mithas}/></Link></div>,
     <div className="item"><Link to="/tc"><img className="slideHome" src={TC}/></Link></div>,
 ];
 

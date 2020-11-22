@@ -17,6 +17,7 @@ function Tc() {
             <p><strong>6. We take precautionary measures at every level of order processing.</strong></p>
             <p><strong>7. For adding your store to Worth-It contact- 9752763949.</strong></p>
             <p><strong>8. For any help contact- 9752763949.</strong></p>
+            <p><strong>9. There is no night service.</strong></p>
             </div>
         </div>
     )
