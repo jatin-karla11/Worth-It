@@ -32,6 +32,7 @@ function AllOrders() {
                 <p>email: {order.email}</p>
                 <p><strong>Contact: {order.contact}</strong></p>
                 <p><strong>Delivery Address: {order.address}</strong></p>
+                <p><strong>Cash on delivery: {order.checked}</strong></p>
             <p>{order.items.map(item=><span>{item.title}-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p>date: {order.date.toString()}</p>
             <p>order id: {order.orderId}</p>

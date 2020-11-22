@@ -34,6 +34,21 @@ function Payment() {
     const value=getBasketTotal(basket)
     const [checked, setChecked] =useState(false);
 
+    async function afterCOD(){
+        alert("Order Placed!!!")
+        const response1 = await fetch('https://worthit-backend.herokuapp.com/setOrderHistory', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ array:basket,orderid:orderId,
+                paymentid:paymentId,email:name,
+            contact:contact,address:address,checked:checked }),
+          })
+          dispatch({
+              type:"EMPTY_BASKET"
+          })
+          history.replace('/orders')
+    }
+
     async function afterpayment(){
         alert("payment done!");
         const response1 = await fetch('https://worthit-backend.herokuapp.com/setOrderHistory', {
@@ -159,7 +174,7 @@ function Payment() {
                             <br></br>
                             <br></br>
                             <label><strong>Cash on delivery</strong></label><input type="checkbox" onChange={()=>{if(!checked){setChecked(true)}else{setChecked(false)}}}/>
-                            <br></br>{checked?<button>Place Order</button>:""}<br></br><hr></hr>
+                            <br></br>{checked?<button onClick={afterCOD}>Place Order</button>:""}<br></br><hr></hr>
                             <span>Tap pay online using UPIs, Netbanking, Cards.</span>
                             <br></br><br></br>
                             <button style={{background:"lightcyan"}} onClick={displayRazorpay}>Pay Online :)</button>

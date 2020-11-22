@@ -4,6 +4,7 @@ import dc from './images/dc.jpg'
 import md from './images/md.jpg'
 import dairy from './images/dairy.jpg'
 import vindhy from './images/vindhy.jpg'
+import mithas from './images/mithas.jpg'
 import grocery1 from './images/grocery1.jpg'
 
 const Sdata=[
@@ -35,7 +36,7 @@ const Sdata=[
         to:"/dairy"
     },
     {
-        imgsrc:chocolate,
+        imgsrc:mithas,
         title:'Mithas',
         to:"/mithas"
     }

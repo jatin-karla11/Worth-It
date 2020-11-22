@@ -49,6 +49,7 @@ function OrderHistory() {
             {orders.map((order)=>(<>
                 <p><strong>Email: {order.email}</strong></p>
                 <p><strong>Contact: {order.contact}</strong></p>
+                <p><strong>Cash on delivery: {order.checked}</strong></p>
                 <p><strong>Delivery Address: {order.address}</strong></p>
             <p>{order.items.map(item=><span><strong>{item.title}(₹{item.price})</strong>-<img className="orderimage" src={item.image}/><br></br> </span>)}</p>
             <p><strong>Date: {order.date.toString()}</strong></p>
