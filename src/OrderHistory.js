@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useStateValue } from './StateProvider';
 import "./OrderHistory.css";
+import { Link } from 'react-router-dom';
 
 function OrderHistory() {
     const [{basket,user1},dispatch]=useStateValue();
@@ -46,7 +47,10 @@ function OrderHistory() {
             <div id="bgoh">
             {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
             {/* {console.log(orders)} */}
-            {(!orders.length)?<marquee>"You have not ordered anything yet!"</marquee>:<>
+            {(!orders.length)?<><marquee>"You have not ordered anything yet!"</marquee>
+
+            <br></br><br></br>
+            <center><Link to="/service"><button>Go to Stores</button></Link></center></>:<>
             {orders.map((order)=>(<>
             
                 <p><strong>Email: {order.email}</strong></p>
