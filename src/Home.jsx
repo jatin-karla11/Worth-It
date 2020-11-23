@@ -13,6 +13,7 @@ import grocery1 from './images/grocery1.jpg'
 import mithas from './images/mithas.jpg'
 import TC from './images/T-C.png'
 import pizza from './images/pizza.jpg'
+import ig from './images/ig.jpg'
 
 const responsive = { 
     0: { items: 3 },
@@ -56,6 +57,21 @@ const Home=()=>{
         <br></br>
         <strong><a className="linkmd" href="https://medilinediagnostics.in/">Mediline Diagnostics</a></strong>
         </div>
+    </div>
+    <br></br>
+    <div className="dog">
+    <div className="mddesc">
+        <strong>Contact- 8630268941</strong><br></br>
+        <span className="dogdescription">For dogs training and behaviour related issues or for any animal rescue.. </span>
+        
+        </div>
+    <a href="https://www.instagram.com/caninekrishna/"><img className="mdimage" src={ig} alt=""/></a>   
+    </div>
+    <br></br>
+    <br></br>
+    <div className="feedback">
+        
+        <center><Link to="/feedback"><button className="goto">Tap to rate our service!!</button></Link></center>
     </div>
     </>);
 };

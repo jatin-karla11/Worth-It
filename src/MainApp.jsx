@@ -33,6 +33,8 @@ import AddProduct from './AddProduct';
 import Tc from './Tc';
 import AllOrders from './AllOrders';
 import Queries from './Queries';
+import UserFeedback from './UserFeedback';
+
 
 function ad(){
   setTimeout(()=>{
@@ -106,7 +108,7 @@ const MainApp=()=>{
         <Route exact path="/allorders" component={AllOrders}/>
         <Route exact path="/queries" component={Queries}/>
         <Route exact path="/pizza" component={Pizza}/>
-        {/* <Route exact path="/grocery" component={Grocery}/> */}
+        <Route exact path="/feedback" component={UserFeedback}/>
         
         <Redirect to="/" />
     </Switch>

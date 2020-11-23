@@ -27,7 +27,27 @@
     text-decoration: none;
     color: black;
 }
+.dog{
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.feedback{
+    
+    height: 60px;
+    background-color: whitesmoke;
+    align-items: center; 
+}
 @media screen and (max-width: 768px) and (orientation: portrait) {
+    .dog{
+        padding: 5px;
+
+    }
+    .dogdescription{
+        font-size: small;
+    }
     .mdhome{
         padding: 5px;
     }
