@@ -100,7 +100,7 @@ function Mithas() {
             <Product 
             id="9752732"
             title="Gud atta laddu" 
-            price={750} 
+            price={65} 
             image={gudattaladdu}/>
             {/* Product */}
         </div>
@@ -147,7 +147,7 @@ function Mithas() {
             <Product 
             id="9752713" 
             title="Khajoor anjir roll"
-            price={125} 
+            price={200} 
             image={khajooranjirroll}/>
             <Product 
             id="9752714"
@@ -241,7 +241,7 @@ function Mithas() {
         <Product 
             id="9752724"
             title="Atta mathri" 
-            price={550} 
+            price={50} 
             image={attamathri}/>
     
         {/* Product */}
@@ -250,19 +250,19 @@ function Mithas() {
     <Product 
             id="9752725"
             title="Methi mathri" 
-            price={550} 
+            price={50} 
             image={methimathri}/>
             <Product 
             id="9752726"
             title="Atta Shakkarpare" 
-            price={550} 
+            price={50} 
             image={shakkarpare}/>
     </div>
     <div className="shop_row">
     <Product 
             id="9752725"
             title="Masala Fries" 
-            price={550} 
+            price={50} 
             image={masalafries}/>
           
     </div>
@@ -270,24 +270,24 @@ function Mithas() {
     <Product 
             id="9752727"
             title="Sugar Shakkarpare" 
-            price={550} 
+            price={50} 
             image={sugarcoatedshakarpare}/>
             <Product 
             id="9752728"
             title="Namakpare" 
-            price={550} 
+            price={50} 
             image={namakpare}/>
     </div>
     <div className="shop_row">
     <Product 
             id="9752729"
             title="Besan papdi" 
-            price={550} 
+            price={50} 
             image={besanpapdi}/>
             <Product 
             id="9752730"
             title="Masala Fries" 
-            price={550} 
+            price={50} 
             image={chocolate}/>
     </div>
     </div>
