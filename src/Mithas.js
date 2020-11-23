@@ -95,7 +95,7 @@ function Mithas() {
             <Product 
             id="9752731" 
             title="Majoon"
-            price={550} 
+            price={200} 
             image={majoon}/>
             <Product 
             id="9752732"
@@ -128,7 +128,7 @@ function Mithas() {
             title="Dry fruit chikki" 
             price={200} 
             image={dryfruitchikki}/>
-            {/* Product */}
+            
         </div>
         <div className="shop_row">
             <Product 
@@ -141,7 +141,7 @@ function Mithas() {
             title="khush khush badam halwa" 
             price={150} 
             image={khuskhushalwa}/>
-            {/* Product */}
+            
         </div>
         <div className="shop_row">
             <Product 
@@ -154,7 +154,7 @@ function Mithas() {
             title="Gajar ka halwa" 
             price={100} 
             image={gajarhalwa}/>
-            {/* Product */}
+            
         </div>
         <div className="shop_row">
             <Product 
@@ -167,7 +167,7 @@ function Mithas() {
             title="Til gud chikki" 
             price={65} 
             image={til}/>
-            {/* Product */}
+            
         </div>
         <div className="shop_row">
             <Product 
@@ -178,7 +178,7 @@ function Mithas() {
             
         </div>
         <br></br>
-        <div><strong><center>Cakes Corner</center></strong></div>
+        {/* <div><strong><center>Cakes Corner</center></strong></div>
         <marquee>Cakes prices per</marquee>
         <div className="shop_row">
            
@@ -192,7 +192,7 @@ function Mithas() {
             title="Chocolava Cake" 
             price={350} 
             image={chocolate}/>
-            {/* Product */}
+            
         </div>
         <div className="shop_row">
             <Product 
@@ -205,7 +205,7 @@ function Mithas() {
             title="Chocochip Cake" 
             price={440} 
             image={chocolate}/>
-            {/* Product */}
+            
         </div>
         
         <div className="shop_row">
@@ -234,7 +234,7 @@ function Mithas() {
             image={chocolate}/>
 
                  </div>
-                 <br></br>
+                 <br></br> */}
         <div><strong><center>Taste of Namkeen</center></strong></div>
         {/* <marquee>Cakes prices per</marquee> */}
     <div className="shop_row">
