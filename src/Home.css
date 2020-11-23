@@ -1,17 +1,32 @@
 .item{
-    height: 260px;
-    padding: 15px;
+    height: 240px;
+    padding: 30px;
     
 }
 .slideHome{
-    height: 220px;
-    width: 220px;
+    height: 170px;
+    width: 170px;
 }
 .imgslider{
     background-color: whitesmoke;
 }
-
+.mdhome{
+    background-color: whitesmoke;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    
+}
+.mddesc{
+    margin-left: 20px;
+}
+.mdimage{
+    height: 80px;
+}
 @media screen and (max-width: 768px) and (orientation: portrait) {
+    .mdhome{
+        padding: 5px;
+    }
     .item{
         height: 110px;
         /* border: 1px solid black; */

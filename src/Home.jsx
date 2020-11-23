@@ -14,7 +14,7 @@ import mithas from './images/mithas.jpg'
 import TC from './images/T-C.png'
 import pizza from './images/pizza.jpg'
 
-const responsive = {
+const responsive = { 
     0: { items: 3 },
     568: { items: 3 },
     1024: { items: 6 },
@@ -45,6 +45,14 @@ const Home=()=>{
     <br></br>
     <div className="imgslider"><AliceCarousel mouseTracking items={items}
         responsive={responsive} disableDotsControls="false" disableButtonsControls="false" />
+    </div>
+    <br></br>
+    <div className="mdhome">
+        <a href="https://medilinediagnostics.in/"><img className="mdimage" src={md} alt=""/></a>
+        <div className="mddesc">
+        <strong>Diagnostics Products Distributor</strong><br></br>
+        Kits, Equipments, Rapid tests, Analytical chemicals, Plastict-wares and consumables.
+        </div>
     </div>
     </>);
 };

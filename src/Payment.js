@@ -137,11 +137,12 @@ function Payment() {
         <div className="container-fluid">
             <div className="payment">
                 <div className="payment_container">
-
+                <br></br>
                     <h1>
     Checkout (<Link to="/checkout">{basket?.length} items</Link>)
                     </h1>
 
+<marquee>Free delivery on orders above 499!!!</marquee>
                     <div className="payment_section">
                         <div className="payment_title">
                             <h3>Delivery Address</h3>
