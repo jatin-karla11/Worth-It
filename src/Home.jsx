@@ -51,7 +51,10 @@ const Home=()=>{
         <a href="https://medilinediagnostics.in/"><img className="mdimage" src={md} alt=""/></a>
         <div className="mddesc">
         <strong>Diagnostics Products Distributor</strong><br></br>
-        Kits, Equipments, Rapid tests, Analytical chemicals, Plastict-wares and consumables.
+        <span className="mddescription">Kits, Lab Equipments, Rapid tests, Analytical chemicals, Plastict-wares and consumables.</span>
+        
+        <br></br>
+        <strong><a className="linkmd" href="https://medilinediagnostics.in/">Mediline Diagnostics</a></strong>
         </div>
     </div>
     </>);

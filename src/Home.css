@@ -12,8 +12,8 @@
 }
 .mdhome{
     background-color: whitesmoke;
-    height: 100px;
-    padding: 10px;
+    height: 110px;
+    padding: 15px;
     display: flex;
     
 }
@@ -22,6 +22,10 @@
 }
 .mdimage{
     height: 80px;
+}
+.linkmd{
+    text-decoration: none;
+    color: black;
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
     .mdhome{
@@ -38,5 +42,8 @@
         height: 90px;
         width: 90px;
         
+    }
+    .mddescription{
+        font-size: small;
     }
 }
