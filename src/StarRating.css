@@ -1,0 +1,11 @@
+.starback{
+    background-color: rgb(207, 224, 224);
+    padding: 15px;
+}
+input[type="radio"]{
+    display: none;
+}
+.star{
+    cursor: pointer;
+    transition: color 200ms;
+}
