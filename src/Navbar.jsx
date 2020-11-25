@@ -8,19 +8,29 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useStateValue } from './StateProvider';
 // import Nav from './Nav'
 import $ from 'jquery'
+import { useRef } from 'react';
 // import {Helmet} from "react-helmet";
 
 const Navbar = ()=>{
   
   useEffect(()=>{
-    $(document).on('click',function (event) {
-          var clickover = $(event.target);
-          var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-          if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-            $("button.navbar-toggle").on('click');
-          }
-      });
+    // add when mounted
+  document.addEventListener("mousedown", handleClick);
+  // return function to be called when unmounted
+  return () => {
+    document.removeEventListener("mousedown", handleClick);
+  };
+  
   },[])
+
+  const handleClick = e => {
+    if (node.current.contains(e.target)) {
+      // inside click
+      return;
+    }
+    // outside click 
+    $('.navbar-collapse').removeClass('show');
+  };
 
   const jQueryCode=()=>{
                   
@@ -50,6 +60,7 @@ const Navbar = ()=>{
 
   const[{basket,user1},dispatch]=useStateValue();
 
+  const node=useRef();
   return(
         <>
         
@@ -58,7 +69,7 @@ const Navbar = ()=>{
                 <div className="col-12 mx-auto">
  
                 
-            <nav className="navbar navbar-expand-lg navbar-light">
+            <nav ref={node} className="navbar navbar-expand-lg navbar-light">
   <NavLink className="navbar-brand" to="/">
   {/* <img src={worth} alt="logo" height="150"/> */}
   We are here for you! <MoodIcon className="mood" fontSize="large"/>
