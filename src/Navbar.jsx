@@ -35,14 +35,7 @@ const Navbar = ()=>{
   const jQueryCode=()=>{
                   
     $('.navbar-collapse').removeClass('show');
-  //   $(document).on('click',function (event) {
-  //     var clickover = $(event.target);
-  //     var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
-  //     if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-  //       $('.navbar-collapse').removeClass('show');
-  //     }
-  // });
-
+  
   }
 
   // var user = fire.auth().currentUser;

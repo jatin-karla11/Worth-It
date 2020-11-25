@@ -142,7 +142,7 @@ function Payment() {
     Checkout (<Link to="/checkout">{basket?.length} items</Link>)
                     </h1>
 
-<marquee>Free delivery on orders above 499!!!</marquee>
+<marquee>Free delivery on orders above 499!!!..Please do not forget to add correct delivery address and contact number before checking cod else you will not be able to place the order..</marquee>
                     <div className="payment_section">
                         <div className="payment_title">
                             <h3>Delivery Address</h3>
@@ -181,7 +181,7 @@ function Payment() {
                             {(value>499)?<strong>Free delivery!!!</strong>:<strong>Delivery Charge Rs.30/-</strong>}
                             <br></br>
                             <label><strong>Cash on delivery</strong></label><input type="checkbox" onChange={()=>{if(!checked){setChecked(true)}else{setChecked(false)}}}/>
-                            <br></br>{checked?<button onClick={afterCOD}>Place Order</button>:""}<br></br><hr></hr>
+                            <br></br>{(checked && address!=="" && contact!=="" && value!==0)?<button onClick={afterCOD}>Place Order</button>:""}<br></br><hr></hr>
                             <span>Tap to pay online using UPIs, Netbanking, Cards.</span>
                             <br></br><br></br>
                             <button style={{background:"lightcyan"}} onClick={displayRazorpay}>Pay Online :)</button>

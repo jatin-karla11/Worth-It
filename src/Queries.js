@@ -28,6 +28,7 @@ function Queries() {
             <br></br>
             <center><strong><h2>User queries!</h2></strong></center>
             <br></br>
+            {(name==="adminmhu@gmail.com")?<>
             <div id="bgoh">
             {queries.map((query)=>(<>
             <p><strong>{query.date}</strong></p>
@@ -38,6 +39,8 @@ function Queries() {
             <hr></hr>
             </>))}
             </div>
+            </>:<><marquee><strong>You are not admin!</strong></marquee></>}
+            
         </div>
     )
 }

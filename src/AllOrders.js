@@ -27,6 +27,7 @@ function AllOrders() {
             
             <strong><center><h2>All orders!</h2></center></strong><hr></hr>
             <br></br>
+            {(name==="adminmhu@gmail.com")?<>
             <div id="bgoh">
             {orders.map((order)=>(<>
                 <p>email: {order.email}</p>
@@ -42,6 +43,8 @@ function AllOrders() {
             </>
             ))}
             </div>
+            </>:<><marquee><strong>You are not admin!</strong></marquee></>}
+            
         </div>
     )
 }
