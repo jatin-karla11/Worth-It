@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 import './AddProduct.css'
 
 function AddProduct() {
+    const history=useHistory();
+    const [productImage,setProductImage]=useState(null);
+    const fup=(e)=>{
+        setProductImage(e.target.files[0])
+    }
 
     const [pname,setPname]=useState("");
     const [price,setPrice]=useState("");
@@ -10,6 +16,21 @@ function AddProduct() {
         e.preventDefault();
         // alert(pname);
         // alert(price)
+        var fd=new FormData();
+        fd.append("name",pname)
+        fd.append("price",price)
+        fd.append("productImage",productImage)
+
+        fetch("https://worthit-backend.herokuapp.com/insertProduct",{
+            method:'POST',
+            body:fd
+        })
+        .then((res)=>res.json())
+        .then((data)=>{
+            console.log(data);
+        })
+        alert("product inserted")
+        history.replace('/allProducts')
     };
 
     return (<><div className="my-5">
@@ -28,14 +49,14 @@ class="form-control" id="exampleInput" aria-describedby="emailHelp"/>
 <br></br>
 <div class="form-group">
 <label for="exampleInput">Product Price</label>
-<input required type="text" maxLength='10' 
+<input required type="number" maxLength='10' 
 name="phone" value={price} onChange={(e)=>{setPrice(e.target.value)}}
 class="form-control" id="exampleInput" aria-describedby="emailHelp"/>
 </div>
 <br></br>
   <div class="form-group">
     <label for="exampleFormControlFile1">Upload Product Image</label>
-    <input required type="file" class="form-control-file" id="exampleFormControlFile1"/>
+    <input required type="file" onChange={fup} class="form-control-file" id="exampleFormControlFile1"/>
   </div>
 
 <br></br>

@@ -11,7 +11,7 @@ function Dream() {
         <div className="shop">
         <div className="shop-title">
             Dream-Catchers by xyz
-        </div>
+        </div> 
         <div className="shop_row">
             <Product 
             id="975271" 
