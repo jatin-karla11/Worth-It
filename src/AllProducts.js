@@ -30,17 +30,21 @@ function AllProducts() {
             <br></br>
             <div className="shop">
             <div className="shop_row">
-            
+            <div className="allproducts">
             {products.map((product)=>(<>
-                
+                <br></br>
+                <hr></hr>
+                <p><br></br></p>
                 <Product 
             id="975271" 
             title={product.name}
             description="" 
             price={product.price} 
             image={process.env.PUBLIC_URL + '/productImages/'+product.productFileName}/>
+    <br></br>
     
             </>))}
+            </div>
         </div>
                 
             </div>
