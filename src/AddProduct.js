@@ -21,7 +21,7 @@ function AddProduct() {
         fd.append("price",price)
         fd.append("productImage",productImage)
 
-        fetch("https://worthit-backend.herokuapp.com/insertProduct",{
+        fetch("http://localhost:1337/insertProduct",{
             method:'POST',
             body:fd
         })

@@ -15,7 +15,7 @@ function AllProducts() {
     },[])
 
     const getAllProducts=()=>{
-        fetch('https://worthit-backend.herokuapp.com/getAllProducts',{method: 'POST',
+        fetch('http://localhost:1337/getAllProducts',{method: 'POST',
         headers: { 'Content-Type': 'application/json' },body:JSON.stringify()}).then(response => response.json()).then(data => setProducts(data));
         // alert("yo")
         // console.log(products)
