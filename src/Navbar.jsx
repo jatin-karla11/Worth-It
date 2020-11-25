@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './index.css';
 import worth from './worth.jpg';
 import {Link, NavLink} from 'react-router-dom';
@@ -11,9 +11,27 @@ import $ from 'jquery'
 // import {Helmet} from "react-helmet";
 
 const Navbar = ()=>{
+  
+  useEffect(()=>{
+    $(document).on('click',function (event) {
+          var clickover = $(event.target);
+          var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
+          if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+            $("button.navbar-toggle").on('click');
+          }
+      });
+  },[])
+
   const jQueryCode=()=>{
                   
     $('.navbar-collapse').removeClass('show');
+  //   $(document).on('click',function (event) {
+  //     var clickover = $(event.target);
+  //     var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
+  //     if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+  //       $('.navbar-collapse').removeClass('show');
+  //     }
+  // });
 
   }
 

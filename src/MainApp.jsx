@@ -67,6 +67,13 @@ const MainApp=()=>{
       //    $('#exampleModal2').modal();
       //   // alert("helllll") 
       // }, 10000);
+    //   $(document).on('click',function (event) {
+    //     var clickover = $(event.target);
+    //     var _opened = $(".navbar-collapse").hasClass("navbar-collapse in");
+    //     if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+    //         $("button.navbar-toggle").on('click');
+    //     }
+    // });
       setTimeout(()=>{
         handleShow();
       },70000)
