@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Worth-It/static/css/main.a6708ef0.chunk.css",
-    "main.js": "/Worth-It/static/js/main.6e099df5.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.6e099df5.chunk.js.map",
+    "main.css": "/Worth-It/static/css/main.7bbba026.chunk.css",
+    "main.js": "/Worth-It/static/js/main.156455fa.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.156455fa.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8de70ac3.chunk.css": "/Worth-It/static/css/2.8de70ac3.chunk.css",
     "static/js/2.b59ba69b.chunk.js": "/Worth-It/static/js/2.b59ba69b.chunk.js",
     "static/js/2.b59ba69b.chunk.js.map": "/Worth-It/static/js/2.b59ba69b.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.b4a7a9ea08a8cd892e51b3157f320094.js": "/Worth-It/precache-manifest.b4a7a9ea08a8cd892e51b3157f320094.js",
+    "precache-manifest.0c1df57c19d7c81340090665fc046c45.js": "/Worth-It/precache-manifest.0c1df57c19d7c81340090665fc046c45.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8de70ac3.chunk.css.map": "/Worth-It/static/css/2.8de70ac3.chunk.css.map",
-    "static/css/main.a6708ef0.chunk.css.map": "/Worth-It/static/css/main.a6708ef0.chunk.css.map",
+    "static/css/main.7bbba026.chunk.css.map": "/Worth-It/static/css/main.7bbba026.chunk.css.map",
     "static/js/2.b59ba69b.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.b59ba69b.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/Khoprapak.jpg": "/Worth-It/static/media/Khoprapak.aa63386d.jpg",
@@ -32,7 +32,7 @@
     "static/media/grocery1.jpg": "/Worth-It/static/media/grocery1.3f6bff26.jpg",
     "static/media/gudattaladdu.jpg": "/Worth-It/static/media/gudattaladdu.25c5bdc2.jpg",
     "static/media/guddfchikki.jpg": "/Worth-It/static/media/guddfchikki.63480c03.jpg",
-    "static/media/ig.jpg": "/Worth-It/static/media/ig.fda437ad.jpg",
+    "static/media/ig.jpg": "/Worth-It/static/media/ig.6b908334.jpg",
     "static/media/kajukatli.jpg": "/Worth-It/static/media/kajukatli.bae02e00.jpg",
     "static/media/khajooranjirroll.jpg": "/Worth-It/static/media/khajooranjirroll.2a69e40d.jpg",
     "static/media/khuskhushalwa.jpg": "/Worth-It/static/media/khuskhushalwa.fb169da8.jpg",
@@ -84,7 +84,7 @@
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8de70ac3.chunk.css",
     "static/js/2.b59ba69b.chunk.js",
-    "static/css/main.a6708ef0.chunk.css",
-    "static/js/main.6e099df5.chunk.js"
+    "static/css/main.7bbba026.chunk.css",
+    "static/js/main.156455fa.chunk.js"
   ]
 }

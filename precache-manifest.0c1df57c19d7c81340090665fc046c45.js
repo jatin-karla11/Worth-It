@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "98fdf2f9063d63735d206afe99945948",
+    "revision": "b016044c7370c389c99e5596cb50fc57",
     "url": "/Worth-It/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Worth-It/static/css/2.8de70ac3.chunk.css"
   },
   {
-    "revision": "13173ef1ba824851dfcc",
-    "url": "/Worth-It/static/css/main.a6708ef0.chunk.css"
+    "revision": "fa5ba3c10ece93a9fd4e",
+    "url": "/Worth-It/static/css/main.7bbba026.chunk.css"
   },
   {
     "revision": "7e9b038d89fcaa8b846a",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Worth-It/static/js/2.b59ba69b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13173ef1ba824851dfcc",
-    "url": "/Worth-It/static/js/main.6e099df5.chunk.js"
+    "revision": "fa5ba3c10ece93a9fd4e",
+    "url": "/Worth-It/static/js/main.156455fa.chunk.js"
   },
   {
     "revision": "d56963c23782be421219",
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Worth-It/static/media/guddfchikki.63480c03.jpg"
   },
   {
-    "revision": "fda437adc46b357bc5be9ea46f1c5c42",
-    "url": "/Worth-It/static/media/ig.fda437ad.jpg"
+    "revision": "6b9083349d3b1b306f346960826c918e",
+    "url": "/Worth-It/static/media/ig.6b908334.jpg"
   },
   {
     "revision": "bae02e0063ba9c5375991b19fb95a352",
