@@ -3,6 +3,7 @@ import './Checkout.css'
 import { useStateValue } from './StateProvider'
 import Subtotal from './Subtotal'
 import CheckoutProduct from './CheckoutProduct'
+import ad from './images/ad.jpg'
 
 function Checkout() {
     
@@ -12,7 +13,7 @@ function Checkout() {
         <div className="container-fluid">
         <div className="checkout" style={{marginTop:"30px"}}>
             <div className="checkout_left">
-                <img className="checkout_ad" src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" alt=""/>
+                <img className="checkout_ad" src={ad} alt=""/>
                 <div>
     <h3>{(user1)?"Hello, "+user1.email:"Hey Guest!"}</h3>
                     <h2 className="checkout_title">
