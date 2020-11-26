@@ -11,12 +11,14 @@ function AddProduct() {
 
     const [pname,setPname]=useState("");
     const [price,setPrice]=useState("");
+    const [productId,setProductId]=useState("");
 
     const called=(e)=>{
         e.preventDefault();
         // alert(pname);
         // alert(price)
         var fd=new FormData();
+        fd.append("pid",productId)
         fd.append("name",pname)
         fd.append("price",price)
         fd.append("productImage",productImage)
@@ -40,6 +42,12 @@ function AddProduct() {
     <div className="row">
         <div className="col-md-6 col-10 mx-auto">
         <form onSubmit={called}>
+        <div class="form-group">
+<label for="exampleInput">Product Id</label>
+<input required type="text"
+name="pid" value={productId} onChange={(e)=>{setProductId(e.target.value)}}
+class="form-control" id="exampleInput" aria-describedby="emailHelp"/>
+</div>
         <div class="form-group">
 <label for="exampleInput">Product Name</label>
 <input required type="text"

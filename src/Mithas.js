@@ -2,7 +2,6 @@ import React from 'react'
 import './Product.css'
 import Product from './Product'
 import './shop.css'
-import chocolate from './images/Chocolate.jpg';
 import kajukatli from './images/kajukatli.jpg';
 import besanladdu from './images/besanladdu.jpg';
 import mohanthal from './images/mohanthal.jpg';
@@ -27,7 +26,7 @@ import sugarcoatedshakarpare from './images/sugarcoatedshakarpare.jpg';
 import sweetboondi from './images/sweetboondi.jpg';
 import khuskhushalwa from './images/khuskhushalwa.jpg';
 import til from './images/til.jpg';
-import tuttifrutti from './images/tuttifrutti.jpg';
+// import tuttifrutti from './images/tuttifrutti.jpg';
 import besanpapdi from './images/besanpapdi.jpg';
 import attamathri from './images/attamathri.jpg';
 import masalafries from './images/masalafries.jpg';
@@ -72,20 +71,25 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="975273" 
+            id="975275" 
             title="Boondi Ke laddu"
             price={100} 
             image={boondikeladdu}/>
+            <Product 
+            id="975276" 
+            title="Khoprapak"
+            price={90} 
+            image={Khoprapak}/>
            
         </div>
         <div className="shop_row">
             <Product 
-            id="975275" 
+            id="975277" 
             title="Mohan Thal"
             price={100} 
             image={mohanthal}/>
             <Product 
-            id="975276"
+            id="975278"
             title="Sev ki Barfi" 
             price={100} 
             image={sevkibarfi}/>
@@ -93,12 +97,12 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="9752731" 
+            id="975279" 
             title="Majoon"
             price={200} 
             image={majoon}/>
             <Product 
-            id="9752732"
+            id="9752710"
             title="Gud atta laddu" 
             price={65} 
             image={gudattaladdu}/>
@@ -106,12 +110,12 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="975277" 
+            id="9752711" 
             title="Sitafal Rabdi"
-            price={90} 
+            price={100} 
             image={sitafalrabdi}/>
             <Product 
-            id="975278"
+            id="9752712"
             title="Coconut laddu" 
             price={90} 
             image={coconutladdu}/>
@@ -119,12 +123,12 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="975279" 
+            id="9752713" 
             title="Mava Suji laddu"
             price={90} 
             image={mavasoojiladdu}/>
             <Product 
-            id="9752710"
+            id="9752714"
             title="Dry fruit chikki" 
             price={200} 
             image={dryfruitchikki}/>
@@ -132,12 +136,12 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="9752711" 
+            id="9752715" 
             title="Gud dry fruit chikki"
             price={200} 
             image={guddfchikki}/>
             <Product 
-            id="9752712"
+            id="9752716"
             title="khush khush badam halwa" 
             price={150} 
             image={khuskhushalwa}/>
@@ -145,12 +149,12 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="9752713" 
+            id="9752717" 
             title="Khajoor anjir roll"
             price={200} 
             image={khajooranjirroll}/>
             <Product 
-            id="9752714"
+            id="9752718"
             title="Gajar ka halwa" 
             price={100} 
             image={gajarhalwa}/>
@@ -158,12 +162,12 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="9752715" 
+            id="9752719" 
             title="Sweet boondi"
             price={90} 
             image={sweetboondi}/>
             <Product 
-            id="9752716"
+            id="9752720"
             title="Til gud chikki" 
             price={65} 
             image={til}/>
@@ -171,7 +175,7 @@ function Mithas() {
         </div>
         <div className="shop_row">
             <Product 
-            id="9752717" 
+            id="9752721" 
             title="Peanut chikki"
             price={50} 
             image={peanutchikki}/>
@@ -239,7 +243,7 @@ function Mithas() {
         {/* <marquee>Cakes prices per</marquee> */}
     <div className="shop_row">
         <Product 
-            id="9752724"
+            id="9752722"
             title="Atta mathri" 
             price={50} 
             image={attamathri}/>
@@ -248,36 +252,36 @@ function Mithas() {
     </div>
     <div className="shop_row">
     <Product 
-            id="9752725"
+            id="9752723"
             title="Methi mathri" 
             price={50} 
             image={methimathri}/>
             <Product 
-            id="9752726"
+            id="9752724"
             title="Atta Shakkarpare" 
             price={50} 
             image={shakkarpare}/>
     </div>
     <div className="shop_row">
     <Product 
-            id="9752727"
+            id="9752725"
             title="Sugar Shakkarpare" 
             price={50} 
             image={sugarcoatedshakarpare}/>
             <Product 
-            id="9752728"
+            id="9752726"
             title="Namakpare" 
             price={50} 
             image={namakpare}/>
     </div>
     <div className="shop_row">
     <Product 
-            id="9752729"
+            id="9752727"
             title="Besan papdi" 
             price={50} 
             image={besanpapdi}/>
             <Product 
-            id="9752730"
+            id="9752728"
             title="Masala Fries" 
             price={50} 
             image={masalafries}/>

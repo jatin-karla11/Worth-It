@@ -28,12 +28,12 @@ function Vindhy() {
         </div>
         <div className="shop_row">
             <Product 
-            id="975271" 
+            id="9752729" 
             title="Silver Shiva Rudraksha Om Trishul and Damroo Kada Bracelet for Men and Women (Brown)" 
             price={200} 
             image={vindhy1}/>
             <Product 
-            id="975272"
+            id="9752730"
             title="Gold Plated Meena Om Cuff Rudraksha American Diamond Brass Kada Bracelet for Men"
             description="xyxxxxxzzzzz" 
             price={299} 
@@ -42,13 +42,13 @@ function Vindhy() {
         </div>
         <div className="shop_row">
         <Product 
-            id="975273"
+            id="9752731"
             title="Vindhy's Gold Plated Brass Kada Bracelet for Men"
             description="xyxxxxxzzzzz" 
             price={250} 
             image={vindhy3}/>
         <Product 
-            id="975274"
+            id="9752732"
             title="Golden Plated Rudraksha Om Trishul Damroo Designer Bahubali Kada Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
             price={299} 
@@ -56,14 +56,14 @@ function Vindhy() {
                  </div>
     <div className="shop_row">
     <Product 
-            id="975275"
+            id="9752733"
             title="Vindhy's Shiva Kada Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
             price={200}   
             image={vindhy4}/>
 
     <Product 
-            id="975276"
+            id="9752734"
             title="Vindhy's Silver Shiva Rudraksha Om Trishul and Damroo Kada Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
             price={299} 
@@ -73,13 +73,13 @@ function Vindhy() {
     </div>
     <div className="shop_row">
     <Product 
-            id="975277"
+            id="9752735"
             title="Vindhy's Leather Gold Plated Brass Damroo Trishul Bracelet for Men" 
             description="xyxxxxxzzzzz"
             price={200} 
             image={vindhy7}/>
             <Product 
-            id="975278"
+            id="9752736"
             title="Vindhy's Mahakal Kada Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
             price={299} 
@@ -88,13 +88,13 @@ function Vindhy() {
     </div>
     <div className="shop_row">
     <Product 
-            id="975277"
+            id="9752737"
             title="Golden Leather Shiva Rudraksha Om Trishul and Damroo Kada Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
             price={200} 
             image={vindhy9}/>
     <Product 
-            id="975278"
+            id="9752738"
             title="Vindhy's American Diamond Gold Plated Mangalsutra with Love Design for Women" 
             description="xyxxxxxzzzzz"
             price={240} 
@@ -102,13 +102,13 @@ function Vindhy() {
     </div>
     <div className="shop_row">
     <Product 
-            id="975277"
+            id="9752739"
             title="Nickel Brass Kavach Rudraksha Trishula Damru Locket Pendant Necklace for Men and Women" 
             description="xyxxxxxzzzzz"
             price={299} 
             image={vindhy11}/>
             <Product 
-            id="975278"
+            id="9752740"
             title="Beautiful Mahakal Bracelet, Shiv, Mahakal" 
             description=""
             price={200} 
@@ -116,13 +116,13 @@ function Vindhy() {
     </div>
     <div className="shop_row">
     <Product    
-            id="975277"
+            id="9752741"
             title="Nickel and Brown Wood and Brass Kavach Rudraksha Trishula Damru Locket Pendant Necklace for Men and Women" 
             description="xyxxxxxzzzzz"
             price={299} 
             image={vindhy13}/>
             <Product 
-            id="975278"
+            id="9752742"
             title="Natural Beaded Pure Rudraksha Gold Plated Brass Channel Design Bracelet for Men and Women" 
             description="xyxxxxxzzzzz"
             price={299} 

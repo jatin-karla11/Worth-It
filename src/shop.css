@@ -1,4 +1,13 @@
-
+.allproducts{
+    max-width: 100%;
+}
+.search{
+    background: rgb(142, 210, 211);
+    margin-top: -5px;
+}
+.searchInput{
+    width: 500px;
+}
 .shop-title{
     height: 100px;
     font-family: 'Courgette', cursive;
@@ -20,6 +29,7 @@
     z-index: 1;
     margin-left: 5px;
     margin-right: 5px;
+    
 }
 
 @media screen and (max-width:768px) and (orientation:portrait){
@@ -28,5 +38,12 @@
     font-family: 'Courgette', cursive;
     text-align: center;
     font-size: 25px;
+}
+.search{
+    background: rgb(142, 210, 211);
+    margin-top: -10px;
+}
+.searchInput{
+    width: 250px;
 }
 }

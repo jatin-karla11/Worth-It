@@ -5,6 +5,7 @@ import './Product.css'
 import Product from './Product'
 import './shop.css'
 import dc from './images/dc.jpg'
+import SearchIcon from '@material-ui/icons/Search';
 
 function AllProducts() {
     const [{basket,user1},dispatch]=useStateValue();
@@ -21,30 +22,51 @@ function AllProducts() {
         // console.log(products)
     }
 
+    const [search,setSearch]=useState("");
+
+    const products1=products.filter(product1=>{
+        return product1.name.toLowerCase().indexOf(search.toLowerCase())!==-1
+    })
+    
     return (
         <div className="container-fluid">
-            <br></br><br></br>
-            All products!
+            <br></br>
             <marquee>This page is under build!!!</marquee>
             {/* <img src={process.env.PUBLIC_URL + '/productImages/jatin.jpg'} /> */}
+            <br></br>
+            <div className="searchProducts"><center><input className="searchInput" onChange={(e)=>{setSearch(e.target.value)}} placeholder="Search for product.."/><SearchIcon fontSize="large" className="search"/></center></div>
             <br></br>
             <div className="shop">
             <div className="shop_row">
             <div className="allproducts">
-            {products.map((product)=>(<>
-                <br></br>
-                <hr></hr>
-                <p><br></br></p>
-                <Product 
-            id="975271" 
+            {(search==="")?<>
+            {products.map((product)=>(<><hr></hr>
+                
+            <Product 
+            id={product.pid} 
             title={product.name}
             description="" 
             price={product.price} 
             image={process.env.PUBLIC_URL + '/productImages/'+product.productFileName}/>
+            
+            </>))}</>  
+:<>
+            {products1.map((product)=>(<>
+                
+                <hr></hr>
+                
+                <Product 
+            id={product.pid} 
+            title={product.name}
+            description="" 
+            price={product.price} 
+            image={process.env.PUBLIC_URL + '/productImages/'+product.productFileName}/>
+            </>))}</>}
+
+            
     <br></br>
     
-            </>))}
-            </div>
+                        </div>
         </div>
                 
             </div>
