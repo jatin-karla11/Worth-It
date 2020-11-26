@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/Worth-It/static/css/main.7bbba026.chunk.css",
-    "main.js": "/Worth-It/static/js/main.156455fa.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.156455fa.chunk.js.map",
+    "main.js": "/Worth-It/static/js/main.4fca4649.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.4fca4649.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8de70ac3.chunk.css": "/Worth-It/static/css/2.8de70ac3.chunk.css",
-    "static/js/2.b59ba69b.chunk.js": "/Worth-It/static/js/2.b59ba69b.chunk.js",
-    "static/js/2.b59ba69b.chunk.js.map": "/Worth-It/static/js/2.b59ba69b.chunk.js.map",
+    "static/js/2.e6222214.chunk.js": "/Worth-It/static/js/2.e6222214.chunk.js",
+    "static/js/2.e6222214.chunk.js.map": "/Worth-It/static/js/2.e6222214.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.0c1df57c19d7c81340090665fc046c45.js": "/Worth-It/precache-manifest.0c1df57c19d7c81340090665fc046c45.js",
+    "precache-manifest.240ab4cc4ff8aaf92fa452ed4ec33971.js": "/Worth-It/precache-manifest.240ab4cc4ff8aaf92fa452ed4ec33971.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8de70ac3.chunk.css.map": "/Worth-It/static/css/2.8de70ac3.chunk.css.map",
     "static/css/main.7bbba026.chunk.css.map": "/Worth-It/static/css/main.7bbba026.chunk.css.map",
-    "static/js/2.b59ba69b.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.b59ba69b.chunk.js.LICENSE.txt",
+    "static/js/2.e6222214.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.e6222214.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/Khoprapak.jpg": "/Worth-It/static/media/Khoprapak.aa63386d.jpg",
     "static/media/T-C.png": "/Worth-It/static/media/T-C.48c93369.png",
+    "static/media/ad.jpg": "/Worth-It/static/media/ad.b10b57f6.jpg",
     "static/media/attamathri.jpg": "/Worth-It/static/media/attamathri.f7547cce.jpg",
     "static/media/besanladdu.jpg": "/Worth-It/static/media/besanladdu.13eaed50.jpg",
     "static/media/besanpapdi.jpg": "/Worth-It/static/media/besanpapdi.32ade5f2.jpg",
@@ -83,8 +84,8 @@
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8de70ac3.chunk.css",
-    "static/js/2.b59ba69b.chunk.js",
+    "static/js/2.e6222214.chunk.js",
     "static/css/main.7bbba026.chunk.css",
-    "static/js/main.156455fa.chunk.js"
+    "static/js/main.4fca4649.chunk.js"
   ]
 }
