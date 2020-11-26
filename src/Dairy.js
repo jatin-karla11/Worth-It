@@ -20,12 +20,12 @@ function Dairy() {
         <marquee>Dairy products will be delivered on the same day between 6pm and 9pm</marquee>
         <div className="shop_row">
             <Product 
-            id="975271" 
+            id="9752743" 
             title="Fresh paneer(500grams) at your doorstep" 
             price={140} 
             image={paneer}/>
             <Product 
-            id="975272"
+            id="9752744"
             title="Fress mava(500grams)" 
             price={150} 
             image={mava}/>
@@ -33,19 +33,19 @@ function Dairy() {
         </div>
         <div className="shop_row">
         <Product 
-            id="975273"
+            id="9752745"
             title="Ghee (500grams)" 
             price={240} 
             image={ghee}/>
         <Product 
-            id="975274"
+            id="9752746"
             title="Fresh Cream(500gm)" 
             price={170} 
             image={freshcream}/>
                  </div>
     <div className="shop_row">
     <Product 
-            id="975275"
+            id="9752747"
             title="Butter (500gm)" 
             price={220}   
             image={butter}/>

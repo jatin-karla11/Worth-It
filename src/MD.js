@@ -18,12 +18,12 @@ function MD() {
         </div>
         <div className="shop_row">
             <Product 
-            id="975271" 
+            id="9752748" 
             title="Biolab's 5 litre alcohol based sanitizer" 
             price={1050} 
             image={md1}/>
             <Product 
-            id="975272"
+            id="9752749"
             title="Biolab's 500ml alcohol based sanitizer" 
             price={150} 
             image={md2}/>
@@ -31,12 +31,12 @@ function MD() {
         </div>
         <div className="shop_row">
         <Product 
-            id="975273"
+            id="9752750"
             title="Biolab's 100ml alcohol based sanitizer" 
             price={60} 
             image={md3}/>
         <Product 
-            id="975274"
+            id="9752751"
             title="Biolab's 1 Litre spray- alcohol based sanitizer" 
             price={240} 
             image={md4}/>

@@ -1,5 +1,12 @@
+.shoprow1{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .allproducts{
-    max-width: 100%;
+    display: flex;
+    max-width: 245px;
 }
 .search{
     background: rgb(142, 210, 211);
@@ -45,5 +52,12 @@
 }
 .searchInput{
     width: 250px;
+}
+
+.allproducts{
+    display: flex;
+    max-width: 158px;
+    justify-content: space-around;
+    
 }
 }

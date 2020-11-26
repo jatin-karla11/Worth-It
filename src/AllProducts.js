@@ -31,29 +31,29 @@ function AllProducts() {
     return (
         <div className="container-fluid">
             <br></br>
-            <marquee>This page is under build!!!</marquee>
+            {/* <marquee>This page is under build!!!</marquee> */}
             {/* <img src={process.env.PUBLIC_URL + '/productImages/jatin.jpg'} /> */}
             <br></br>
             <div className="searchProducts"><center><input className="searchInput" onChange={(e)=>{setSearch(e.target.value)}} placeholder="Search for product.."/><SearchIcon fontSize="large" className="search"/></center></div>
             <br></br>
             <div className="shop">
-            <div className="shop_row">
-            <div className="allproducts">
+            <div className="shoprow1">
+            
             {(search==="")?<>
-            {products.map((product)=>(<><hr></hr>
-                
+            {products.map((product)=>(<>
+                <div className="allproducts">    
             <Product 
             id={product.pid} 
             title={product.name}
             description="" 
             price={product.price} 
             image={process.env.PUBLIC_URL + '/productImages/'+product.productFileName}/>
-            
+            </div>
             </>))}</>  
 :<>
             {products1.map((product)=>(<>
                 
-                <hr></hr>
+                
                 
                 <Product 
             id={product.pid} 
@@ -66,7 +66,7 @@ function AllProducts() {
             
     <br></br>
     
-                        </div>
+                        
         </div>
                 
             </div>
