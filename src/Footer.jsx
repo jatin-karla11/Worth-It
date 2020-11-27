@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'
+import { io } from 'socket.io-client';
 // import FacebookIcon from '@material-ui/icons/Facebook';
 // import InstagramIcon from '@material-ui/icons/Instagram';
 // import GitHubIcon from '@material-ui/icons/GitHub';
@@ -9,6 +10,16 @@ import './Footer.css'
 // import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
 
 const Footer=()=>{
+
+    // var socket=io("http://192.168.1.3:1337")
+    // const sendMessage=()=>{
+    //     alert("yop")
+    //     socket.emit("messageSent",{
+    //         "email":document.getElementById("email").value,
+    //         "message":document.getElementById("message").value
+    //     })
+    // }
+
     return(
         <>
         <div className="container-fluid">
@@ -52,14 +63,15 @@ const Footer=()=>{
                             <form action="#">
                                 <div className="email">
                                     <div className="text"> Email *</div>
-                                    <input type="email" required/>
+                                    <input type="email" id="email" required/>
                                 </div>
                                 <div className="msg">
                                     <div className="text">Message *</div>
-                                    <textarea cols="25" rows="3" required></textarea>
+                                    <textarea cols="25" rows="3" id="message" required></textarea>
                                 </div>
                                 <div className="btn11">
                                     <button type="submit">Send</button>
+                                    {/* onClick={sendMessage} */}
                                 </div>
                             </form>
                         </div>

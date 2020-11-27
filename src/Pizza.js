@@ -12,7 +12,8 @@ function Pizza() {
         <div className="shop-title">
             Pizzas
         </div>
-        <marquee>Delivery will be done after 2hours of order placing!</marquee>
+        {/* <marquee>Delivery will be done after 2hours of order placing!</marquee> */}
+        <marquee>This Store is under build!..</marquee>
         <div className="shop_row">
             <Product 
             id="975271" 

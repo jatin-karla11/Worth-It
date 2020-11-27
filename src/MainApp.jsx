@@ -34,6 +34,7 @@ import Tc from './Tc';
 import AllOrders from './AllOrders';
 import Queries from './Queries';
 import UserFeedback from './UserFeedback';
+import RealtimeChat from './RealtimeChat';
 
 
 function ad(){
@@ -116,6 +117,7 @@ const MainApp=()=>{
         <Route exact path="/queries" component={Queries}/>
         <Route exact path="/pizza" component={Pizza}/>
         <Route exact path="/feedback" component={UserFeedback}/>
+        <Route exact path="/chat" component={RealtimeChat}/>
         
         <Redirect to="/" />
     </Switch>

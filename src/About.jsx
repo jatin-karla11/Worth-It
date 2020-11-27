@@ -5,7 +5,7 @@ import Common from './Common';
 
 const About=()=>{
     return (<>
-    <Common name='Welcome to About page!' 
+    <Common name='We try to make your experience' 
     imgsrc={worth}
     visit="/contact" 
     btname="Contact Now"/>

@@ -26,6 +26,8 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "socket.io": "^3.0.3",
+    "socket.io-client": "^3.0.3",
     "stripe": "^8.121.0",
     "styled-components": "^5.2.1",
     "styled-loaders-react": "^1.1.0"
