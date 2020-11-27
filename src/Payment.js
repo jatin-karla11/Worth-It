@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css'
-import { StateContext, useStateValue } from './StateProvider'
+import {useStateValue} from './StateProvider'
+// import { StateContext, useStateValue } from './StateProvider'
 import { getBasketTotal } from './reducer';
 import worth1 from './images/worth1.jpg';
 import { useHistory } from 'react-router-dom';
@@ -182,7 +183,7 @@ function Payment() {
                             <br></br>
                             <label><strong>Cash on delivery</strong></label><input type="checkbox" onChange={()=>{if(!checked){setChecked(true)}else{setChecked(false)}}}/>
                             <br></br>{(checked && address!=="" && contact!=="" && value!==0)?<button onClick={afterCOD}>Place Order</button>:""}<br></br><hr></hr>
-                            <span>Tap to pay online using UPIs, Netbanking, Cards.</span>
+                            <span>Tap to pay online using UPIs, Netbanking, Cards.(Currently in test mode)</span>
                             <br></br><br></br>
                             <button style={{background:"lightcyan"}} onClick={displayRazorpay}>Pay Online :)</button>
                         </div>

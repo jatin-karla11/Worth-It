@@ -2,7 +2,6 @@ import React from 'react'
 import './Product.css'
 import Product from './Product'
 import './shop.css'
-import md from './images/md.jpg'
 import md1 from './images/md1.jpg'
 import md2 from './images/md2.jpg'
 import md3 from './images/md3.jpg'
@@ -16,6 +15,7 @@ function MD() {
         <div className="shop-title">
             Mediline Diagnostics
         </div>
+        <marquee>Delivery will be done on the next day of order placing!</marquee>
         <div className="shop_row">
             <Product 
             id="9752748" 

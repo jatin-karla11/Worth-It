@@ -1,12 +1,10 @@
 import React,{useState,useEffect} from 'react';
 
-import {Link, NavLink,useHistory} from 'react-router-dom';
+import {Link,useHistory} from 'react-router-dom';
 import fire from './fire';
 import Login from './Login';
 import Signin from './Signin';
-import  { Redirect } from 'react-router-dom'
 import $ from 'jquery';
-import firebase from 'firebase'
 import {auth} from './fire'
 import {useStateValue} from './StateProvider'
 import MainCarousel from './MainCarousel';

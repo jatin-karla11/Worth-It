@@ -4,7 +4,6 @@ import { useStateValue } from './StateProvider';
 import './Product.css'
 import Product from './Product'
 import './shop.css'
-import dc from './images/dc.jpg'
 import SearchIcon from '@material-ui/icons/Search';
 
 function AllProducts() {

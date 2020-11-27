@@ -4,10 +4,10 @@ import "./OrderHistory.css";
 import { Link } from 'react-router-dom';
 
 function OrderHistory() {
-    const [{basket,user1},dispatch]=useStateValue();
+    const [{user1}]=useStateValue();
     const name=user1?.email
     const [orders,setOrders]=useState([]);
-    const [reorder,setReorder]=useState("");
+    // const [reorder,setReorder]=useState("");
     useEffect(() => {
         getOrder();
     }, [])
@@ -34,7 +34,7 @@ function OrderHistory() {
     // }
 
     const yo=()=>{
-        alert(reorder);
+        // alert(reorder);
     }
     var orderid="";
     return (

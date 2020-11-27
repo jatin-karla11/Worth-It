@@ -67,7 +67,7 @@ const Footer=()=>{
                 </div>
                 <div className="bottom">
                     <center>
-                        <span className="credit">Created By <a href="#"><strong>beast</strong></a> | </span>
+                        <span className="credit">Created By <a href="https://www.linkedin.com/in/jatin-karla11/"><strong>beast</strong></a> | </span>
                         <span className="far fa-copyright"></span><span> 2020 All rights reserved.</span>
                     </center>
                 </div>
