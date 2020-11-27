@@ -56,7 +56,7 @@
 
 .allproducts{
     display: flex;
-    max-width: 158px;
+    max-width: 50%;
     justify-content: space-around;
     
 }

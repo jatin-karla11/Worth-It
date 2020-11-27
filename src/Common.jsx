@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import worth from './images/worth.jpg';
+
 import {Link, NavLink,useHistory} from 'react-router-dom';
 import fire from './fire';
 import Login from './Login';
@@ -7,10 +7,9 @@ import Signin from './Signin';
 import  { Redirect } from 'react-router-dom'
 import $ from 'jquery';
 import firebase from 'firebase'
-import worth1 from './images/worth1.jpg';
-import worth2 from './images/worth2.jpg';
 import {auth} from './fire'
 import {useStateValue} from './StateProvider'
+import MainCarousel from './MainCarousel';
 
 
 const Common=(props)=>{
@@ -119,9 +118,9 @@ $('.modal-backdrop').remove();
     // console.log(user)
     useEffect(()=>{
       authListener();
-      
+      // setInterval(4000);
     },[]);
-
+    // const [interval,setInterval]=useState(0);
     return (
     
     <>
@@ -146,29 +145,8 @@ emailError={emailError} passwordError={passwordError}   />)}
                  </div>
                     </div>
                     <div className="col-lg-6 order-1 order-lg-2 header-img ">
-                        {/* <img src={props.imgsrc} className="img-fluid animated" alt="home img"/> */}
-                        <div style={{height:"40px"}}></div>
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="4000">
-      <img src={worth1} class="d-block w-100" alt="..." />
-    </div>
-    <div class="carousel-item">
-      <img src={worth2} class="d-block w-100" alt="..." />
-    </div>
-    <div class="carousel-item">
-      <img src={worth} class="d-block w-100" alt="..." />
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+                       <div style={{height:"40px"}}></div>
+                        <MainCarousel/>
                     </div>
                     </div>
                 </div>
