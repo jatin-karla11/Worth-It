@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .allproducts{
     display: flex;
     max-width: 245px;
