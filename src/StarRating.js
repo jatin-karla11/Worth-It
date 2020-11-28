@@ -4,7 +4,7 @@ import './StarRating.css'
 import { useStateValue } from './StateProvider';
 
 function StarRating() {
-    const [{user1}]=useStateValue();
+    const [{basket,user1},dispatch]=useStateValue();
     const name=user1?.email
     const [rating, setRating]=useState(null);
     const [hover,setHover]=useState(null);
