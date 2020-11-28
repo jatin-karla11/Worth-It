@@ -3,6 +3,14 @@
     padding: 30px;
     
 }
+.pizzaPaper{
+    height: 100px;
+    margin: 10px;
+}
+.homePaperImage{
+    height: 80px;
+    margin: 10px;
+}
 .slideHome{
     height: 170px;
     width: 170px;
@@ -41,6 +49,10 @@
     align-items: center; 
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
+    .homePaperImage{
+        height: 80px;
+        margin: 5px;
+    }
     .dog{
         padding: 5px;
 

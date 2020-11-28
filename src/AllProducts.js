@@ -5,6 +5,7 @@ import './Product.css'
 import Product from './Product'
 import './shop.css'
 import SearchIcon from '@material-ui/icons/Search';
+import LongMenu from './LongMenu';
 
 function AllProducts() {
     const [{basket,user1},dispatch]=useStateValue();
@@ -35,6 +36,8 @@ function AllProducts() {
             <br></br>
             <div className="searchProducts"><center><input className="searchInput" onChange={(e)=>{setSearch(e.target.value)}} placeholder="Search for product.."/><SearchIcon fontSize="large" className="search"/></center></div>
             <br></br>
+                {/* <LongMenu/>
+            <br></br> */}
             <div className="shop">
             <div className="shoprow1">
             

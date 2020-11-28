@@ -35,6 +35,7 @@ import AllOrders from './AllOrders';
 import Queries from './Queries';
 import UserFeedback from './UserFeedback';
 import RealtimeChat from './RealtimeChat';
+import Modicare from './Modicare';
 
 
 function ad(){
@@ -118,7 +119,8 @@ const MainApp=()=>{
         <Route exact path="/pizza" component={Pizza}/>
         <Route exact path="/feedback" component={UserFeedback}/>
         <Route exact path="/chat" component={RealtimeChat}/>
-        
+        <Route exact path="/mc" component={Modicare}/>
+
         <Redirect to="/" />
     </Switch>
     {/* </HashRouter> */}

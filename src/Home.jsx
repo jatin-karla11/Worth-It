@@ -14,6 +14,7 @@ import mithas from './images/mithas.jpg'
 import TC from './images/T-C.png'
 import pizza from './images/pizza.jpg'
 import ig from './images/ig.jpg'
+import { Paper } from '@material-ui/core';
 
 const responsive = { 
     0: { items: 3 },
@@ -58,6 +59,8 @@ const Home=()=>{
         <strong><a className="linkmd" href="https://medilinediagnostics.in/">Mediline Diagnostics</a></strong>
         </div>
     </div>
+    <br></br>
+    <Link to="/mc"><Paper className="pizzaPaper" elevation={3} ><img className="homePaperImage" src={pizza}/></Paper></Link>
     <br></br>
     <div className="dog">
     <div className="mddesc">

@@ -27,6 +27,11 @@ const Sdata=[
     }
     ,
     {
+        imgsrc:chocolate,
+        title:'Modicare',
+        to:"/mc"
+    },
+    {
         imgsrc:md,
         title:'Mediline Diagnostics',
         to:"/md"
