@@ -7,7 +7,10 @@ import {useStateValue} from './StateProvider'
 import { getBasketTotal } from './reducer';
 import worth1 from './images/worth1.jpg';
 import { useHistory } from 'react-router-dom';
-
+import Button from '@material-ui/core/Button';
+import Snackbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 
 function loadScript(src){
     return new Promise(resolve=>{
@@ -29,6 +32,17 @@ const __DEV__=document.domain==="localhost"
 var paymentId="";
 var orderId="";
 function Payment() {
+    const [open, setOpen] = useState(false);
+    const handleClick = () => {
+        setOpen(true);
+      };
+      const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpen(false);
+      };
     const history=useHistory();
     const [{basket,user1},dispatch]=useStateValue();
     const name=user1?.email
@@ -36,7 +50,8 @@ function Payment() {
     const [checked, setChecked] =useState(false);
 
     async function afterCOD(){
-        alert("Order Placed!!!")
+        // alert("Order Placed!!!")
+        handleClick();
         const response = await fetch('https://worthit-backend.herokuapp.com/value', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -134,7 +149,7 @@ function Payment() {
     const [address,setAddress]=useState("");
     const [contact,setContact]=useState("");
 
-    return (
+    return (<>
         <div className="container-fluid">
             <div className="payment">
                 <div className="payment_container">
@@ -191,6 +206,25 @@ function Payment() {
                 </div>
             </div>
         </div>
+        <Snackbar
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'center',
+        }}
+        open={open}
+        autoHideDuration={4000}
+        onClose={handleClose}
+        message="Order Placed!!"
+        action={
+          <React.Fragment>
+            
+            <IconButton size="small" aria-label="close" color="inherit" onClick={handleClose}>
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          </React.Fragment>
+        }
+      />
+        </>
     )
 }
 
