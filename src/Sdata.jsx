@@ -7,6 +7,7 @@ import vindhy from './images/vindhy.jpg'
 import mithas from './images/mithas.jpg'
 import grocery1 from './images/grocery1.jpg'
 import pizza from './images/pizza.jpg'
+import modicare from './images/modicare.png'
 
 const Sdata=[
     
@@ -27,7 +28,7 @@ const Sdata=[
     }
     ,
     {
-        imgsrc:chocolate,
+        imgsrc:modicare,
         title:'Modicare',
         to:"/mc"
     },

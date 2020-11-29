@@ -27,4 +27,13 @@
     .checkoutProduct_info>button{
         font-size: small;
     }   
+    .checkoutProduct_image{
+        object-fit: contain;
+        width: 120px;
+        height: 120px;
+    }
+    .checkoutProduct_title{
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
