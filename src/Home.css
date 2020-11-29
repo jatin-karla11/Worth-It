@@ -6,6 +6,10 @@
 .pizzaPaper{
     height: 100px;
     margin: 10px;
+    display: flex;
+}
+.pizzaPaperLink{
+    text-decoration: none;
 }
 .homePaperImage{
     height: 80px;

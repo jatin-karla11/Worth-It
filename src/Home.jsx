@@ -15,6 +15,7 @@ import TC from './images/T-C.png'
 import pizza from './images/pizza.jpg'
 import ig from './images/ig.jpg'
 import { Paper } from '@material-ui/core';
+import modicare from './images/modicare.png'
 
 const responsive = { 
     0: { items: 3 },
@@ -29,6 +30,7 @@ const items = [
     <div className="item"><Link to="/dairy"><img className="slideHome" src={dairy}/></Link></div>,
     <div className="item"><Link to="/md"><img className="slideHome" src={md}/></Link></div>,
     <div className="item"><Link to="/mithas"><img className="slideHome" src={mithas}/></Link></div>,
+    <div className="item"><Link to="/mc"><img className="slideHome" src={modicare}/></Link></div>,
     <div className="item"><Link to="/pizza"><img className="slideHome" src={pizza}/></Link></div>,
     <div className="item"><Link to="/tc"><img className="slideHome" src={TC}/></Link></div>,
 ];
@@ -60,7 +62,7 @@ const Home=()=>{
         </div>
     </div>
     <br></br>
-    <Link to="/mc"><Paper className="pizzaPaper" elevation={3} ><img className="homePaperImage" src={pizza}/></Paper></Link>
+    <Link className="pizzaPaperLink" to="/mc"><Paper className="pizzaPaper" elevation={3} ><img className="homePaperImage" src={modicare}/><div><strong>Contact: 9826434165</strong><br></br><strong>Harsh Arora</strong></div></Paper></Link>
     <br></br>
     <div className="dog">
     <div className="mddesc">
