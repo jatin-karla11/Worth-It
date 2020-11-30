@@ -74,10 +74,10 @@ const Home=()=>{
     </div>
     <br></br>
     <br></br>
-    <div className="feedback">
+    <center><Paper elevation={3} className="feedback">
         
         <center><Link to="/feedback"><button className="goto">Tap to rate our service!!</button></Link></center>
-    </div>
+    </Paper></center>
     </>);
 };
 

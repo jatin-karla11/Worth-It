@@ -102,6 +102,71 @@ import mch52 from './images/mch52.jpg'
 import mch53 from './images/mch53.jpg'
 import mcc1 from './images/mcc1.jpg'
 import mcc2 from './images/mcc2.jpg'
+import mcc3 from './images/mcc3.jpg'
+import mcc4 from './images/mcc4.jpg'
+import mcc5 from './images/mcc5.jpg'
+import mcc6 from './images/mcc6.jpg'
+import mcc7 from './images/mcc7.jpg'
+import mcc8 from './images/mcc8.jpg'
+import mcc9 from './images/mcc9.jpg'
+import mcc10 from './images/mcc10.jpg'
+import mcc11 from './images/mcc11.jpg'
+import mcc12 from './images/mcc12.jpg'
+import mcc13 from './images/mcc13.jpg'
+import mcc14 from './images/mcc14.jpg'
+import mcc15 from './images/mcc15.jpg'
+import mcc16 from './images/mcc16.jpg'
+import mcc17 from './images/mcc17.jpg'
+import mcc18 from './images/mcc18.jpg'
+import mcc19 from './images/mcc19.jpg'
+import mcc20 from './images/mcc20.jpg'
+import mcj1 from './images/mcj1.jpg'
+import mcj2 from './images/mcj2.jpg'
+import mcj3 from './images/mcj3.jpg'
+import mcj4 from './images/mcj4.jpg'
+import mcj5 from './images/mcj5.jpg'
+import mcj6 from './images/mcj6.jpg'
+import mcj7 from './images/mcj7.jpg'
+import mcj8 from './images/mcj8.jpg'
+import mcj9 from './images/mcj9.jpg'
+import mcj10 from './images/mcj10.jpg'
+import mcj11 from './images/mcj11.jpg'
+import mcj12 from './images/mcj12.jpeg'
+import mcj13 from './images/mcj13.jpeg'
+import mcj14 from './images/mcj14.jpeg'
+import mcj15 from './images/mcj15.jpeg'
+import mcj16 from './images/mcj16.jpg'
+import mcj17 from './images/mcj17.jpg'
+import mcj18 from './images/mcj18.jpeg'
+import mcj19 from './images/mcj19.jpg'
+import mcj20 from './images/mcj20.jpg'
+import mcj21 from './images/mcj21.jpeg'
+import mcj22 from './images/mcj22.jpg'
+import mcj23 from './images/mcj23.jpg'
+import mcj24 from './images/mcj24.jpg'
+import mcj25 from './images/mcj25.jpg'
+import mcj26 from './images/mcj26.jpg'
+import mcj27 from './images/mcj27.jpg'
+import mcj28 from './images/mcj28.jpg'
+import mcj29 from './images/mcj29.jpg'
+import mcj30 from './images/mcj30.jpg'
+import mcj31 from './images/mcj31.jpg'
+import mcj32 from './images/mcj32.jpg'
+import mcj33 from './images/mcj33.jpg'
+import mcj34 from './images/mcj34.jpg'
+import mcj35 from './images/mcj35.jpg'
+import mcj36 from './images/mcj36.jpg'
+import mcj37 from './images/mcj37.jpg'
+import mcj38 from './images/mcj38.jpg'
+import mcj39 from './images/mcj39.jpg'
+import mcj40 from './images/mcj40.jpg'
+import mcj41 from './images/mcj41.jpg'
+import mcj42 from './images/mcj42.jpg'
+import mcj43 from './images/mcj43.jpg'
+import mcj44 from './images/mcj44.jpg'
+import mcj45 from './images/mcj45.jpg'
+import mcj46 from './images/mcj46.jpg'
+
 
 const options = [
     {
@@ -120,6 +185,14 @@ const options = [
       label: "Watches",
       value: "watches",
     },
+    {
+        label: "Personal Care",
+        value: "personalcare",
+      },
+      {
+        label: "Jewellery",
+        value: "jewellery",
+      },
   ];
   
 
@@ -345,14 +418,131 @@ function Modicare() {
             <div className="shop_row">
             <Product 
             id="975271" 
-            title="FRUVEG FRUIT AND VEGETABLE WASH" 
-            price={288} 
+            title="AUTO GLOW AUTO POLISH - FOR CAR, APPLIANCES AND OTHERS (500ML)" 
+            price={450} 
             image={mcc1}/>
             <Product 
             id="975272"
+            title="AUTO WASH ADVANCED - AUTO SHAMPOO WITH COLOUR PROTECTANTS (250ML)" 
+            price={125} 
+            image={mcc2}/>
+            
+        </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="BEYOND BLUE (750 ML)" 
+            price={162} 
+            image={mcc3}/>
+            <Product 
+            id="975272"
+            title="FRUVEG FRUIT AND VEGETABLE WASH" 
+            price={288} 
+            image={mcc4}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
             title="GERMI BUST MULTI-SURFACE DISINFECTANT SPRAY" 
             price={270} 
-            image={mcc2}/>
+            image={mcc5}/>
+            <Product 
+            id="975272"
+            title="HD HEAVY DUTY FLOOR CLEANER (500 ML)" 
+            price={160}     
+            image={mcc6}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="MIGHTY IN-ONE MULTIPURPOSE CLEANER (250 ML)" 
+            price={130} 
+            image={mcc7}/>
+            <Product 
+            id="975272"
+            title="ONE DER DROP ADVANCED CONCENTRATED DISH WASHING LIQUID (BIOSAFE FORMULA) (500 ML)" 
+            price={202} 
+            image={mcc8}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="ONE DER DROP ADVANCED ORIGINAL FORMULA(500 ML)" 
+            price={202} 
+            image={mcc9}/>
+            <Product 
+            id="975272"
+            title="ONE DER SCRUB (PACK OF 4 PCS)" 
+            price={135} 
+            image={mcc10}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="SILVER DIP INSTANT SILVER CLEANER (300 ML)" 
+            price={225} 
+            image={mcc11}/>
+            <Product 
+            id="975272"
+            title="SPARKLE ADVANCED CONCENTRATED GLASS CLEANER WITH ANTIFOG EFFECT (BIOSAFE FORMULA 500 ML)" 
+            price={175} 
+            image={mcc12}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="SPIC ‘N’ SPAN SCALE & BATHROOM CLEANER 250ML" 
+            price={135} 
+            image={mcc13}/>
+            <Product 
+            id="975272"
+            title="STERICLEAN POWERFUL DISINFECTANT CLEANER ADVANCE (500 ML)" 
+            price={220} 
+            image={mcc14}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="STERICLEAN POWERFUL DISINFECTANT CLEANER KHUS (500 ML)" 
+            price={213} 
+            image={mcc15}/>
+            <Product 
+            id="975272"
+            title="STERICLEAN POWERFUL DISINFECTANT CLEANER LIME (500 ML)" 
+            price={213} 
+            image={mcc16}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="WASHMATE MATIC CONCENTRATED DETERGENT POWDER (500 G)" 
+            price={150} 
+            image={mcc17}/>
+            <Product 
+            id="975272"
+            title="WASHMATE POPULAR DETERGENT POWDER (1 KG)" 
+            price={157} 
+            image={mcc18}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="WASHMATE POWERCLEAN DETERGENT BAR (200GX3)" 
+            price={108} 
+            image={mcc19}/>
+            <Product 
+            id="975272"
+            title="WASHMATE PRE WASH DIRT & STAIN REMOVER (250ML)" 
+            price={175} 
+            image={mcc20}/>
             
         </div>
             </>:""}
@@ -769,44 +959,302 @@ function Modicare() {
                  </div>
             </>:""}
 
+            {(category==="personalcare")?<>
+            <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SM MEN'S (DAY & DATE) SQUARE TWO TONE GOLD WATCH" 
+            price={2999} 
+            image={mcw9}/>
+        <Product 
+            id="975274"
+            title="SM MEN'S (DAY & DATE) TWO TONE GOLD WATCH" 
+            price={3499} 
+            image={mcw10}/>
+                 </div>
+            </>:""}
+            {(category==="jewellery")?<>
+            <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ADA ANTIQUE (CUFF 1N)" 
+            price={3999} 
+            image={mcj1}/>
+        <Product 
+            id="975274"
+            title="ADA EMERALD GREEN (CUFF 1N)" 
+            price={3999} 
+            image={mcj2}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ADA RUBY RED (CUFF 1N)" 
+            price={3999} 
+            image={mcj3}/>
+        <Product 
+            id="975274"
+            title="AZRA RUBY RED (EARRING 2N)" 
+            price={1799} 
+            image={mcj4}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="CHAND BALA (EARRING 2N)" 
+            price={1799} 
+            image={mcj5}/>
+        <Product 
+            id="975274"
+            title="CHANDINI (NECKLACE 1N + EARRING 2N)" 
+            price={3349} 
+            image={mcj6}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="DIA (NECKLACE 1N + EARRING 2N)" 
+            price={2000} 
+            image={mcj7}/>
+        <Product 
+            id="975274"
+            title="DIVYA (NECKLACE 1N + EARRING 2N)" 
+            price={2399} 
+            image={mcj8}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="FIZA (EARRING 2N)" 
+            price={899} 
+            image={mcj9}/>
+        <Product 
+            id="975274"
+            title="HANSANI (PENDENT 1N + EARRING 2N)" 
+            price={1699} 
+            image={mcj10}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="HEER EARRING 2N" 
+            price={1399} 
+            image={mcj11}/>
+        <Product 
+            id="975274"
+            title="JAHAAN (NECKLACE & EARRING SET)" 
+            price={3999} 
+            image={mcj12}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="Kiran Earring" 
+            price={1500} 
+            image={mcj13}/>
+        <Product 
+            id="975274"
+            title="KOHINOOR (BANGLE 2.4" 
+            price={1899} 
+            image={mcj14}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="Kohinoor Bangle 2'6" 
+            price={1899} 
+            image={mcj15}/>
+        <Product 
+            id="975274"
+            title="KUNDAN KANGAN GREEN (BANGLES 2N - 2.4)" 
+            price={1599} 
+            image={mcj16}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="KUNDAN KANGAN RED (BANGLES 2N - 2.4)" 
+            price={1599} 
+            image={mcj17}/>
+        <Product 
+            id="975274"
+            title="MAHI (HATH PAN)" 
+            price={1999} 
+            image={mcj18}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="MAYA (EARRING 2N)" 
+            price={1399} 
+            image={mcj19}/>
+        <Product 
+            id="975274"
+            title="MEHAR (BRACELET 1N)" 
+            price={949} 
+            image={mcj20}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="MOH (BRACELET)" 
+            price={1099} 
+            image={mcj21}/>
+        <Product 
+            id="975274"
+            title="MOTI MALA NECLACE 1N EARRING 2N" 
+            price={2199} 
+            image={mcj22}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="NAAZ BLUE SAPPHIRE (EARRING 2N)" 
+            price={1699} 
+            image={mcj23}/>
+        <Product 
+            id="975274"
+            title="NAAZ RUBY RED (EARRING 2N " 
+            price={1699} 
+            image={mcj24}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="NAUSHEEN (BRACELET 1N" 
+            price={1999} 
+            image={mcj25}/>
+        <Product 
+            id="975274"
+            title="NAYANTARA (NECKLACE 1N + EARRING 2N)" 
+            price={2200} 
+            image={mcj26}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="NAZIA ONYX BLUE (EARRING 2N)" 
+            price={1299} 
+            image={mcj27}/>
+        <Product 
+            id="975274"
+            title="NAZIA ONYX PINK (EARRING 2N)" 
+            price={1299} 
+            image={mcj28}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="NOOR EMERALD GREEN (EARRING 2N)" 
+            price={1099} 
+            image={mcj29}/>
+        <Product 
+            id="975274"
+            title="NOOR-RUBY-RED" 
+            price={1099} 
+            image={mcj30}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="PHOOL (BRACELET)" 
+            price={1299} 
+            image={mcj31}/>
+        <Product 
+            id="975274"
+            title="PIA (BRACELET 1N)" 
+            price={849} 
+            image={mcj32}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="RANI (PENDANT SET)" 
+            price={3999} 
+            image={mcj33}/>
+        <Product 
+            id="975274"
+            title="SHABNAM AQUA (EARRING 2N)" 
+            price={899} 
+            image={mcj34}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SHABNAM ROSE QUARTZ (EARRING 2N)" 
+            price={1099} 
+            image={mcj35}/>
+        <Product 
+            id="975274"
+            title="SIA PENDENT 1N EARRING 2N" 
+            price={1699} 
+            image={mcj36}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SIA PENDENT 1N EARRING 2N" 
+            price={1699} 
+            image={mcj37}/>
+        <Product 
+            id="975274"
+            title="SITARA (NECKLACE 1N + EARRING 2N)" 
+            price={2499} 
+            image={mcj38}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SIYA EARRING" 
+            price={1099} 
+            image={mcj39}/>
+        <Product 
+            id="975274"
+            title="Tara-(Earrings)---" 
+            price={1249} 
+            image={mcj40}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="TARANG (NECKLACE 1N + EARRING 2N)" 
+            price={2849} 
+            image={mcj41}/>
+        <Product 
+            id="975274"
+            title="THE MAHARANI COLLECTION KUNDAN KANGAN GREEN" 
+            price={1599} 
+            image={mcj42}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="THE MAHARANI COLLECTION KUNDAN KANGAN RED" 
+            price={1599} 
+            image={mcj43}/>
+        <Product 
+            id="975274"
+            title="TRISHNA NECKLACE 1N EARING 2N" 
+            price={4999} 
+            image={mcj44}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ZEENAT (BRACELET 1N)" 
+            price={1999} 
+            image={mcj45}/>
+        <Product 
+            id="975274"
+            title="ZOYA (EARRING 2N)" 
+            price={899} 
+            image={mcj46}/>
+                 </div>
                  
-                 {/* <div className="shop_row">
-        <Product 
-            id="975273"
-            title="" 
-            price={} 
-            image={mc29}/>
-        <Product 
-            id="975274"
-            title="" 
-            price={} 
-            image={mc30}/>
-                 </div>
-                 <div className="shop_row">
-        <Product 
-            id="975273"
-            title="" 
-            price={} 
-            image={mc29}/>
-        <Product 
-            id="975274"
-            title="" 
-            price={} 
-            image={mc30}/>
-                 </div>
-                 <div className="shop_row">
-        <Product 
-            id="975273"
-            title="" 
-            price={} 
-            image={mc29}/>
-        <Product 
-            id="975274"
-            title="" 
-            price={} 
-            image={mc30}/>
-                 </div> */}
-    </div>
+            </>:""}
+
+                 
+                </div>
     </>
 
     )
