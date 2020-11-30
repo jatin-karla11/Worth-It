@@ -166,6 +166,93 @@ import mcj43 from './images/mcj43.jpg'
 import mcj44 from './images/mcj44.jpg'
 import mcj45 from './images/mcj45.jpg'
 import mcj46 from './images/mcj46.jpg'
+import mcp1 from './images/mcp1.jpg'
+import mcp2 from './images/mcp2.jpg'
+import mcp3 from './images/mcp3.jpg'
+import mcp4 from './images/mcp4.jpg'
+import mcp5 from './images/mcp5.jpg'
+import mcp6 from './images/mcp6.jpg'
+import mcp7 from './images/mcp7.jpg'
+import mcp8 from './images/mcp8.jpg'
+import mcp9 from './images/mcp9.jpg'
+import mcp10 from './images/mcp10.jpg'
+import mcp11 from './images/mcp11.jpg'
+import mcp12 from './images/mcp12.jpg'
+import mcp13 from './images/mcp13.jpg'
+import mcp14 from './images/mcp14.jpg'
+import mcp15 from './images/mcp15.jpg'
+import mcp16 from './images/mcp16.jpg'
+import mcp17 from './images/mcp17.jpg'
+import mcp18 from './images/mcp18.jpg'
+import mcp19 from './images/mcp19.jpg'
+import mcp20 from './images/mcp20.jpg'
+import mcp21 from './images/mcp21.jpg'
+import mcp22 from './images/mcp22.jpg'
+import mcp23 from './images/mcp23.jpg'
+import mcp24 from './images/mcp24.jpg'
+import mcp25 from './images/mcp25.jpg'
+import mcp26 from './images/mcp26.jpg'
+import mcp27 from './images/mcp27.jpg'
+import mcp28 from './images/mcp28.jpg'
+import mcp29 from './images/mcp29.jpg'
+import mcp30 from './images/mcp30.jpg'
+import mcp31 from './images/mcp31.jpg'
+import mcp32 from './images/mcp32.jpg'
+import mcp33 from './images/mcp33.jpg'
+import mcp34 from './images/mcp34.jpg'
+import mcp35 from './images/mcp35.jpg'
+import mcp36 from './images/mcp36.jpg'
+import mcp37 from './images/mcp37.jpg'
+import mcp38 from './images/mcp38.jpg'
+import mcp39 from './images/mcp39.jpg'
+import mcp40 from './images/mcp40.jpg'
+import mcp41 from './images/mcp41.jpg'
+import mcp42 from './images/mcp42.jpg'
+import mcp43 from './images/mcp43.jpg'
+import mcp44 from './images/mcp44.jpg'
+import mcp45 from './images/mcp45.jpg'
+import mcp46 from './images/mcp46.jpg'
+import mcp47 from './images/mcp47.jpg'
+import mcp48 from './images/mcp48.jpg'
+import mcp49 from './images/mcp49.jpg'
+import mcp50 from './images/mcp50.jpg'
+import mcp51 from './images/mcp51.jpg'
+import mcp52 from './images/mcp52.jpg'
+import mcp53 from './images/mcp53.jpg'
+import mcp54 from './images/mcp54.jpg'
+import mcp55 from './images/mcp55.jpg'
+import mcp56 from './images/mcp56.jpg'
+import mcp57 from './images/mcp57.jpg'
+import mcp58 from './images/mcp58.jpg'
+import mcp59 from './images/mcp59.jpg'
+import mcp60 from './images/mcp60.jpg'
+import mcp61 from './images/mcp61.jpg'
+import mcp62 from './images/mcp62.jpg'
+import mcp63 from './images/mcp63.jpg'
+import mcp64 from './images/mcp64.jpg'
+import mcp65 from './images/mcp65.jpg'
+import mcp66 from './images/mcp66.jpg'
+import mcp67 from './images/mcp67.jpg'
+import mcp68 from './images/mcp68.jpg'
+import mcp69 from './images/mcp69.jpg'
+import mcp70 from './images/mcp70.jpg'
+import mcp71 from './images/mcp71.jpg'
+import mcp72 from './images/mcp72.jpg'
+import mcp73 from './images/mcp73.jpg'
+import mcp74 from './images/mcp74.jpg'
+import mcp75 from './images/mcp75.jpg'
+import mcp76 from './images/mcp76.jpg'
+import mcp77 from './images/mcp77.jpg'
+import mcp78 from './images/mcp78.jpg'
+import mcp79 from './images/mcp79.jpg'
+import mcp80 from './images/mcp80.jpg'
+import mcp81 from './images/mcp81.jpg'
+import mcp82 from './images/mcp82.jpg'
+import mcp83 from './images/mcp83.jpg'
+import mcp84 from './images/mcp84.jpg'
+import mcp85 from './images/mcp85.jpg'
+import mcp86 from './images/mcp86.jpg'
+
 
 
 const options = [
@@ -963,14 +1050,518 @@ function Modicare() {
             <div className="shop_row">
         <Product 
             id="975273"
-            title="SM MEN'S (DAY & DATE) SQUARE TWO TONE GOLD WATCH" 
-            price={2999} 
-            image={mcw9}/>
+            title="ALL PURE HAND SANITIZER – ALOE VERA (250 ML)" 
+            price={125} 
+            image={mcp1}/>
         <Product 
             id="975274"
-            title="SM MEN'S (DAY & DATE) TWO TONE GOLD WATCH" 
-            price={3499} 
-            image={mcw10}/>
+            title="ALL PURE HAND SANITIZER (60 ML)" 
+            price={30} 
+            image={mcp2}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ALL PURE HAND SANITIZER (250 ML)" 
+            price={125} 
+            image={mcp3}/>
+        <Product 
+            id="975274"
+            title="ALL PURE HAND SANITIZER- ALOE VERA (500 ML)" 
+            price={250} 
+            image={mcp4}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ALL PURE HAND SANITIZER- MORINGA (250 ML)" 
+            price={125} 
+            image={mcp5}/>
+        <Product 
+            id="975274"
+            title="ALL PURE HAND SANITIZER- MORINGA (500 ML)" 
+            price={250} 
+            image={mcp6}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="BABY SPA 2 IN 1 BUBBLE BATH & WASH (200 ML)" 
+            price={221} 
+            image={mcp7}/>
+        <Product 
+            id="975274"
+            title="BABY SPA DIAPER RASH CREAM (50 G)" 
+            price={140} 
+            image={mcp8}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="BABY SPA MASSAGE OIL (200 ML)" 
+            price={195} 
+            image={mcp9}/>
+        <Product 
+            id="975274"
+            title="BABY SPA MILK CREAM (50 G" 
+            price={90} 
+            image={mcp10}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="BABY SPA MOISTURISING LOTION (200 ML)" 
+            price={161} 
+            image={mcp11}/>
+        <Product 
+            id="975274"
+            title="BABY SPA NO-TEARS SHAMPOO (200 ML)" 
+            price={175} 
+            image={mcp12}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="BABY SPA NOURISHING SOAP (75 G)" 
+            price={65} 
+            image={mcp13}/>
+        <Product 
+            id="975274"
+            title="BABY SPA SOFT CLEANSING WIPES (80 PCS)" 
+            price={225} 
+            image={mcp14}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="BABY SPA TALC POWDER (100 G)" 
+            price={75} 
+            image={mcp15}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL BODY PUFF - ULTRA SOFT & GENTLE" 
+            price={88} 
+            image={mcp16}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL HAND & BODY LOTION (ALLANTOIN & VITAMIN E) (100 ML)" 
+            price={165} 
+            image={mcp17}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL HAND & BODY LOTION (ALLANTOIN & VITAMIN E) (200 ML)" 
+            price={264} 
+            image={mcp18}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL HAND & BODY LOTION (GLYCERINE & HONEY) (100 ML)" 
+            price={165} 
+            image={mcp19}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL HAND & BODY LOTION (GLYCERINE & HONEY) (200 ML)" 
+            price={264} 
+            image={mcp20}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL INSTANTE TEA TREE OIL WITH VITAMIN E (15 ML)" 
+            price={330} 
+            image={mcp21}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL PERFUMED BODY TALC-DREAMS (100G)" 
+            price={72} 
+            image={mcp22}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL PERFUMED BODY TALC-DREAMS (400G)" 
+            price={193} 
+            image={mcp23}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL PERFUMED BODY TALC-WILD FLOWER (100G)" 
+            price={72} 
+            image={mcp24}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL PERFUMED BODY TALC-WILD FLOWER (400G)" 
+            price={193} 
+            image={mcp25}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL PERFUMED DEO SPRAY-INDULGE (150ML)" 
+            price={190} 
+            image={mcp26}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL PERFUMED DEO SPRAY-MOMENTUM (150ML)" 
+            price={190} 
+            image={mcp27}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL PERFUMED DEO SPRAY-OCEAN BLUE (150ML)" 
+            price={190} 
+            image={mcp28}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL PERFUMED DEO SPRAY-ORIENTAL SPICE (150 ML)" 
+            price={190} 
+            image={mcp29}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL POCKET PERFUME DUSKY DESIRE" 
+            price={80} 
+            image={mcp30}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL POCKET PERFUME SPICE WOODS" 
+            price={80} 
+            image={mcp31}/>
+        <Product 
+            id="975274"
+            title="ESSENSUAL POCKET PERFUME WILD GIRL" 
+            price={80} 
+            image={mcp32}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="ESSENSUAL SOFT & SMOOTH INTENSIVE FOOT CARE CREAM (100 ML)" 
+            price={225} 
+            image={mcp33}/>
+        <Product 
+            id="975274"
+            title="FOTE CONDITIONER WITH ALOE VERA & ALMOND OIL (SMOOTH & SHINE) (100 ML)" 
+            price={140} 
+            image={mcp34}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="FOTE CONDITIONER WITH ALOE VERA & ALMOND OIL (SMOOTH & SHINE) (150 ML)" 
+            price={198} 
+            image={mcp35}/>
+        <Product 
+            id="975274"
+            title="FOTE SHAMPOO WITH ARNICA & TEA TREE OIL (DANDRUFF CONTROL) (100 ML)" 
+            price={120} 
+            image={mcp36}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="FOTE SHAMPOO WITH ARNICA & TEA TREE OIL (DANDRUFF CONTROL) (200 ML)" 
+            price={195} 
+            image={mcp37}/>
+        <Product 
+            id="975274"
+            title="FOTE SHAMPOO WITH HENNA & JOJOBA OIL (HAIR FALL CONTROL) (100 ML)" 
+            price={120} 
+            image={mcp38}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="FOTE SHAMPOO WITH HENNA & JOJOBA OIL (HAIR FALL CONTROL) (200 ML)" 
+            price={195} 
+            image={mcp39}/>
+        <Product 
+            id="975274"
+            title="FRESH MOMENTS AYURVEDIC HERBAL TOOTHPASTE" 
+            price={58} 
+            image={mcp40}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="FRESH MOMENTS DEEP CLEAN ANTI-CAVITY TOOTHPASTE" 
+            price={48} 
+            image={mcp41}/>
+        <Product 
+            id="975274"
+            title="FRESH MOMENTS GEL TOOTHPASTE (100G)" 
+            price={90} 
+            image={mcp42}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="FRESH MOMENTS TOOTHBRUSH (PACK OF 4)" 
+            price={176} 
+            image={mcp43}/>
+        <Product 
+            id="975274"
+            title="FRESH MOMENTS TOOTHPASTE (100G)" 
+            price={75} 
+            image={mcp44}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL ADVANCE FORMULA HAIR FALL DEFENSE SHAMPOO - 288ML(6ML48 SACHETS)" 
+            price={192} 
+            image={mcp45}/>
+        <Product 
+            id="975274"
+            title="SALON PROFESSIONAL ADVANCE FORMULA NOURISH & SHINE HAIR OIL (100 ML)" 
+            price={115} 
+            image={mcp46}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL ADVANCED FORMULA DANDRUFF CARE SHAMPOO" 
+            price={280} 
+            image={mcp47}/>
+        <Product 
+            id="975274"
+            title="SALON PROFESSIONAL ADVANCED FORMULA HAIR FALL DEFENSE SHAMPOO" 
+            price={280} 
+            image={mcp48}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL ADVANCED FORMULA RADIANT SHINE CONDITIONER" 
+            price={295} 
+            image={mcp49}/>
+        <Product 
+            id="975274"
+            title="SALON PROFESSIONAL ADVANCED FORMULA SMOOTH & SHINE SHAMPOO" 
+            price={280} 
+            image={mcp50}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL AMLA HAIR OIL" 
+            price={65} 
+            image={mcp51}/>
+        <Product 
+            id="975274"
+            title="SALON PROFESSIONAL ARGAN OIL OF MOROCCO - HAIR TREATMENT OIL" 
+            price={725} 
+            image={mcp52}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL COOL HERBAL OIL" 
+            price={90} 
+            image={mcp53}/>
+        <Product 
+            id="975274"
+            title="SALON PROFESSIONAL HAIR COLOR-BROWN (3)" 
+            price={450} 
+            image={mcp54}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL HAIR COLOR-CHOCOLATE (4)" 
+            price={450} 
+            image={mcp55}/>
+        <Product 
+            id="975274"
+            title="SALON PROFESSIONAL HAIR COLOR-DARK BLOND (6)" 
+            price={450} 
+            image={mcp56}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL HAIR COLOR-DARK BROWN (2)" 
+            price={450} 
+            image={mcp57}/>
+        <Product 
+            id="975274"
+            title="SALON PROFESSIONAL HAIR COLOR-LIGHT BROWN (5)" 
+            price={450} 
+            image={mcp58}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SALON PROFESSIONAL HAIR COLOR-NATURAL BLACK (1)" 
+            price={450} 
+            image={mcp59}/>
+        <Product 
+            id="975274"
+            title="SANITARY NAPKIN - LARGE 290 MM (15 PADS)" 
+            price={245} 
+            image={mcp60}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SANITARY NAPKIN - REGULAR 245 MM (15 PADS)" 
+            price={225} 
+            image={mcp61}/>
+        <Product 
+            id="975274"
+            title="SANITARY NAPKIN - X-LARGE 320 MM (15 PADS)" 
+            price={265} 
+            image={mcp62}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SOFWASH 3 IN 1 HAND WASH, SHOWER GEL & BUBBLE BATH - BERRY STRAWBERRY (250 ML)" 
+            price={163} 
+            image={mcp63}/>
+        <Product 
+            id="975274"
+            title="SOFWASH 3 IN 1 HAND WASH, SHOWER GEL & BUBBLE BATH - CITRUSY LIME (250 ML)" 
+            price={162} 
+            image={mcp64}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SOFWASH 3 IN 1 HAND WASH, SHOWER GEL & BUBBLE BATH - GREEN APPLE (250 ML)" 
+            price={162} 
+            image={mcp65}/>
+        <Product 
+            id="975274"
+            title="SOFWASH ALOE VERA, NEEM & TULSI SOAP" 
+            price={30} 
+            image={mcp66}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SOFWASH ANTIBACTERIAL SOAP" 
+            price={45} 
+            image={mcp67}/>
+        <Product 
+            id="975274"
+            title="SOFWASH GLYCERIN & HONEY BAR (100G X 2)" 
+            price={170} 
+            image={mcp68}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SOFWASH KIDS 3 IN 1 HANDWASH, SHOWERGEL & BUBBLE BATH" 
+            price={275} 
+            image={mcp69}/>
+        <Product 
+            id="975274"
+            title="SOFWASH LIME SOAP" 
+            price={30} 
+            image={mcp70}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SOFWASH ORANGE SOAP" 
+            price={30} 
+            image={mcp71}/>
+        <Product 
+            id="975274"
+            title="SOFWASH SANDAL SOAP" 
+            price={30} 
+            image={mcp72}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="SOFWASH WHITE PEARL SOAP (75GX4)" 
+            price={180} 
+            image={mcp73}/>
+        <Product 
+            id="975274"
+            title="VELOCITY MEN 7 IN 1 BEARD GROWTH OIL (30ML)" 
+            price={340} 
+            image={mcp74}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="VELOCITY MEN AFTER SHAVE SPLASH (100 ML)" 
+            price={215} 
+            image={mcp75}/>
+        <Product 
+            id="975274"
+            title="VELOCITY MEN BODY SPRAY (125 ML  88 G)" 
+            price={199} 
+            image={mcp76}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="VELOCITY MEN DEODORISING BODY TALC (100 G)" 
+            price={72} 
+            image={mcp77}/>
+        <Product 
+            id="975274"
+            title="VELOCITY MEN ENERGISING SHOWER GEL (150 ML)" 
+            price={240} 
+            image={mcp78}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="VELOCITY MEN FAIRNESS CREAM (50 G)" 
+            price={140} 
+            image={mcp79}/>
+        <Product 
+            id="975274"
+            title="VELOCITY MEN FORTIFYING HAIR CONDITIONER (100ML)" 
+            price={176} 
+            image={mcp80}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="VELOCITY MEN FORTIFYING SHAMPOO" 
+            price={193} 
+            image={mcp81}/>
+        <Product 
+            id="975274"
+            title="VELOCITY MEN HAIR STYLING GEL (50 G)" 
+            price={90} 
+            image={mcp82}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="VELOCITY MEN OIL CLEAR FACE WASH (50 G)" 
+            price={129} 
+            image={mcp83}/>
+        <Product 
+            id="975274"
+            title="VELOCITY MEN PREMIUM SHAVING CREAM (70 G)" 
+            price={115} 
+            image={mcp84}/>
+                 </div>
+                 <div className="shop_row">
+        <Product 
+            id="975273"
+            title="VELOCITY MEN TWIN BLADE PLUS READYSHAVER (PACK OF 5)" 
+            price={130} 
+            image={mcp85}/>
+        <Product 
+            id="975274"
+            title="VELOCITY MWN COOL MENTHOL SHAMPOO" 
+            price={193} 
+            image={mcp86}/>
                  </div>
             </>:""}
             {(category==="jewellery")?<>
