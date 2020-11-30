@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Product.css'
 import Product from './Product'
 import './shop.css'
@@ -48,8 +48,33 @@ import mcw9 from './images/mcw9.jpg'
 import mcw10 from './images/mcw10.jpg'
 import mcw11 from './images/mcw11.jpg'
 
+const options = [
+    {
+      label: "Skin Care",
+      value: "skincare",
+    },
+    {
+      label: "Home Care",
+      value: "homecare",
+    },
+    {
+      label: "Colors",
+      value: "colors",
+    },
+    {
+      label: "Watches",
+      value: "watches",
+    },
+  ];
+  
 
 function Modicare() {
+    const [category,setCategory]=useState("skincare");
+    const handleChange=(e)=> {
+        // console.log(e.target.value)        
+        setCategory(e.target.value);
+   
+      }
     return (
         <>
         
@@ -57,9 +82,15 @@ function Modicare() {
         <div className="shop-title">
             Modicare
         </div>
-        {/* <center><Paper className="modicare_contact" elevation={3}>Contact: 9826434165</Paper></center> */}
-        {/* <marquee>Delivery will be done after 2hours of order placing!</marquee> */}
         <marquee>Get 20% discount on becoming a consultant..Delivery will be done within 7 days of order placing!</marquee>
+        
+        <center><select className="selectModicare" value={category} onChange={handleChange}>
+            {options.map((option) => (
+              <option value={option.value}>{option.label}</option>
+            ))}
+          </select></center>
+
+        {(category==="skincare")?<>
         <div className="shop_row">
             <Product 
             id="975271" 
@@ -253,8 +284,12 @@ function Modicare() {
             price={240} 
             image={modicare}/> */}
                  </div>
-                 ..............................................................
-                 <div className="shop_row">
+        </>:""}
+
+            {(category==="homecare")?<></>:""}
+            {(category==="colors")?<></>:""}
+            {(category==="watches")?<>
+            <div className="shop_row">
         <Product 
             id="975273"
             title="HIS AND HER COMBO PACK" 
@@ -326,6 +361,9 @@ function Modicare() {
             price={} 
             image={mc30}/> */}
                  </div>
+            </>:""}
+
+                 
                  {/* <div className="shop_row">
         <Product 
             id="975273"

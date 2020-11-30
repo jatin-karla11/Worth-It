@@ -1,5 +1,13 @@
-.modicare_contact{
-    width: 200px;
-    height: 50px;
-    align-items: center;
+.selectModicare{
+    width: 500px;
+    height: 30px;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+
+    .selectModicare{
+        width: 200px;
+        height: 30px;
+    }
+
 }
