@@ -280,7 +280,7 @@ const options = [
         label: "Jewellery",
         value: "jewellery",
       },
-  ];
+  ];    
   
 
 function Modicare() {
