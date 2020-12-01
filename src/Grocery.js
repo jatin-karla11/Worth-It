@@ -4,6 +4,8 @@ import Product from './Product'
 import './shop.css'
 import grocery1 from './images/grocery1.jpg'
 import './modicare.css'
+import maggi from './images/maggi.jpg'
+import yippee from './images/yippee.jpg'
 
 const options = [
     {
@@ -71,7 +73,8 @@ function Grocery() {
         <div className="shop-title">
             Groceries by Mahadev General Store
         </div>
-        <marquee>Groceries will be delivered on the next day of order placing..</marquee>
+        {/* <marquee>Groceries will be delivered on the next day of order placing..</marquee> */}
+        <marquee>This Store is under build.</marquee>
         <center><select className="selectModicare" value={category} onChange={handleChange}>
             {options.map((option) => (
               <option value={option.value}>{option.label}</option>
@@ -142,14 +145,14 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Maggi" 
+            price={12} 
+            image={maggi}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Yippee" 
+            price={10} 
+            image={yippee}/>
             
         </div>
         </>:""}
