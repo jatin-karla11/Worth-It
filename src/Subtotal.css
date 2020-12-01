@@ -29,7 +29,7 @@
 @media screen and (max-width:768px) and (orientation:portrait){
  
     .subtotal{
-        width: 285px;
+        width: 100%;
     }
 
 }

@@ -62,7 +62,7 @@ const Home=()=>{
         </div>
     </div>
     <br></br>
-    <Link className="pizzaPaperLink" to="/mc"><Paper className="pizzaPaper" elevation={3} ><img className="homePaperImage" src={modicare}/><div><strong>Contact: 9826434165</strong><br></br><strong>Harsh Arora</strong></div></Paper></Link>
+    <Link className="pizzaPaperLink" to="/mc"><Paper className="pizzaPaper" elevation={3} ><img className="homePaperImage" src={modicare}/><div className="contactHarsh"><strong>Contact: 9826434165</strong><br></br><strong>Harsh Arora</strong></div></Paper></Link>
     <br></br>
     <div className="dog">
     <div className="mddesc">
