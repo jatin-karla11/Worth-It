@@ -1,0 +1,32 @@
+.aboutPaper{
+    width: 500px;
+    align-items: center;
+    vertical-align: center;
+    height: 50px;
+}
+.aboutdiv{
+    height: 50px;
+}
+.swipe{
+    /* padding: 10px; */
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 0px 5px 20px 10px rgb(7, 7, 7) ;
+    
+}
+.swipeline{
+    padding: 3px;
+    font-size: 13px;
+    /* border: 1px solid black; */
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .aboutdiv{
+        height: 200px;
+    }
+    .aboutPaper{
+        width: 65%;
+        height: 65px;
+    }    
+
+}
