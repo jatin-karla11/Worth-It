@@ -3,7 +3,10 @@ import './Product.css'
 import Product from './Product'
 import './shop.css'
 import modicare from './images/modicare.png'
-
+import { makeStyles } from '@material-ui/core/styles';
+import Popover from '@material-ui/core/Popover';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import './modicare.css'
 import mc1 from './images/mc1.jpg'
 import mc2 from './images/mc2.jpg'
@@ -252,7 +255,7 @@ import mcp83 from './images/mcp83.jpg'
 import mcp84 from './images/mcp84.jpg'
 import mcp85 from './images/mcp85.jpg'
 import mcp86 from './images/mcp86.jpg'
-
+import PhoneIcon from '@material-ui/icons/Phone';
 
 
 const options = [
@@ -282,8 +285,30 @@ const options = [
       },
   ];    
   
+  const useStyles = makeStyles((theme) => ({
+    typography: {
+      padding: theme.spacing(2),
+      color:"black"
+    },
+  }));
 
 function Modicare() {
+
+    const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
+
+
     const [category,setCategory]=useState("skincare");
     const handleChange=(e)=> {
         // console.log(e.target.value)        
@@ -297,14 +322,31 @@ function Modicare() {
         <div className="shop-title">
             Modicare
         </div>
-        <marquee>Get 20% discount on becoming a consultant..Delivery will be done within 7 days of order placing!</marquee>
         
+        <marquee>Get 20% discount on becoming a consultant..Delivery will be done within 7 days of order placing!</marquee>
+        <div className="selectphone">
         <center><select className="selectModicare" value={category} onChange={handleChange}>
             {options.map((option) => (
               <option value={option.value}>{option.label}</option>
             ))}
-          </select></center>
-
+          </select><span className="storecontact"><PhoneIcon aria-describedby={id} variant="contained" color="dark" onClick={handleClick} className="phoneicon"/></span></center>
+          </div>
+          <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'center',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'center',
+        }}
+      >
+        <Typography className={classes.typography}>Harsh: 9826434165</Typography>
+      </Popover>
         {(category==="skincare")?<>
         <div className="shop_row">
             <Product 
