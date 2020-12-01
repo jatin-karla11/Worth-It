@@ -18,6 +18,7 @@ function Tc() {
             <p><strong>7. For adding your store to Worth-It contact- 9752763949.</strong></p>
             <p><strong>8. For any help contact- 9752763949.</strong></p>
             <p><strong>9. There is no night service.</strong></p>
+            <p><strong>10. We assure you quality in our services.</strong></p>
             </div>
         </div>
     )

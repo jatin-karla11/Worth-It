@@ -345,7 +345,7 @@ function Modicare() {
           horizontal: 'center',
         }}
       >
-        <Typography className={classes.typography}>Harsh: 9826434165</Typography>
+        <Typography className={classes.typography}>For any help!<br></br>Harsh: 9826434165</Typography>
       </Popover>
         {(category==="skincare")?<>
         <div className="shop_row">
