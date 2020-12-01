@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css'
 import { io } from 'socket.io-client';
+import {Link} from 'react-router-dom';
 // import FacebookIcon from '@material-ui/icons/Facebook';
 // import InstagramIcon from '@material-ui/icons/Instagram';
 // import GitHubIcon from '@material-ui/icons/GitHub';
@@ -29,6 +30,7 @@ const Footer=()=>{
                         <h2>About us</h2>
                         <div className="content">
                             <p>hey there, we are here for you.. </p>
+                            <p><Link className="tcabout" to="/tc">View our Terms and Conditions</Link></p>
                             <div className="social">
                                 {/* <a href="#"><span className="fab fa-facebook-f"></span></a> */}
                                 <a href="https://www.instagram.com/jatin.karla11/"><span className="fab fa-instagram"></span></a>
