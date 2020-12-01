@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Worth-It/static/css/main.edbc1df9.chunk.css",
-    "main.js": "/Worth-It/static/js/main.5b09390a.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.5b09390a.chunk.js.map",
+    "main.js": "/Worth-It/static/js/main.83433097.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.83433097.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8de70ac3.chunk.css": "/Worth-It/static/css/2.8de70ac3.chunk.css",
-    "static/js/2.5e5a4425.chunk.js": "/Worth-It/static/js/2.5e5a4425.chunk.js",
-    "static/js/2.5e5a4425.chunk.js.map": "/Worth-It/static/js/2.5e5a4425.chunk.js.map",
+    "static/js/2.27faf2db.chunk.js": "/Worth-It/static/js/2.27faf2db.chunk.js",
+    "static/js/2.27faf2db.chunk.js.map": "/Worth-It/static/js/2.27faf2db.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.9b4dccaa3e466fcec21cab01821c682a.js": "/Worth-It/precache-manifest.9b4dccaa3e466fcec21cab01821c682a.js",
+    "precache-manifest.eeb325036c413ef95546b1bbb0d4406a.js": "/Worth-It/precache-manifest.eeb325036c413ef95546b1bbb0d4406a.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8de70ac3.chunk.css.map": "/Worth-It/static/css/2.8de70ac3.chunk.css.map",
     "static/css/main.edbc1df9.chunk.css.map": "/Worth-It/static/css/main.edbc1df9.chunk.css.map",
-    "static/js/2.5e5a4425.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.5e5a4425.chunk.js.LICENSE.txt",
+    "static/js/2.27faf2db.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.27faf2db.chunk.js.LICENSE.txt",
     "static/media/Chocolate.jpg": "/Worth-It/static/media/Chocolate.db33b1e1.jpg",
     "static/media/Khoprapak.jpg": "/Worth-It/static/media/Khoprapak.aa63386d.jpg",
     "static/media/T-C.png": "/Worth-It/static/media/T-C.48c93369.png",
@@ -37,6 +37,7 @@
     "static/media/kajukatli.jpg": "/Worth-It/static/media/kajukatli.bae02e00.jpg",
     "static/media/khajooranjirroll.jpg": "/Worth-It/static/media/khajooranjirroll.2a69e40d.jpg",
     "static/media/khuskhushalwa.jpg": "/Worth-It/static/media/khuskhushalwa.fb169da8.jpg",
+    "static/media/maggi.jpg": "/Worth-It/static/media/maggi.f4926628.jpg",
     "static/media/majoon.jpg": "/Worth-It/static/media/majoon.496b17b1.jpg",
     "static/media/makhanbada.jpg": "/Worth-It/static/media/makhanbada.548fab37.jpg",
     "static/media/masalafries.jpg": "/Worth-It/static/media/masalafries.ed2aca25.jpg",
@@ -327,13 +328,14 @@
     "static/media/vindhy9.png": "/Worth-It/static/media/vindhy9.8493a198.png",
     "static/media/worth.jpg": "/Worth-It/static/media/worth.0efb5662.jpg",
     "static/media/worth1.jpg": "/Worth-It/static/media/worth1.1b113a81.jpg",
-    "static/media/worth2.jpg": "/Worth-It/static/media/worth2.25b7ac7f.jpg"
+    "static/media/worth2.jpg": "/Worth-It/static/media/worth2.25b7ac7f.jpg",
+    "static/media/yippee.jpg": "/Worth-It/static/media/yippee.7bd46239.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8de70ac3.chunk.css",
-    "static/js/2.5e5a4425.chunk.js",
+    "static/js/2.27faf2db.chunk.js",
     "static/css/main.edbc1df9.chunk.css",
-    "static/js/main.5b09390a.chunk.js"
+    "static/js/main.83433097.chunk.js"
   ]
 }
