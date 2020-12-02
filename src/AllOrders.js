@@ -30,6 +30,7 @@ function AllOrders() {
             {(name==="adminmhu@gmail.com")?<>
             <div id="bgoh">
             {orders.map((order)=>(<>
+                <p><strong>Delivery Status: {order.deliveryStatus}</strong></p>
                 <p>email: {order.email}</p>
                 <p><strong>Contact: {order.contact}</strong></p>
                 <p><strong>Delivery Address: {order.address}</strong></p>
