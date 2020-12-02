@@ -48,6 +48,7 @@ function Payment() {
     const name=user1?.email
     const value=getBasketTotal(basket)
     const [checked, setChecked] =useState(false);
+    const [deliveryStatus,setDeliveryStatus]=useState("Order Placed");
 
     async function afterCOD(){
         // alert("Order Placed!!!")
@@ -62,7 +63,7 @@ function Payment() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ array:basket,orderid:orderId,
                 paymentid:paymentId,email:name,
-            contact:contact,address:address,checked:checked,amount1:value}),
+            contact:contact,address:address,checked:checked,amount1:value,deliveryStatus:deliveryStatus}),
           })
           dispatch({
               type:"EMPTY_BASKET"
