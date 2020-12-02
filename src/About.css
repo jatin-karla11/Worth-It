@@ -4,6 +4,13 @@
     vertical-align: center;
     height: 50px;
 }
+.tcheading{
+    background-color: rgb(37, 192, 192);
+    border-radius: 2rem;
+    height: 30px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
 .aboutdiv{
     height: 50px;
 }
