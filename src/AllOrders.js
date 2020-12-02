@@ -22,11 +22,11 @@ function AllOrders() {
     }
 
     const ChangeDeliveryStatus=()=>{
-        
+         
         // setDeliveryStatus("Delivered!");
         alert("changed to delivered!!!");
         // console.log(deliveryStatus)
-        fetch('http://localhost:1337/updateToDelivered',{method: 'POST',
+        fetch('https://worthit-backend.herokuapp.com/updateToDelivered',{method: 'POST',
         headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:deliveryEmail})}).then(response => response.json()).then(data => console.log(data));
         // console.log(deliveryStatus)
 
