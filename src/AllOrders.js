@@ -3,13 +3,14 @@ import { useStateValue } from './StateProvider';
 import "./OrderHistory.css";
 
 function AllOrders() {
-
+    // const [deliveryStatus,setDeliveryStatus]=useState("");
     const [{basket,user1},dispatch]=useStateValue();
     const name=user1?.email
     const [orders,setOrders]=useState([]);
     useEffect(() => {
         adminOrder();
     }, []) 
+    const [deliveryEmail,setDeliveryEmail]=useState("");
 
     const adminOrder=()=>{
         // alert("getOrderHistory called")
@@ -20,14 +21,28 @@ function AllOrders() {
           
     }
 
+    const ChangeDeliveryStatus=()=>{
+        
+        // setDeliveryStatus("Delivered!");
+        alert("changed to delivered!!!");
+        // console.log(deliveryStatus)
+        fetch('http://localhost:1337/updateToDelivered',{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:deliveryEmail})}).then(response => response.json()).then(data => console.log(data));
+        // console.log(deliveryStatus)
+
+    }
+
     return (
         <div className="container-fluid">
             <br></br>
             <br></br>
-            
+
             <strong><center><h2>All orders!</h2></center></strong><hr></hr>
             <br></br>
+            
             {(name==="adminmhu@gmail.com")?<>
+            <div><center><label>Change delivery status to delivered:</label><input onChange={(e)=>setDeliveryEmail(e.target.value)} placeholder="enter respective email id/order id.."/><button className="goto" onClick={ChangeDeliveryStatus}>Update</button></center></div>
+            <br></br>
             <div id="bgoh">
             {orders.map((order)=>(<>
                 <p><strong>Delivery Status: {order.deliveryStatus}</strong></p>

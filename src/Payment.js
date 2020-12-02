@@ -105,7 +105,7 @@ function Payment() {
         const data=await fetch('https://worthit-backend.herokuapp.com/razorpay',{method:'POST'}).then((t)=>t.json())
         // https://worthit-backend.herokuapp.com/razorpay
         //http://localhost:1337/razorpay
-        console.log(data)
+        console.log(data) 
 
         const options = {
             "key": __DEV__?"rzp_test_so1UY4l640zHli":"rzp_test_so1UY4l640zHli", 
