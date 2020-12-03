@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
 import './Payment.css'
-import {useStateValue} from './StateProvider'
-// import { StateContext, useStateValue } from './StateProvider'
+// import {useStateValue} from './StateProvider'
+import { StateContext, useStateValue } from './StateProvider'
 import { getBasketTotal } from './reducer';
 import worth1 from './images/worth1.jpg';
 import { useHistory } from 'react-router-dom';
@@ -78,7 +78,7 @@ function Payment() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ array:basket,orderid:orderId,
                 paymentid:paymentId,email:name,
-            contact:contact,address:address,amount1:value }),
+            contact:contact,address:address,amount1:value,deliveryStatus:deliveryStatus }),
           })
           dispatch({
               type:"EMPTY_BASKET"

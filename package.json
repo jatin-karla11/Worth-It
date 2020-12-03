@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.0",
     "bootstrap": "^5.0.0-alpha3",
+    "cloc": "^2.7.0",
     "cors": "^2.8.5",
     "firebase": "^7.20.0",
     "jquery": "^3.5.1",
@@ -28,7 +29,6 @@
     "react-scripts": "3.4.3",
     "socket.io": "^3.0.3",
     "socket.io-client": "^3.0.3",
-    "stripe": "^8.121.0",
     "styled-components": "^5.2.1",
     "styled-loaders-react": "^1.1.0"
   },
