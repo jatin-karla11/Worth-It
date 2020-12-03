@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useStateValue } from './StateProvider';
 import "./OrderHistory.css";
+import { useHistory } from 'react-router-dom';
 
 function AllOrders() {
+    const history=useHistory();
     // const [deliveryStatus,setDeliveryStatus]=useState("");
     const [{basket,user1},dispatch]=useStateValue();
     const name=user1?.email
@@ -29,8 +31,21 @@ function AllOrders() {
         fetch('https://worthit-backend.herokuapp.com/updateToDelivered',{method: 'POST',
         headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:deliveryEmail})}).then(response => response.json()).then(data => console.log(data));
         // console.log(deliveryStatus)
+        history.replace('/')
+    }
+    const ChangeDeliveryStatusShipped=()=>{
+         
+        // setDeliveryStatus("Delivered!");
+        alert("changed to Shipped!!!");
+        // console.log(deliveryStatus)
+        fetch('https://worthit-backend.herokuapp.com/updateToShipped',{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:deliveryEmail})}).then(response => response.json()).then(data => console.log(data));
+        // console.log(deliveryStatus)
+        history.replace('/')
 
     }
+    
+
 
     return (
         <div className="container-fluid">
@@ -41,7 +56,7 @@ function AllOrders() {
             <br></br>
             
             {(name==="adminmhu@gmail.com")?<>
-            <div><center><label>Change delivery status to delivered:</label><input onChange={(e)=>setDeliveryEmail(e.target.value)} placeholder="enter respective email id/order id.."/><button className="goto" onClick={ChangeDeliveryStatus}>Update</button></center></div>
+            <div><center><label>Change delivery status:</label><input onChange={(e)=>setDeliveryEmail(e.target.value)} placeholder="enter respective email id/order id.."/><button className="goto" onClick={ChangeDeliveryStatusShipped}>Update To Shipped</button><button className="goto" onClick={ChangeDeliveryStatus}>Update To Delivered</button></center></div>
             <br></br>
             <div id="bgoh">
             {orders.map((order)=>(<>
@@ -57,7 +72,7 @@ function AllOrders() {
             <p>order id: {order.orderId}</p>
             <p>payment id: {order.paymentId}</p><hr></hr>
             </>
-            ))}
+            ))} 
             </div>
             </>:<><marquee><strong>You are not admin!</strong></marquee></>}
             
