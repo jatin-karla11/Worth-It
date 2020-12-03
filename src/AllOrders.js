@@ -12,7 +12,7 @@ function AllOrders() {
     useEffect(() => {
         adminOrder();
     }, []) 
-    const [deliveryEmail,setDeliveryEmail]=useState("");
+    const [deliveryId,setDeliveryId]=useState("");
 
     const adminOrder=()=>{
         // alert("getOrderHistory called")
@@ -29,7 +29,7 @@ function AllOrders() {
         alert("changed to delivered!!!");
         // console.log(deliveryStatus)
         fetch('https://worthit-backend.herokuapp.com/updateToDelivered',{method: 'POST',
-        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:deliveryEmail})}).then(response => response.json()).then(data => console.log(data));
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({mongoid:deliveryId})}).then(response => response.json()).then(data => console.log(data));
         // console.log(deliveryStatus)
         history.replace('/')
     }
@@ -39,7 +39,7 @@ function AllOrders() {
         alert("changed to Shipped!!!");
         // console.log(deliveryStatus)
         fetch('https://worthit-backend.herokuapp.com/updateToShipped',{method: 'POST',
-        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:deliveryEmail})}).then(response => response.json()).then(data => console.log(data));
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({mongoid:deliveryId})}).then(response => response.json()).then(data => console.log(data));
         // console.log(deliveryStatus)
         history.replace('/')
 
@@ -56,11 +56,13 @@ function AllOrders() {
             <br></br>
             
             {(name==="adminmhu@gmail.com")?<>
-            <div><center><label>Change delivery status:</label><input onChange={(e)=>setDeliveryEmail(e.target.value)} placeholder="enter respective email id/order id.."/><button className="goto" onClick={ChangeDeliveryStatusShipped}>Update To Shipped</button><button className="goto" onClick={ChangeDeliveryStatus}>Update To Delivered</button></center></div>
+            <div><center><label>Change delivery status:</label><input onChange={(e)=>setDeliveryId(e.target.value)} placeholder="enter respective (mongo)order id/order id.."/><button className="goto" onClick={ChangeDeliveryStatusShipped}>Update To Shipped</button><button className="goto" onClick={ChangeDeliveryStatus}>Update To Delivered</button></center></div>
             <br></br>
             <div id="bgoh">
-            {orders.map((order)=>(<>
-                <p><strong>Delivery Status: {order.deliveryStatus}</strong></p>
+            {orders.map((order,i)=>(<>
+                
+            <p><strong>{++i} Delivery Status: {order.deliveryStatus}</strong></p>
+            <p><strong>Mongo Id: {order._id}</strong></p>
                 <p>email: {order.email}</p>
                 <p><strong>Contact: {order.contact}</strong></p>
                 <p><strong>Delivery Address: {order.address}</strong></p>

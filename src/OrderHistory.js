@@ -51,9 +51,9 @@ function OrderHistory() {
 
             <br></br><br></br>
             <center><Link to="/service"><button>Go to Stores</button></Link></center></>:<>
-            {orders.map((order)=>(<>
-            
-                <p><strong>Email: {order.email}</strong></p>
+            {orders.map((order,i)=>(<>
+              
+            <p><strong>{++i} Email: {order.email}</strong></p>
                 <p><strong>Contact: {order.contact}</strong></p>
                 <p><strong>Cash on delivery: {order.checked}</strong></p>
             <p><strong>Delivery Status: {order.deliveryStatus}</strong></p>
