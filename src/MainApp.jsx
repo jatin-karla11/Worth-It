@@ -36,6 +36,7 @@ import Queries from './Queries';
 import UserFeedback from './UserFeedback';
 import RealtimeChat from './RealtimeChat';
 import Modicare from './Modicare';
+import ForgotPassword from './ForgotPassword';
 
 
 function ad(){
@@ -120,6 +121,7 @@ const MainApp=()=>{
         <Route exact path="/feedback" component={UserFeedback}/>
         <Route exact path="/chat" component={RealtimeChat}/>
         <Route exact path="/mc" component={Modicare}/>
+        <Route exact path="/fp" component={ForgotPassword}/>
 
         <Redirect to="/" />
     </Switch>

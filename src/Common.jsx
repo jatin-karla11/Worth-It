@@ -35,7 +35,7 @@ const Common=(props)=>{
     };
 
     const handleLogin=(e)=>{
-      e.preventDefault()
+      // e.preventDefault()
       clearErrors();
       
        auth
@@ -62,7 +62,7 @@ const Common=(props)=>{
     };
 
     const handleSignup=(e)=>{
-      e.preventDefault()
+      // e.preventDefault()
       clearErrors();
       
         

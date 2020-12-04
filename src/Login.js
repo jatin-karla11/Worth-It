@@ -5,9 +5,15 @@ import './Login.css'
 import { useStateValue } from './StateProvider';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
+import { Link } from 'react-router-dom';
+import $ from 'jquery'
 
 const Login=(props)=>{
 
+    const fp=()=>{
+      $('body').removeClass('modal-open');
+$('.modal-backdrop').remove();
+    }
   
     function passwordeye() {
       var x=document.getElementById("inputpass");
@@ -80,7 +86,7 @@ const Login=(props)=>{
             <div className="btnContainer">
                 {hasAccount?(
                     <>
-                        <button className="login_button" onClick={handleLogin} data-dismiss="">Sign in</button>
+                        <button className="login_button" onClick={handleLogin} data-dismiss="">Sign in</button><Link to="/fp"><button onClick={fp}>Forgot Password?</button></Link><br></br><br></br>
                         <p>Don't have an account? <button onClick={()=>setHasAccount(!hasAccount)}>Sign up</button> </p>
                     </>
                 ):(
