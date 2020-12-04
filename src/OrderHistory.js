@@ -8,6 +8,7 @@ function OrderHistory() {
     const name=user1?.email
     const [orders,setOrders]=useState([]);
     const [reorder,setReorder]=useState("");
+    const [gotreorder,setGotreorder]=useState([]);
     useEffect(() => {
         getOrder();
     }, [])
@@ -20,29 +21,41 @@ function OrderHistory() {
             
             }
 
-    // const addAll=()=>{
-    //     //dispatch an item to the data layer
-    //     dispatch({
-    //         type:'ADD_TO_BASKET',
-    //         item:{
-    //             id:id,
-    //             title:title,
-    //             image:image,
-    //             price:price
-    //         }
-    //     })
-    // }
-
-    const yo=(s)=>{
-        // alert(reorder);
-        // console.log("yo called",reorder)
-        setReorder(s);
-
+    const addAll=()=>{
+        // //dispatch an item to the data layer
+        // var r=0;
+        gotreorder.map((gR)=>{
+            gR.items.map((item)=>{
+                dispatch({
+                    type:'ADD_TO_BASKET',
+                    item:{
+                        
+                        title:item.title,
+                        image:item.image,
+                        price:item.price
+                    }
+                })
+        
+            })
+            
+        })
+        
+    //  alert(gotreorder.map((gR)=>(<>{gR.address}</>)))
     }
+
     const reordernow=()=>{
-        alert(reorder);
+                
+        // alert(reorder);
+        console.log("yo called",reorder);
+        
+        fetch('http://localhost:1337/getReorder',{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({reorderid:reorder})}).then(response => response.json()).then(data => setGotreorder(data));
+        // setTimeout(() => {
+        //     addAll();    
+        // }, 5000);
+        addAll();
     }
-    var orderid="";
+    
     return (
         <div className="container-fluid">
             <br></br>
@@ -50,8 +63,10 @@ function OrderHistory() {
             
             <strong><center><h2>Your order history!</h2></center></strong><hr></hr>
             <br></br>
+            
             <div id="bgoh">
             {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
+                <marquee>Tap the Re-order Button twice if you want to re-order items of a previous order!!</marquee>
             {/* {console.log(orders)} */}
             {(!orders.length)?<><marquee>"You have not ordered anything yet!"</marquee>
 
@@ -72,17 +87,15 @@ function OrderHistory() {
             <p><strong>Order id: {order.orderId}</strong></p>
             {/* {orderid=order.orderId} */}
             <p><strong>Payment id: {order.paymentId}</strong></p>
-            <button onClick={()=>{
-                // setReorder(order._id)
-            yo(order._id)
-            reordernow();
-            
-        }}>Re-Order</button>
+<form onSubmit={reordernow}>
+            <button style={{float:"right"}} onClick={()=>setReorder(order._id)}>Re-Order</button></form>
+        <br></br>
             <hr></hr>
             </>
             ))}</>}
                 </>}
-            
+                {/* {gotreorder.map((gR)=>(<>{gR.address}</>))} */}
+            {/* <button onClick={yo}>Reset</button> */}
               </div>
         </div>
     )

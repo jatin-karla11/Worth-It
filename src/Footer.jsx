@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom';
 
 const Footer=()=>{
 
-    // var socket=io("http://192.168.1.3:1337")
+    // var socket=io("http://192.168.1.2:1337");
     // const sendMessage=()=>{
     //     alert("yop")
     //     socket.emit("messageSent",{
@@ -72,7 +72,7 @@ const Footer=()=>{
                                     <textarea cols="25" rows="3" id="message" required></textarea>
                                 </div>
                                 <div className="btn11">
-                                    <button type="submit">Send</button>
+                                    <button type="submit" >Send</button>
                                     {/* onClick={sendMessage} */}
                                 </div>
                             </form>
