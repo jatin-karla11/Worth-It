@@ -48,7 +48,7 @@ function OrderHistory() {
         // alert(reorder);
         console.log("yo called",reorder);
         
-        fetch('http://localhost:1337/getReorder',{method: 'POST',
+        fetch('https://worthit-backend.herokuapp.com/getReorder',{method: 'POST',
         headers: { 'Content-Type': 'application/json' },body:JSON.stringify({reorderid:reorder})}).then(response => response.json()).then(data => setGotreorder(data));
         // setTimeout(() => {
         //     addAll();    
