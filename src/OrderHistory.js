@@ -43,8 +43,8 @@ function OrderHistory() {
     //  alert(gotreorder.map((gR)=>(<>{gR.address}</>)))
     }
 
-    const reordernow=()=>{
-                
+    const reordernow=(e)=>{
+          e.preventDefault();      
         // alert(reorder);
         console.log("yo called",reorder);
         
