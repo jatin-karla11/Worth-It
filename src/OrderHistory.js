@@ -8,7 +8,8 @@ function OrderHistory() {
     const name=user1?.email
     const [orders,setOrders]=useState([]);
     const [reorder,setReorder]=useState("");
-    const [gotreorder,setGotreorder]=useState([]);
+    // const [gotreorder,setGotreorder]=useState([]);
+    // const [reorderline,setReorderline]=useState("");
     useEffect(() => {
         getOrder();
     }, [])
@@ -20,11 +21,29 @@ function OrderHistory() {
         headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:name})}).then(response => response.json()).then(data => setOrders(data));
             
             }
-
+            var arr=[];
+    
+    const reordernow= async (e)=>{
+          e.preventDefault();      
+        // alert(reorder);
+        // console.log("yo called",reorder);
+        
+        await fetch('https://worthit-backend.herokuapp.com/getReorder',{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({reorderid:reorder})}).then(response => response.json()).then(data => {arr=data;});
+        // setTimeout(() => {
+        //     addAll();    
+        // }, 5000);
+        // setReorderline("reorder pressed")
+        // console.log(reorderline)
+        // console.log(gotreorder)
+        // setGotreorder(data)
+        addAll();
+    }
+    
     const addAll=()=>{
         // //dispatch an item to the data layer
         // var r=0;
-        gotreorder.map((gR)=>{
+        arr.map((gR)=>{
             gR.items.map((item)=>{
                 dispatch({
                     type:'ADD_TO_BASKET',
@@ -43,19 +62,7 @@ function OrderHistory() {
     //  alert(gotreorder.map((gR)=>(<>{gR.address}</>)))
     }
 
-    const reordernow=(e)=>{
-          e.preventDefault();      
-        // alert(reorder);
-        console.log("yo called",reorder);
-        
-        fetch('https://worthit-backend.herokuapp.com/getReorder',{method: 'POST',
-        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({reorderid:reorder})}).then(response => response.json()).then(data => setGotreorder(data));
-        // setTimeout(() => {
-        //     addAll();    
-        // }, 5000);
-        addAll();
-    }
-    
+
     return (
         <div className="container-fluid">
             <br></br>
@@ -63,10 +70,11 @@ function OrderHistory() {
             
             <strong><center><h2>Your order history!</h2></center></strong><hr></hr>
             <br></br>
-            
+            {/* <div>{reorderline}</div>
+    <div>{gotreorder.map((gR)=>(<>{gR.address}</>))}</div> */}
             <div id="bgoh">
             {(!(user1?.email))?<marquee><strong>Sign in to view order history!</strong></marquee>:<>
-                <marquee>Tap the Re-order Button twice if you want to re-order items of a previous order!!</marquee>
+                {/* <marquee>Tap the Re-order Button twice if you want to re-order items of a previous order!!</marquee> */}
             {/* {console.log(orders)} */}
             {(!orders.length)?<><marquee>"You have not ordered anything yet!"</marquee>
 

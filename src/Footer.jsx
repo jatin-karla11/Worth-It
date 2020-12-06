@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'
-import { io } from 'socket.io-client';
+import socketIOClient from 'socket.io-client';
 import {Link} from 'react-router-dom';
 // import FacebookIcon from '@material-ui/icons/Facebook';
 // import InstagramIcon from '@material-ui/icons/Instagram';
@@ -12,7 +12,7 @@ import {Link} from 'react-router-dom';
 
 const Footer=()=>{
 
-    // var socket=io("http://192.168.1.2:1337");
+    // var socket=socketIOClient("http://192.168.1.2:1337");
     // const sendMessage=()=>{
     //     alert("yop")
     //     socket.emit("messageSent",{
@@ -62,7 +62,7 @@ const Footer=()=>{
                     <div className="right box">
                         <h2>Contact us</h2>
                         <div className="content">
-                            <form action="#">
+                            <form>
                                 <div className="email">
                                     <div className="text"> Email *</div>
                                     <input type="email" id="email" required/>
@@ -72,7 +72,7 @@ const Footer=()=>{
                                     <textarea cols="25" rows="3" id="message" required></textarea>
                                 </div>
                                 <div className="btn11">
-                                    <button type="submit" >Send</button>
+                                    <button type="submit"  >Send</button>
                                     {/* onClick={sendMessage} */}
                                 </div>
                             </form>

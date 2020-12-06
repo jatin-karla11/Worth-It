@@ -1,9 +1,9 @@
 import React from 'react'
-import { io } from 'socket.io-client';
-
+import socketIOClient  from 'socket.io-client';
+ 
 function RealtimeChat() {
 
-    // var socket=io("http://192.168.1.2:1337");
+    // var socket=socketIOClient("http://192.168.1.2:1337");
     // socket.on("messageSent",function(message){
     //     console.log(message)
     // })
