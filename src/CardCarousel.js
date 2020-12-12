@@ -75,14 +75,14 @@ const CardCarousel = () => {
 
   return (
     <div className="container">
-      <ul className="card-carousel">
-        {cardItems.map((card, index) => (
+      <ul className="card1-carousel">
+        {cardItems.map((card1, index) => (
           <li
-            key={card.id}
-            className={`card ${determineClasses(indexes, index)}`}
+            key={card1.id}
+            className={`card1 ${determineClasses(indexes, index)}`}
           >
-            <h2>{card.title}</h2>
-            <p>{card.copy}</p>
+            <h2>{card1.title}</h2>
+            <p>{card1.copy}</p>
           </li>
         ))}
       </ul>

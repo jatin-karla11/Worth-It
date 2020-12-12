@@ -1,5 +1,5 @@
 
-.card-carousel {
+.card1-carousel {
     list-style: none;
     padding: 0;
     display: flex;
@@ -10,7 +10,7 @@
     position: relative;
   }
   
-  .card {
+  .card1 {
     background: #ffffff;
     border-radius: 8px;
     border: 1px solid #eeeeee;
@@ -24,32 +24,32 @@
     transform: scale(0.85) translateY(50px);
   }
   
-  .card h2,
-  .card p {
+  .card1 h2,
+  .card1 p {
     line-height: 1.5;
     margin: 0;
   }
   
-  .card.active {
+  .card1.active {
     opacity: 1;
     transform: scale(1) translateY(0);
     box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   
-  .card.next {
+  .card1.next {
     opacity: 1;
     z-index: 0;
   }
   
-  .card.prev {
+  .card1.prev {
     transform: scale(1.1) translateY(-50px);
     z-index: 2;
     opacity: 0;
     visibility: hidden;
   }
   @media screen and (max-width: 768px) and (orientation: portrait) {
-    .card-carousel {
+    .card1-carousel {
         list-style: none;
         padding: 0;
         display: flex;
@@ -60,7 +60,7 @@
         position: relative;
       }
       
-      .card {
+      .card1 {
         background: #ffffff;
         border-radius: 8px;
         border: 1px solid #eeeeee;
