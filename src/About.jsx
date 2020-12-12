@@ -5,6 +5,7 @@ import Common from './Common';
 import { Paper } from '@material-ui/core';
 import './About.css';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import CardCarousel from './CardCarousel';
 
 const About=()=>{
     const [state, setState] = React.useState({
@@ -45,7 +46,7 @@ const About=()=>{
             <span className="swipeline">5. For adding your store to Worth-It contact- 9752763949.</span>
             <span className="swipeline">6. There is no night service.</span>
             <span className="swipeline">7. We assure you quality in our services.</span> */}
-            <ul>
+            <ul> 
               <li>Cancellation and return policy is not available as of now.</li>
               <li>Free delivery on order above ₹499.</li>
               <li>For instant delivery on the same day the delivery charge will be ₹50.</li>
@@ -59,6 +60,8 @@ const About=()=>{
         </React.Fragment>
       ))}
     </div></Paper></center>
+    <br></br>
+    <CardCarousel/>
     </>);
 };
 
