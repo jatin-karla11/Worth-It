@@ -6,6 +6,19 @@ import grocery1 from './images/grocery1.jpg'
 import './modicare.css'
 import maggi from './images/maggi.jpg'
 import yippee from './images/yippee.jpg'
+import toordal from './images/toordal.jpg'
+import moongmogar from './images/moongmogar.jpg'
+import moongchilka from './images/moongchilka.jpg'
+import masoordal from './images/masoordal.jpg'
+import chanadal from './images/chanadal.jpg'
+import kabulichana from './images/kabulichana.jpg'
+import desichana from './images/desichana.jpeg'
+import rajma from './images/rajma.jpg'
+import haldi from './images/haldi.jpg'
+import kissanketchup from './images/kissanketchup.jpg'
+import dhaniyapowder from './images/dhaniyapowder.jpg'
+import neerajketchup from './images/neerajketchup.jpg'
+
 
 const options = [
     {
@@ -205,14 +218,14 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Haldi (500gm)" 
+            price={100} 
+            image={haldi}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Dhaniya powder (500gm)" 
+            price={90} 
+            image={dhaniyapowder}/>
             
         </div>
         </>:""}
@@ -220,14 +233,66 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Toor Dal (1Kg)" 
+            price={110} 
+            image={toordal}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Moong Mogar (1Kg)" 
+            price={110} 
+            image={moongmogar}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Masoor Dal (1Kg)" 
+            price={110} 
+            image={masoordal}/>
+            <Product 
+            id="975272"
+            title="Chana Dal (1Kg)" 
+            price={70} 
+            image={chanadal}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Moong Chilka (1Kg)" 
+            price={95} 
+            image={moongchilka}/>
+            <Product 
+            id="975272"
+            title="Kabuli Chana (1Kg)" 
+            price={100} 
+            image={kabulichana}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Desi Chana (1Kg)" 
+            price={90} 
+            image={desichana}/>
+            <Product 
+            id="975272"
+            title="Rajma (1Kg)" 
+            price={140} 
+            image={rajma}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Moong Chilka (1Kg)" 
+            price={95} 
+            image={moongchilka}/>
+            <Product 
+            id="975272"
+            title="Kabuli Chana (1Kg)" 
+            price={100} 
+            image={kabulichana}/>
             
         </div>
         </>:""}
@@ -235,14 +300,14 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Kissan Ketchup (1kg)" 
+            price={125} 
+            image={kissanketchup}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Neeraj Ketchup (1kg)" 
+            price={75} 
+            image={neerajketchup}/>
             
         </div>
         </>:""}
