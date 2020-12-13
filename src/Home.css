@@ -57,6 +57,9 @@
     width: 500px;
 }
 @media screen and (max-width: 768px) and (orientation: portrait) {
+    .contactHarsh{
+        margin: 5px;
+    }
     .feedback{
         width: 300px;
     }
@@ -67,6 +70,10 @@
     .dog{
         padding: 5px;
 
+    }
+    .mcspan{
+        font-size: 12px;
+        font-weight: 600;
     }
     .dogdescription{
         font-size: small;

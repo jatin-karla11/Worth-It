@@ -1,17 +1,20 @@
 import React, { useEffect, useCallback, useState } from "react";
 import "./CC.css";
+import {Link} from 'react-router-dom'
 
 const cardItems = [
   {
     id: 1,
     title: "Join Us!",
     copy:
-      "To add your store to Worth-It!"
+      "To add your store to Worth-It!",
+    link: "/contact"
   },
   {
     id: 2,
     title: "Quick Contact",
-    copy: "9752763949"
+    copy: "9752763949",
+    // link:"https://wa.me/+919752763949"
   },
   {
     id: 3,
@@ -22,7 +25,8 @@ const cardItems = [
   {
     id: 4,
     title: "Stay safe and healthy!",
-    copy: "We take precautionary measures at each level of order processing.."
+    copy: "We take precautionary measures at each level of order processing..",
+    link:'/tc'
   }
 ];
 
@@ -77,12 +81,13 @@ const CardCarousel = () => {
     <div className="container">
       <ul className="card1-carousel">
         {cardItems.map((card1, index) => (
+          
           <li
             key={card1.id}
             className={`card1 ${determineClasses(indexes, index)}`}
-          >
+          ><Link className="cclink" to={card1.link}>
             <h2>{card1.title}</h2>
-            <p>{card1.copy}</p>
+            <p>{card1.copy}</p></Link>
           </li>
         ))}
       </ul>
