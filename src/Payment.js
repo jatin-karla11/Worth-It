@@ -114,8 +114,8 @@ function Payment() {
             currency:data.currency,
             amount:data.amount.toString(),
             order_id:data.id,
-            "name": "Donation",
-            "description": "Thankyou for nothing",
+            "name": "Worth-It",
+            "description": "Your Order Total:",
             "image": worth1,
             // "order_id": "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
             "handler": function (response){
