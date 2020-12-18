@@ -1,12 +1,19 @@
 import React from 'react'
 import socketIOClient  from 'socket.io-client';
- 
-function RealtimeChat() {
 
-    // var socket=socketIOClient("http://192.168.1.2:1337");
-    // socket.on("messageSent",function(message){
-    //     console.log(message)
-    // })
+ 
+function RealtimeChat() { 
+
+    var socket=socketIOClient("https://worthit-backend.herokuapp.com/", {
+        withCredentials: true,
+        extraHeaders: {
+          "my-custom-header": "abcd"
+        }
+      });
+    socket.on("messageSent",function(message){
+        // $.notify("New Message\n"+message.message+"\n\nFrom: "+message.email)
+        alert("New Message\n"+message.message+"\n\nFrom: "+message.email);
+    })
 
     return (
         <div>

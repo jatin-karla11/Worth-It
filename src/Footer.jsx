@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Footer.css'
-import socketIOClient from 'socket.io-client';
+import io from 'socket.io-client';
 import {Link} from 'react-router-dom';
 // import FacebookIcon from '@material-ui/icons/Facebook';
 // import InstagramIcon from '@material-ui/icons/Instagram';
@@ -9,17 +9,25 @@ import {Link} from 'react-router-dom';
 // import LocationOnTwoToneIcon from '@material-ui/icons/LocationOnTwoTone';
 // import PhoneTwoToneIcon from '@material-ui/icons/PhoneTwoTone';
 // import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
-
+let socket;
 const Footer=()=>{
 
-    // var socket=socketIOClient("http://192.168.1.2:1337");
-    // const sendMessage=()=>{
-    //     alert("yop")
-    //     socket.emit("messageSent",{
-    //         "email":document.getElementById("email").value,
-    //         "message":document.getElementById("message").value
-    //     })
-    // }
+    useEffect(() => {
+        socket=io("https://worthit-backend.herokuapp.com/", {
+            withCredentials: true,
+            extraHeaders: {
+              "my-custom-header": "abcd"
+            }
+          });    
+    }, [])
+    
+    const sendMessage=()=>{
+        // alert("yop")
+        socket.emit("messageSent",{
+            "email":document.getElementById("email").value,
+            "message":document.getElementById("message").value
+        })
+    }
 
     return(
         <>
@@ -39,7 +47,7 @@ const Footer=()=>{
                                 <a href="tel:9752763949"><span className="fas fa-phone"></span></a>
                                 <a href="https://wa.me/+919752763949"><span className="fab fa-whatsapp"></span></a>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                     <div className="center box">
                         <h2>Address</h2>
@@ -72,8 +80,8 @@ const Footer=()=>{
                                     <textarea cols="25" rows="3" id="message" required></textarea>
                                 </div>
                                 <div className="btn11">
-                                    <button type="submit"  >Send</button>
-                                    {/* onClick={sendMessage} */}
+                                    <button type="submit" onClick={sendMessage} >Send</button>
+                               
                                 </div>
                             </form>
                         </div>
