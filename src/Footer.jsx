@@ -21,8 +21,10 @@ const Footer=()=>{
           });    
     }, [])
     
-    const sendMessage=()=>{
+    const sendMessage=(e)=>{
         // alert("yop")
+        e.preventDefault();
+        alert("Messange sent successfully to Worth-It!")
         socket.emit("messageSent",{
             "email":document.getElementById("email").value,
             "message":document.getElementById("message").value
