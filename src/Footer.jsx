@@ -13,6 +13,8 @@ import { useState } from 'react';
 let socket;
 const Footer=()=>{
     const [que,setQue]=useState([]);
+    const [email,setEmail]=useState("");
+    const [message,setMessage]=useState("");
 
     useEffect(() => {
         socket=io("https://worthit-backend.herokuapp.com/", {
@@ -26,13 +28,16 @@ const Footer=()=>{
     const sendMessage=(e)=>{
         // alert("yop")
         e.preventDefault();
+        // var email=document.getElementById("email").value;
+        // var message=document.getElementById("message").value;
         alert("Messange sent successfully to Worth-It!")
         socket.emit("messageSent",{
             "email":document.getElementById("email").value,
             "message":document.getElementById("message").value
         })
+        
         fetch('https://worthit-backend.herokuapp.com/setQuery',{method: 'POST',
-        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:document.getElementById("email").value,message:document.getElementById("message").value})}).then(response => response.json()).then(data => setQue(data));
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:email,message:message})}).then(response => response.json()).then(data => setQue(data));
     }
 
     return(
@@ -79,11 +84,11 @@ const Footer=()=>{
                             <form>
                                 <div className="email">
                                     <div className="text"> Email *</div>
-                                    <input type="email" id="email" required/>
+                                    <input type="email" id="email" onChange={(e)=>setEmail(e.target.value)} required/>
                                 </div>
                                 <div className="msg">
                                     <div className="text">Message *</div>
-                                    <textarea cols="25" rows="3" id="message" required></textarea>
+                                    <textarea cols="25" rows="3" id="message" onChange={(e)=>setMessage(e.target.value)} required></textarea>
                                 </div>
                                 <div className="btn11">
                                     <button type="submit" onClick={sendMessage} >Send</button>
