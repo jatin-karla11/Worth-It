@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Footer.css'
 import io from 'socket.io-client';
 import {Link} from 'react-router-dom';
+import { useState } from 'react';
 // import FacebookIcon from '@material-ui/icons/Facebook';
 // import InstagramIcon from '@material-ui/icons/Instagram';
 // import GitHubIcon from '@material-ui/icons/GitHub';
@@ -11,6 +12,7 @@ import {Link} from 'react-router-dom';
 // import EmailTwoToneIcon from '@material-ui/icons/EmailTwoTone';
 let socket;
 const Footer=()=>{
+    const [que,setQue]=useState([]);
 
     useEffect(() => {
         socket=io("https://worthit-backend.herokuapp.com/", {
@@ -29,6 +31,8 @@ const Footer=()=>{
             "email":document.getElementById("email").value,
             "message":document.getElementById("message").value
         })
+        fetch('https://worthit-backend.herokuapp.com/setQuery',{method: 'POST',
+        headers: { 'Content-Type': 'application/json' },body:JSON.stringify({email:document.getElementById("email").value,message:document.getElementById("message").value})}).then(response => response.json()).then(data => setQue(data));
     }
 
     return(
