@@ -18,6 +18,38 @@ import haldi from './images/haldi.jpg'
 import kissanketchup from './images/kissanketchup.jpg'
 import dhaniyapowder from './images/dhaniyapowder.jpg'
 import neerajketchup from './images/neerajketchup.jpg'
+import pushpMirchi from './images/pushpMirchi.jpg'
+import hing from './images/hing.jpg'
+import jeera from './images/jeera.jpg'
+import souf from './images/souf.jpg'
+import rai from './images/rai.jpg'
+import ajwain from './images/ajwain.jpg'
+import kalimirch from './images/kalimirch.jpg'
+import loung from './images/loung.jpg'
+import dalchini from './images/dalchini.jpg'
+import shahjeera from './images/shahjeera.jpg'
+import badamFool from './images/badamFool.jpg'
+import tezpan from './images/tezpan.jpg'
+import badiElaichi from './images/badiElaichi.jpg'
+import hariElaichi from './images/hariElaichi.jpg'
+import jaifal from './images/jaifal.jpg'
+import javitri from './images/javitri.jpg'
+import barikSouf from './images/barikSouf.jpg'
+import vaseline from './images/vaseline.jpg'
+import ponds from './images/ponds.jpg'
+import beerShampoo from './images/beerShampoo.jpg'
+import doveShampoo from './images/doveShampoo.jpg'
+import clinicPlus from './images/clinicPlus.jpg'
+import vatikaShampoo from './images/vatikaShampoo.jpg'
+import vicks5 from './images/vicks5.jpg'
+import vicks25 from './images/vicks25.jpg'
+import apbalm from './images/apbalm.jpg'
+import zanduBalm from './images/zanduBalm.jpg'
+import iodex from './images/iodex.jpg'
+// import zanduBalm from './images/zanduBalm.jpg'
+
+
+
 
 
 const options = [
@@ -188,16 +220,75 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Vaseline Lotion (400ml)" 
+            price={260} 
+            image={vaseline}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
-            
+            title="Ponds Lotion" 
+            price={200} 
+            image={ponds}/>
         </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Beer Shampoo" 
+            price={40} 
+            image={beerShampoo}/>
+            <Product 
+            id="975272"
+            title="Dove Shampoo" 
+            price={50} 
+            image={doveShampoo}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Clinic Plus Shampoo" 
+            price={45} 
+            image={clinicPlus}/>
+            <Product 
+            id="975272"
+            title="Vatika Shampoo" 
+            price={30} 
+            image={vatikaShampoo}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Vicks (5gm)" 
+            price={20} 
+            image={vicks5}/>
+            <Product 
+            id="975272"
+            title="Vicks (25gm)" 
+            price={80} 
+            image={vicks25}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="AP Special Balm" 
+            price={30} 
+            image={apbalm}/>
+            <Product 
+            id="975272"
+            title="Zandu Balm" 
+            price={38} 
+            image={zanduBalm}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Iodex Balm" 
+            price={38} 
+            image={iodex}/>
+            <Product 
+            id="975272"
+            title="Zandu Balm" 
+            price={38} 
+            image={zanduBalm}/>
+            </div>
         </>:""}
         {(category==="homeessentials")?<>
         <div className="shop_row">
@@ -218,14 +309,126 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="Haldi (500gm)" 
+            title="Pushp Haldi (500gm)" 
             price={100} 
             image={haldi}/>
             <Product 
             id="975272"
-            title="Dhaniya powder (500gm)" 
+            title="Pushp Dhaniya powder (500gm)" 
             price={90} 
             image={dhaniyapowder}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Pushp Mirchi (500gm)" 
+            price={140} 
+            image={pushpMirchi}/>
+            <Product 
+            id="975272"
+            title="Pushp Hing (10gm)" 
+            price={45} 
+            image={hing}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Jeera (100gm)" 
+            price={25} 
+            image={jeera}/>
+            <Product 
+            id="975272"
+            title="Souf (100gm)" 
+            price={15} 
+            image={souf}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Rai (100gm)" 
+            price={9} 
+            image={rai}/>
+            <Product 
+            id="975272"
+            title="Ajwain (100gm)" 
+            price={20} 
+            image={ajwain}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Kali Mirch (100gm)" 
+            price={50} 
+            image={kalimirch}/>
+            <Product 
+            id="975272"
+            title="Loung (100gm)" 
+            price={100} 
+            image={loung}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Dalchini (100gm)" 
+            price={40} 
+            image={dalchini}/>
+            <Product 
+            id="975272"
+            title="Shahjeera (100gm)" 
+            price={80} 
+            image={shahjeera}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="BadamFool (100gm)" 
+            price={10} 
+            image={badamFool}/>
+            <Product 
+            id="975272"
+            title="Tezpan (100gm)" 
+            price={20} 
+            image={tezpan}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Badi Elaichi (100gm)" 
+            price={100} 
+            image={badiElaichi}/>
+            <Product 
+            id="975272"
+            title="Hari Elaichi (100gm)" 
+            price={300} 
+            image={hariElaichi}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Jaifal (per piece)" 
+            price={5} 
+            image={jaifal}/>
+            <Product 
+            id="975272"
+            title="Javitri (100gm)" 
+            price={400} 
+            image={javitri}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Barik Souf (100gm)" 
+            price={20} 
+            image={barikSouf}/>
             
         </div>
         </>:""}

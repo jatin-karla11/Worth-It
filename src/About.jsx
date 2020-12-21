@@ -39,13 +39,6 @@ const About=()=>{
           >
             <div className="swipe">
               <center><div className="tcheading">Terms and Conditions</div></center>
-            {/* <span className="swipeline">1. Cancellation and return policy is not available as of now.</span>
-            <span className="swipeline">2. Free delivery on order above ₹499.</span>
-            <span className="swipeline">3. For instant delivery on the same day the delivery charge will be ₹50.</span>
-            <span className="swipeline">4. We take precautionary measures at every level of order processing.</span>
-            <span className="swipeline">5. For adding your store to Worth-It contact- 9752763949.</span>
-            <span className="swipeline">6. There is no night service.</span>
-            <span className="swipeline">7. We assure you quality in our services.</span> */}
             <ul> 
               <li>Cancellation and return policy is not available as of now.</li>
               <li>Free delivery on order above ₹499.</li>
