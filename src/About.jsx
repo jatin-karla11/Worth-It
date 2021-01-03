@@ -8,6 +8,49 @@ import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import CardCarousel from './CardCarousel';
 
 const About=()=>{
+  //   const hey=()=>{
+  //     console.log("hey called!")
+  //     const publicVapidKey='BG5ui8drP4P1gxjSM1jSy0eCDSDwujI1_6mdnONdEhrp6AKLVYN1OU_Vx6uygFvWr0oJMva6z9pqSZlhKG2ec8I';
+  //     if ('serviceWorker' in navigator) {
+  //       console.log("ok")
+  //     navigator.serviceWorker.ready.then(registration => {
+  //       console.log("okay")
+  //       if (!registration.pushManager) {
+  //         alert("Push Unsupported")
+  //         return
+  //       }
+        
+  //       registration.pushManager
+  //         .subscribe({
+  //           userVisibleOnly: true, //Always display notifications
+  //           applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
+  //         })
+  //         .then(subscription => fetch('http://localhost:1337/subscribe',{
+  //           method:'POST',
+  //           body:JSON.stringify(subscription),
+  //           headers:{
+  //               'content-type':'application/json'
+  //           }
+  //       }))
+  //         .catch(err => console.error("Push subscription error: ", err))
+  //     })
+
+  //     function urlBase64ToUint8Array(base64String) {
+  //       const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  //       const base64 = (base64String + padding)
+  //         .replace(/-/g, '+')
+  //         .replace(/_/g, '/');
+      
+  //       const rawData = window.atob(base64);
+  //       const outputArray = new Uint8Array(rawData.length);
+      
+  //       for (let i = 0; i < rawData.length; ++i) {
+  //         outputArray[i] = rawData.charCodeAt(i);
+  //       }
+  //       return outputArray;
+  //     }
+  //   }
+  // }
     const [state, setState] = React.useState({
     
         bottom: false,
@@ -54,6 +97,8 @@ const About=()=>{
       ))}
     </div></Paper></center>
     <br></br>
+    <center><button>Subscribe</button></center>
+    {/* onClick={hey} */}
     <CardCarousel/>
     </>);
 };

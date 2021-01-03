@@ -59,9 +59,29 @@ import ghadi10 from './images/ghadi10.jpg'
 import wheel10 from './images/wheel10.jpg'
 import tideSoap10 from './images/tideSoap10.jpg'
 import burhani from './images/burhani.jpg'
-
-
-
+import alpine5 from './images/alpine5.jpg'
+import alpine10 from './images/alpine10.jpg'
+import alpine25 from './images/alpine25.jpg'
+import makka from './images/makka.jpg'
+import jwar from './images/jwar.jpg'
+import gulabjamunMix from './images/gulabjamunMix.png'
+import khamanMix from './images/khamanMix.png'
+import idliMix from './images/idliMix.png'
+import mahakosh5 from './images/mahakosh5.jpeg'
+import setWet from './images/setWet.jpg'
+import fogg from './images/fogg.jpg'
+import wildStone from './images/wildStone.jpg'
+import godrej5 from './images/godrej5.jpg'
+import cinthol4 from './images/cinthol4.jpg'
+import godrej1 from './images/godrej1.jpg'
+import detol5 from './images/detol5.jpg'
+import santoor4 from './images/santoor4.jpg'
+import dove from './images/dove.jpg'
+import pears from './images/pears.jpg'
+import VivelAloeVera from './images/VivelAloeVera.jpg'
+import lifebuoy4 from './images/lifebuoy4.jpg'
+import luxSetOf5 from './images/luxSetOf5.jpg'
+// import fogg from './images/fogg.jpg'
 
 
 const options = [
@@ -157,14 +177,14 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
-            <Product 
+            title="Mahakosh Oil (5 litre)" 
+            price={640} 
+            image={mahakosh5}/>
+            {/* <Product 
             id="975272"
             title="" 
             price={750} 
-            image={grocery1}/>
+            image={grocery1}/> */}
             
         </div>
         </>:""}
@@ -232,6 +252,30 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
+            title="Fogg Deo" 
+            price={200} 
+            image={fogg}/>
+            <Product 
+            id="975272"
+            title="Wild Stone Deo" 
+            price={200} 
+            image={wildStone}/>
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Set Wet Deo" 
+            price={200} 
+            image={setWet}/>
+            {/* <Product 
+            id="975272"
+            title="Ponds Lotion" 
+            price={200} 
+            image={ponds}/> */}
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
             title="Vaseline Lotion (400ml)" 
             price={260} 
             image={vaseline}/>
@@ -265,6 +309,69 @@ function Grocery() {
             price={30} 
             image={vatikaShampoo}/>
             </div>
+            {/* Soaps */}
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Dove Soap" 
+            price={20} 
+            image={dove}/>
+            <Product 
+            id="975272"
+            title="Dettol Soap (set of 5)" 
+            price={200} 
+            image={detol5}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Lifebuoy soap (set of 4)" 
+            price={80} 
+            image={lifebuoy4}/>
+            <Product 
+            id="975272"
+            title="Pears Soap" 
+            price={20} 
+            image={pears}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Santoor soap (set of 4)" 
+            price={90} 
+            image={santoor4}/>
+            <Product 
+            id="975272"
+            title="Vivel alovera soap (set of 5)" 
+            price={95} 
+            image={VivelAloeVera}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Lux soap (set of 5)" 
+            price={100} 
+            image={luxSetOf5}/>
+            <Product 
+            id="975272"
+            title="Cinthol soap (set of 4)" 
+            price={80} 
+            image={cinthol4}/>
+            </div>
+            <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Godrej no. 1 (set of 5)" 
+            price={70} 
+            image={godrej5}/>
+            <Product 
+            id="975272"
+            title="Godrej shikakai soap" 
+            price={20} 
+            image={godrej1}/>
+            </div>
+
+            {/* Balms */}
             <div className="shop_row">
             <Product 
             id="975271" 
@@ -603,19 +710,71 @@ function Grocery() {
             image={neerajketchup}/>
             
         </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Khaman Mix Gangwal (500gm)" 
+            price={70} 
+            image={khamanMix}/>
+            <Product 
+            id="975272"
+            title="Idli Mix Gangwal (500gm)" 
+            price={70} 
+            image={idliMix}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="420 Gulabjamun Mix (200gm)" 
+            price={70} 
+            image={gulabjamunMix}/>
+            {/* <Product 
+            id="975272"
+            title="" 
+            price={75} 
+            image={neerajketchup}/>
+             */}
+        </div>
         </>:""}
         {(category==="flour")?<>
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Alpine Aata 5kg" 
+            price={140} 
+            image={alpine5}/>
             <Product 
             id="975272"
-            title="" 
+            title="Alpine Aata 10kg" 
+            price={270} 
+            image={alpine10}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Alpine Aata 25kg" 
+            price={600} 
+            image={alpine25}/>
+            <Product 
+            id="975272"
+            title="Makka Aata (1kg)" 
+            price={40} 
+            image={makka}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Jowar Aata (1kg)" 
+            price={80} 
+            image={jwar}/>
+            {/* <Product 
+            id="975272"
+            title="Alpine Aata 10kg" 
             price={750} 
-            image={grocery1}/>
+            image={grocery1}/> */}
             
         </div>
         </>:""}

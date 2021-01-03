@@ -21,7 +21,9 @@ const isLocalhost = Boolean(
 );
 
 export function register(config) {
-  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  console.log(config)
+    console.log("register called")
+  if ('serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
     if (publicUrl.origin !== window.location.origin) {
@@ -32,9 +34,11 @@ export function register(config) {
     }
 
     window.addEventListener('load', () => {
-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
-
+      const swUrl = `${publicUrl.origin}/Worth-It/custom-sw.js`;
+      console.log(swUrl)
+        
       if (isLocalhost) {
+        console.log("localhost present!")
         // This is running on localhost. Let's check if a service worker still exists or not.
         checkValidServiceWorker(swUrl, config);
 
@@ -55,9 +59,11 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
+  console.log("callled")
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
+      console.log("in")
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
@@ -76,6 +82,7 @@ function registerValidSW(swUrl, config) {
 
               // Execute callback
               if (config && config.onUpdate) {
+                console.log("ddddd")
                 config.onUpdate(registration);
               }
             } else {
@@ -83,9 +90,10 @@ function registerValidSW(swUrl, config) {
               // It's the perfect time to display a
               // "Content is cached for offline use." message.
               console.log('Content is cached for offline use.');
-
+              console.log(config)
               // Execute callback
               if (config && config.onSuccess) {
+                console.log("done")
                 config.onSuccess(registration);
               }
             }
@@ -104,6 +112,7 @@ function checkValidServiceWorker(swUrl, config) {
     headers: { 'Service-Worker': 'script' },
   })
     .then(response => {
+      console.log("heckdude")
       // Ensure service worker exists, and that we really are getting a JS file.
       const contentType = response.headers.get('content-type');
       if (
@@ -111,12 +120,14 @@ function checkValidServiceWorker(swUrl, config) {
         (contentType != null && contentType.indexOf('javascript') === -1)
       ) {
         // No service worker found. Probably a different app. Reload the page.
+        console.log("helllll")
         navigator.serviceWorker.ready.then(registration => {
           registration.unregister().then(() => {
             window.location.reload();
           });
         });
       } else {
+        console.log("heckagain")
         // Service worker found. Proceed as normal.
         registerValidSW(swUrl, config);
       }
