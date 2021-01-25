@@ -37,6 +37,7 @@ import UserFeedback from './UserFeedback';
 import RealtimeChat from './RealtimeChat';
 import Modicare from './Modicare';
 import ForgotPassword from './ForgotPassword';
+import Cakes from './Cakes';
 
 
 function ad(){
@@ -128,6 +129,7 @@ const MainApp=()=>{
         <Route exact path="/chat" component={RealtimeChat}/>
         <Route exact path="/mc" component={Modicare}/>
         <Route exact path="/fp" component={ForgotPassword}/>
+        <Route exact path="/cakes" component={Cakes}/>
 
         <Redirect to="/" />
     </Switch>

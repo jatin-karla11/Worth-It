@@ -5,7 +5,7 @@ import Sdata from './Sdata';
 import './Service.css';
 
 const Service=()=>{
-    return (<>
+    return (<> 
     <div className="serviceText">
         <h1 className="text-center">Our Services</h1>
     </div>

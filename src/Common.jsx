@@ -133,7 +133,7 @@ $('.modal-backdrop').remove();
                             Sign-In for better experience..
                         </span>
                         <div className="mt-3">
-                        
+                         
                         {/* Signin handleLogout={handleLogout} */}
     {/* <NavLink to={props.visit} className="btn-get-started">{props.btname}</NavLink> */}
 {user1?(<><Link to="/service"><button className="goto">Go to Stores</button></Link><Signin handleLogout={handleLogout}/><br></br><br></br></>):(<Login email={email} setEmail={setEmail} password={password} setPassword={setPassword}

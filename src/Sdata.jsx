@@ -8,8 +8,9 @@ import mithas from './images/mithas.jpg'
 import grocery1 from './images/grocery1.jpg'
 import pizza from './images/pizza.jpg'
 import modicare from './images/modicare.png'
+import cakestore from './images/cakestore.jpg'
 
-const Sdata=[ 
+const Sdata=[  
     
     
     {
@@ -42,6 +43,11 @@ const Sdata=[
         imgsrc:mithas,
         title:'Mithas',
         to:"/mithas"
+    },
+    {
+        imgsrc:cakestore,
+        title:'Cakes Store',
+        to:"/cakes"
     },
     {
         imgsrc:dc,

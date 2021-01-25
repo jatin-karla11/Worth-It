@@ -1,0 +1,9 @@
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .root1{
+    width: 90%;
+    margin: 0 auto;
+    
+    /* margin-left: -3px; */
+    }
+}
