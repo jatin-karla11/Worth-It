@@ -81,7 +81,38 @@ import pears from './images/pears.jpg'
 import VivelAloeVera from './images/VivelAloeVera.jpg'
 import lifebuoy4 from './images/lifebuoy4.jpg'
 import luxSetOf5 from './images/luxSetOf5.jpg'
-// import fogg from './images/fogg.jpg'
+import layscao10 from './images/layscao10.jpg'
+import chings_schezwansauce from './images/chings_schezwansauce_250gm_80.jpg'
+import kurkurechutney10 from './images/kurkurechutney10.jpg'
+import madhur5kg from './images/madhur5kg_220.jpg'
+import laystomato10 from './images/laystomato10.jpg'
+import gangwalmaida30 from './images/gangwalmaida30.jpg'
+import hideandseek30 from './images/hideandseek30.jpg'
+import balajicao10 from './images/balajicao10.jpg'
+import dairymilk_oreo from './images/dairymilk_oreo80_60g.jpg'
+import perk_5 from './images/perk_5.jpg'
+import pepsodent125 from './images/pepsodent125.jpg'
+import bournvita_500g from './images/bournvita_500g_210.jpg'
+import horlicks220 from './images/horlicks220.jpg'
+import tatasalt_1kg_19 from './images/tatasalt_1kg_19.jpg'
+import bru_100g from './images/bru_100g_190.jpg'    
+import laysblue10 from './images/lays_blue_10.jpg'
+import laysyellow10 from './images/lays_yellow_10.jpg'
+import kurkuresolidmasti from './images/kurkuresolidmasti_10.jpg'
+import kurkurechilli10 from './images/kurkurechilli_10.jpg'
+import kurkuremasala10 from './images/kurkuremasala_10.jpg'
+import twentytwenty from './images/t20_10.jpg'
+import cheesecube from './images/cheese15.jpg'
+import kissanjam from './images/kissan1kg260.png'
+import oreo30 from './images/oreo30.jpg'
+import oreo10 from './images/oreo10.jpg'
+import gangwalbesan80 from './images/gangwalbesan500g80.jpg'
+import chocopie190 from './images/chocopie_190.jpg'
+import gangwalsuji42 from './images/gangwalsuji500g42.png'
+import mayonnaise230 from './images/mayonise_230_1.2kg.jpg'
+import waghbakri280 from './images/waghbakri280500g.jpg'
+import tataagni320 from './images/tata_agni3201kg.jpg'
+import closeup from './images/closeup.png'
 
 
 const options = [
@@ -162,14 +193,14 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Bournvita 500g" 
+            price={210} 
+            image={bournvita_500g}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Horlicks Chocolate" 
+            price={220} 
+            image={horlicks220}/>
             
         </div>
         </>:""}
@@ -192,14 +223,105 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Oreo Original" 
+            price={10} 
+            image={oreo10}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Oreo Chocolate Cream" 
+            price={30} 
+            image={oreo30}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Parle 20-20 Butter Cookies" 
+            price={10} 
+            image={twentytwenty}/>
+            <Product 
+            id="975272"
+            title="Hide & Seek" 
+            price={30} 
+            image={hideandseek30}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Lays Cream and Onion" 
+            price={10} 
+            image={layscao10}/>
+            <Product 
+            id="975272"
+            title="Lays India's Magic Masala" 
+            price={10} 
+            image={laysblue10}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Lays Classic" 
+            price={10} 
+            image={laysyellow10}/>
+            <Product 
+            id="975272"
+            title="Lays Spanish Tomato Tango" 
+            price={10} 
+            image={laystomato10}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Kurkure Masala Munch" 
+            price={10} 
+            image={kurkuremasala10}/>
+            <Product 
+            id="975272"
+            title="Kurkure Green Chutney Style" 
+            price={10} 
+            image={kurkurechutney10}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Kurkure Solid Masti" 
+            price={10} 
+            image={kurkuresolidmasti}/>
+            <Product 
+            id="975272"
+            title="Kurkure Chilli Chatka" 
+            price={10} 
+            image={kurkurechilli10}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Lotte Chocopie" 
+            price={190} 
+            image={chocopie190}/>
+            <Product 
+            id="975272"
+            title="Balaji Cream and Onion" 
+            price={10} 
+            image={balajicao10}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Perk" 
+            price={5} 
+            image={perk_5}/>
+            <Product 
+            id="975272"
+            title="Dairy Milk Oreo (60g)" 
+            price={80} 
+            image={dairymilk_oreo}/>
             
         </div>
         </>:""}
@@ -207,15 +329,28 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Tata Agni (1kg)" 
+            price={320} 
+            image={tataagni320}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Wagh Bakri (500g)" 
+            price={280} 
+            image={waghbakri280}/>
             
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Bru (100g)" 
+            price={190} 
+            image={bru_100g}/>
+            {/* <Product 
+            id="975272"
+            title="Wagh Bakri (500g)" 
+            price={280} 
+            image={waghbakri280}/>
+             */}
         </div>
         </>:""}
         {(category==="noodles")?<>
@@ -501,6 +636,19 @@ function Grocery() {
             image={tideSoap10}/>
             
         </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Pepsodent Germi Check (100g)" 
+            price={52} 
+            image={pepsodent125}/>
+            <Product 
+            id="975272"
+            title="Close Up Ever Fresh (80g)" 
+            price={48} 
+            image={closeup}/>
+            
+        </div>
         </>:""}
         {(category==="spices&masala")?<>
         <div className="shop_row">
@@ -626,7 +774,25 @@ function Grocery() {
             title="Barik Souf (100gm)" 
             price={20} 
             image={barikSouf}/>
+            <Product 
+            id="975271" 
+            title="Madhur Sugar (5Kg)" 
+            price={220} 
+            image={madhur5kg}/>
             
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Tata Salt (1Kg)" 
+            price={19} 
+            image={tatasalt_1kg_19}/>
+            {/* <Product 
+            id="975271" 
+            title="Madhur Sugar (5Kg)" 
+            price={220} 
+            image={madhur5kg}/>
+             */}
         </div>
         </>:""}
         {(category==="pulses&rice")?<>
@@ -700,6 +866,45 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
+            title="Chings Schezwan (250g)" 
+            price={80} 
+            image={chings_schezwansauce}/>
+            <Product 
+            id="975272"
+            title="Dr. Oetker Mayonnaise 1.2Kg" 
+            price={230} 
+            image={mayonnaise230}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Amul Cheese Cube" 
+            price={15} 
+            image={cheesecube}/>
+            <Product 
+            id="975272"
+            title="Kissan Mixed Fruit Jam (1kg)" 
+            price={260} 
+            image={kissanjam}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Gangwal Maida (500g)" 
+            price={30} 
+            image={gangwalmaida30}/>
+            <Product 
+            id="975272"
+            title="Gangwal Suji (500g)" 
+            price={42} 
+            image={gangwalsuji42}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
             title="Kissan Ketchup (1kg)" 
             price={125} 
             image={kissanketchup}/>
@@ -729,12 +934,12 @@ function Grocery() {
             title="420 Gulabjamun Mix (200gm)" 
             price={70} 
             image={gulabjamunMix}/>
-            {/* <Product 
+            <Product 
             id="975272"
-            title="" 
-            price={75} 
-            image={neerajketchup}/>
-             */}
+            title="Gangwal Besan (500g)" 
+            price={80} 
+            image={gangwalbesan80}/>
+            
         </div>
         </>:""}
         {(category==="flour")?<>
