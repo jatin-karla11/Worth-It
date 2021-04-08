@@ -26,6 +26,8 @@ import sweetad from './images/sweetad.jpg'
 import dairyad from './images/dairyad.jpg'
 import groceryad from './images/groceryad.jpg'
 import braceletad from './images/braceletad.jpg'
+import allSharbat from './images/allsharbat.jpg'
+
 
 const responsive = { 
     0: { items: 3 },
@@ -97,6 +99,9 @@ const Home=()=>{
                 </div>
                 <div className="item">
                 <ServiceCard title={sanitizerad} where="md"/>
+                </div>
+                <div className="item">
+                <ServiceCard title={allSharbat} where="mithas"/> 
                 </div>
                 <div className="item">
                 <ServiceCard title={dairyad} where="dairy"/> 

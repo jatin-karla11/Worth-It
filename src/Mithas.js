@@ -31,6 +31,16 @@ import besanpapdi from './images/besanpapdi.jpg';
 import attamathri from './images/attamathri.jpg';
 import masalafries from './images/masalafries.jpg';
 import guddfchikki from './images/guddfchikki.jpg';
+import roseSharbat from './images/rosesharbat.jpg'
+import cpsharbat from './images/Cherry Pudina Sharbat.jpg';
+import thandai from './images/Thandai.jpg'
+import kalakhattaSharbat from './images/kalakhattaSharbat.jpg'
+import khasSharbat from './images/khasSharbat.jpg'
+import lemonSharbat from './images/lemonSharbat.jpg'
+import pineappleSharbat from './images/PineappleSharbat.jpg'
+import mangoSharbat from './images/MangoSharbat.jpg'
+import roseSharbat1 from './images/RoseSharbat1.jpg'
+
 
 function Mithas() {
 
@@ -56,17 +66,18 @@ function Mithas() {
             image={besanladdu}/>
             {/* Product */}
         </div>
+        
         <div className="shop_row">
             <Product 
             id="975273" 
-            title="Moong dal halwa"
+            title="Rose Sharbat"
             price={100} 
-            image={moongdalhalwa}/>
-            <Product 
+            image={roseSharbat}/>
+            {/* <Product 
             id="975274"
             title="Makkhan bada" 
             price={100} 
-            image={makhanbada}/>
+            image={makhanbada}/> */}
             {/* Product */}
         </div>
         <div className="shop_row">
@@ -85,6 +96,67 @@ function Mithas() {
         <div className="shop_row">
             <Product 
             id="975277" 
+            title="Mango Sharbat"
+            price={100} 
+            image={mangoSharbat}/>
+            <Product 
+            id="975278"
+            title="Pineapple Sharbat" 
+            price={100} 
+            image={pineappleSharbat}/>
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975277" 
+            title="Kala-Khatta Sharbat"
+            price={100} 
+            image={kalakhattaSharbat}/>
+            <Product 
+            id="975278"
+            title="Khas Sharbat" 
+            price={100} 
+            image={khasSharbat}/>
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975277" 
+            title="Lemon Sharbat"
+            price={100} 
+            image={lemonSharbat}/>
+            <Product 
+            id="975278"
+            title="Cherry-Pudina Sharbat" 
+            price={100} 
+            image={cpsharbat}/>
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975277" 
+            title="Thandai"
+            price={100} 
+            image={thandai}/>
+            {/* <Product 
+            id="975278"
+            title="Cherry-Pudina Sharbat" 
+            price={100} 
+            image={cpsharbat}/> */}
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975273" 
+            title="Moong dal halwa"
+            price={100} 
+            image={moongdalhalwa}/>
+            <Product 
+            id="975274"
+            title="Makkhan bada" 
+            price={100} 
+            image={makhanbada}/>
+            {/* Product */}
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975277" 
             title="Mohan Thal"
             price={100} 
             image={mohanthal}/>
@@ -93,7 +165,6 @@ function Mithas() {
             title="Sev ki Barfi" 
             price={100} 
             image={sevkibarfi}/>
-            {/* Product */}
         </div>
         <div className="shop_row">
             <Product 
