@@ -316,7 +316,7 @@ function Mithas() {
         <Product 
             id="9752722"
             title="Atta mathri" 
-            price={50} 
+            price={60} 
             image={attamathri}/>
     
         {/* Product */}
@@ -325,36 +325,36 @@ function Mithas() {
     <Product 
             id="9752723"
             title="Methi mathri" 
-            price={50} 
+            price={60} 
             image={methimathri}/>
             <Product 
             id="9752724"
             title="Atta Shakkarpare" 
-            price={50} 
+            price={60} 
             image={shakkarpare}/>
     </div>
     <div className="shop_row">
     <Product 
             id="9752725"
             title="Sugar Shakkarpare" 
-            price={50} 
+            price={60} 
             image={sugarcoatedshakarpare}/>
             <Product 
             id="9752726"
             title="Namakpare" 
-            price={50} 
+            price={60} 
             image={namakpare}/>
     </div>
     <div className="shop_row">
     <Product 
             id="9752727"
             title="Besan papdi" 
-            price={50} 
+            price={60} 
             image={besanpapdi}/>
             <Product 
             id="9752728"
             title="Masala Fries" 
-            price={50} 
+            price={60} 
             image={masalafries}/>
     </div>
     </div>
