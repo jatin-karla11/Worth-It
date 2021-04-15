@@ -40,7 +40,11 @@ import lemonSharbat from './images/lemonSharbat.jpg'
 import pineappleSharbat from './images/PineappleSharbat.jpg'
 import mangoSharbat from './images/MangoSharbat.jpg'
 import roseSharbat1 from './images/RoseSharbat1.jpg'
-
+import elaichiShrikhand from './images/elaichiShrikhand.jpeg'
+import kesarPistaShrikhand from './images/kesarPistaShrikhand.jpeg'
+import kesarPistaRabdi from './images/KesarPistaRabdi.jpeg'
+import americanNutsShrikhand from './images/AmericanNutsShrikhand.jpeg'
+import mangoShrikhand from './images/MangoShrikhand.jpeg'
 
 function Mithas() {
 
@@ -52,21 +56,48 @@ function Mithas() {
             Mithas by Neelam Rajani
         </div>
         <marquee>Delivery will be done after 1 day of order placing!</marquee>
+        <b><center>Neelam Rajani - 9826959212<br></br>
+        Address : 87, Shiv Shakti Villa Flat no. 302 ,Scheme no. 103
+        </center></b>
         <center>Prices shown are per 250 gm</center>
+        <br></br>
+        <div><strong><center>Summer Specials</center></strong></div>
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="Kaju Katli"
-            price={200} 
-            image={kajukatli}/>
+            title="Elaichi Shrikhand"
+            price={60} 
+            image={elaichiShrikhand}/>
             <Product 
             id="975272"
-            title="Besan laddu" 
-            price={100} 
-            image={besanladdu}/>
-            {/* Product */}
+            title="Kesar Pista Shrikhand" 
+            price={60} 
+            image={kesarPistaShrikhand}/>
         </div>
-        
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="American Nuts Shrikhand"
+            price={80} 
+            image={americanNutsShrikhand}/>
+            <Product 
+            id="975272"
+            title="Mango Shrikhand" 
+            price={70} 
+            image={mangoShrikhand}/>
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Kesar Pista Rabdi"
+            price={90} 
+            image={kesarPistaRabdi}/>
+            {/* <Product 
+            id="975272"
+            title="Mango Shrikhand" 
+            price={60} 
+            image={besanladdu}/> */}
+        </div>
         <div className="shop_row">
             <Product 
             id="975273" 
@@ -79,19 +110,6 @@ function Mithas() {
             price={100} 
             image={makhanbada}/> */}
             {/* Product */}
-        </div>
-        <div className="shop_row">
-            <Product 
-            id="975275" 
-            title="Boondi Ke laddu"
-            price={100} 
-            image={boondikeladdu}/>
-            <Product 
-            id="975276" 
-            title="Khoprapak"
-            price={90} 
-            image={Khoprapak}/>
-           
         </div>
         <div className="shop_row">
             <Product 
@@ -141,6 +159,39 @@ function Mithas() {
             price={100} 
             image={cpsharbat}/> */}
         </div>
+        {/* --summerspecials end here-- */}
+        <br></br>
+        <div><strong><center>Mesmerizing Delights</center></strong></div>
+        
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Kaju Katli"
+            price={200} 
+            image={kajukatli}/>
+            <Product 
+            id="975272"
+            title="Besan laddu" 
+            price={100} 
+            image={besanladdu}/>
+            {/* Product */}
+        </div>
+        
+        
+        <div className="shop_row">
+            <Product 
+            id="975275" 
+            title="Boondi Ke laddu"
+            price={100} 
+            image={boondikeladdu}/>
+            <Product 
+            id="975276" 
+            title="Khoprapak"
+            price={90} 
+            image={Khoprapak}/>
+           
+        </div>
+        
         <div className="shop_row">
             <Product 
             id="975273" 
@@ -315,7 +366,7 @@ function Mithas() {
     <div className="shop_row">
         <Product 
             id="9752722"
-            title="Atta mathri" 
+            title="Plain mathri" 
             price={60} 
             image={attamathri}/>
     
@@ -346,11 +397,11 @@ function Mithas() {
             image={namakpare}/>
     </div>
     <div className="shop_row">
-    <Product 
+    {/* <Product 
             id="9752727"
             title="Besan papdi" 
             price={60} 
-            image={besanpapdi}/>
+            image={besanpapdi}/> */}
             <Product 
             id="9752728"
             title="Masala Fries" 
