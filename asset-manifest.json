@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Worth-It/static/css/main.6c692726.chunk.css",
-    "main.js": "/Worth-It/static/js/main.36f8d8be.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.36f8d8be.chunk.js.map",
+    "main.js": "/Worth-It/static/js/main.1b22c3ff.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.1b22c3ff.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8d80afaa.chunk.css": "/Worth-It/static/css/2.8d80afaa.chunk.css",
-    "static/js/2.f0c84416.chunk.js": "/Worth-It/static/js/2.f0c84416.chunk.js",
-    "static/js/2.f0c84416.chunk.js.map": "/Worth-It/static/js/2.f0c84416.chunk.js.map",
+    "static/js/2.d5de8370.chunk.js": "/Worth-It/static/js/2.d5de8370.chunk.js",
+    "static/js/2.d5de8370.chunk.js.map": "/Worth-It/static/js/2.d5de8370.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.1af7a9d08575200ff8f2991bb1aee023.js": "/Worth-It/precache-manifest.1af7a9d08575200ff8f2991bb1aee023.js",
+    "precache-manifest.12016bd79d5d303362f4aea4f6401cf1.js": "/Worth-It/precache-manifest.12016bd79d5d303362f4aea4f6401cf1.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8d80afaa.chunk.css.map": "/Worth-It/static/css/2.8d80afaa.chunk.css.map",
     "static/css/main.6c692726.chunk.css.map": "/Worth-It/static/css/main.6c692726.chunk.css.map",
-    "static/js/2.f0c84416.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.f0c84416.chunk.js.LICENSE.txt",
+    "static/js/2.d5de8370.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.d5de8370.chunk.js.LICENSE.txt",
     "static/media/AmericanNutsShrikhand.jpeg": "/Worth-It/static/media/AmericanNutsShrikhand.862f0789.jpeg",
     "static/media/BlackforestCake.jpg": "/Worth-It/static/media/BlackforestCake.a58eb8a6.jpg",
     "static/media/ButterscotchCake.jpg": "/Worth-It/static/media/ButterscotchCake.08eef0ea.jpg",
@@ -425,6 +425,7 @@
     "static/media/sevkibarfi.jpg": "/Worth-It/static/media/sevkibarfi.7126a2e0.jpg",
     "static/media/shahjeera.jpg": "/Worth-It/static/media/shahjeera.801076f4.jpg",
     "static/media/shakkarpare.jpg": "/Worth-It/static/media/shakkarpare.350abbf0.jpg",
+    "static/media/shrikhand.jpg": "/Worth-It/static/media/shrikhand.9d0de22c.jpg",
     "static/media/sitafalrabdi.jpg": "/Worth-It/static/media/sitafalrabdi.7936aa44.jpg",
     "static/media/souf.jpg": "/Worth-It/static/media/souf.0e1c04a0.jpg",
     "static/media/sugarcoatedshakarpare.jpg": "/Worth-It/static/media/sugarcoatedshakarpare.0620e90d.jpg",
@@ -469,8 +470,8 @@
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8d80afaa.chunk.css",
-    "static/js/2.f0c84416.chunk.js",
+    "static/js/2.d5de8370.chunk.js",
     "static/css/main.6c692726.chunk.css",
-    "static/js/main.36f8d8be.chunk.js"
+    "static/js/main.1b22c3ff.chunk.js"
   ]
 }
