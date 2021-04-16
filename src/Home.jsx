@@ -27,7 +27,7 @@ import dairyad from './images/dairyad.jpg'
 import groceryad from './images/groceryad.jpg'
 import braceletad from './images/braceletad.jpg'
 import allSharbat from './images/allsharbat.jpg'
-
+import shrikhandad from './images/shrikhand.jpg'
 
 const responsive = { 
     0: { items: 3 },
@@ -91,11 +91,14 @@ const Home=()=>{
             autoplaySpeed={4000}
             >
                 <div className="item">
-                <ServiceCard title={sweetad} where="mithas"/>
+                <ServiceCard title={shrikhandad} where="mithas"/>
                 </div>
                 <div className="item">
                 {/* <img src={image1}/> */} 
                 <ServiceCard title={cakead} where="cakes"/>
+                </div>
+                <div className="item">
+                <ServiceCard title={sweetad} where="mithas"/>
                 </div>
                 <div className="item">
                 <ServiceCard title={sanitizerad} where="md"/>
