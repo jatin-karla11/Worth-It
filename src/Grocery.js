@@ -113,6 +113,11 @@ import mayonnaise230 from './images/mayonise_230_1.2kg.jpg'
 import waghbakri280 from './images/waghbakri280500g.jpg'
 import tataagni320 from './images/tata_agni3201kg.jpg'
 import closeup from './images/closeup.png'
+import limca from './images/limca.jpg'
+import sprite from './images/sprite.jpg'
+import cocacola from './images/cocacola.jpg'
+import fanta from './images/fanta.jpg'
+import thumsup from './images/thumsup.jpg'
 
 
 const options = [
@@ -372,14 +377,35 @@ function Grocery() {
         <div className="shop_row">
             <Product 
             id="975271" 
-            title="" 
-            price={550} 
-            image={grocery1}/>
+            title="Thums Up (1.25L)" 
+            price={65} 
+            image={thumsup}/>
             <Product 
             id="975272"
-            title="" 
-            price={750} 
-            image={grocery1}/>
+            title="Coca Cola (1.25L)" 
+            price={65} 
+            image={cocacola}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Sprite (1.25L)" 
+            price={65} 
+            image={sprite}/>
+            <Product 
+            id="975272"
+            title="Limca (1.25L)" 
+            price={65} 
+            image={limca}/>
+            
+        </div>
+        <div className="shop_row">
+            <Product 
+            id="975271" 
+            title="Fanta (1.25L)" 
+            price={65} 
+            image={fanta}/>
             
         </div>
         </>:""}
