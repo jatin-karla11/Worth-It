@@ -65,6 +65,13 @@ function Payment() {
                 paymentid:paymentId,email:name,
             contact:contact,address:address,checked:checked,amount1:value,deliveryStatus:deliveryStatus}),
           })
+          const response2 = await fetch('https://worthit-backend.herokuapp.com/setOrderHistoryEmail', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ array:basket,orderid:orderId,
+                paymentid:paymentId,email:name,
+            contact:contact,address:address,amount1:value,deliveryStatus:deliveryStatus }),
+          })
           dispatch({
               type:"EMPTY_BASKET"
           })
@@ -74,6 +81,13 @@ function Payment() {
     async function afterpayment(){
         alert("payment done!");
         const response1 = await fetch('https://worthit-backend.herokuapp.com/setOrderHistory', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ array:basket,orderid:orderId,
+                paymentid:paymentId,email:name,
+            contact:contact,address:address,amount1:value,deliveryStatus:deliveryStatus }),
+          })
+          const response2 = await fetch('https://worthit-backend.herokuapp.com/setOrderHistoryEmail', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ array:basket,orderid:orderId,
