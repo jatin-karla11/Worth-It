@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Worth-It/static/css/main.6c692726.chunk.css",
-    "main.js": "/Worth-It/static/js/main.f44ef58a.chunk.js",
-    "main.js.map": "/Worth-It/static/js/main.f44ef58a.chunk.js.map",
+    "main.css": "/Worth-It/static/css/main.4241c3e4.chunk.css",
+    "main.js": "/Worth-It/static/js/main.1d5c39c9.chunk.js",
+    "main.js.map": "/Worth-It/static/js/main.1d5c39c9.chunk.js.map",
     "runtime-main.js": "/Worth-It/static/js/runtime-main.d684b042.js",
     "runtime-main.js.map": "/Worth-It/static/js/runtime-main.d684b042.js.map",
     "static/css/2.8d80afaa.chunk.css": "/Worth-It/static/css/2.8d80afaa.chunk.css",
-    "static/js/2.83d1e976.chunk.js": "/Worth-It/static/js/2.83d1e976.chunk.js",
-    "static/js/2.83d1e976.chunk.js.map": "/Worth-It/static/js/2.83d1e976.chunk.js.map",
+    "static/js/2.b89bc5a7.chunk.js": "/Worth-It/static/js/2.b89bc5a7.chunk.js",
+    "static/js/2.b89bc5a7.chunk.js.map": "/Worth-It/static/js/2.b89bc5a7.chunk.js.map",
     "index.html": "/Worth-It/index.html",
-    "precache-manifest.26e5d3ad528487da82bbfdab78a4ef11.js": "/Worth-It/precache-manifest.26e5d3ad528487da82bbfdab78a4ef11.js",
+    "precache-manifest.dfa2df9db3314c05c30d8c9d6e9949ed.js": "/Worth-It/precache-manifest.dfa2df9db3314c05c30d8c9d6e9949ed.js",
     "service-worker.js": "/Worth-It/service-worker.js",
     "static/css/2.8d80afaa.chunk.css.map": "/Worth-It/static/css/2.8d80afaa.chunk.css.map",
-    "static/css/main.6c692726.chunk.css.map": "/Worth-It/static/css/main.6c692726.chunk.css.map",
-    "static/js/2.83d1e976.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.83d1e976.chunk.js.LICENSE.txt",
+    "static/css/main.4241c3e4.chunk.css.map": "/Worth-It/static/css/main.4241c3e4.chunk.css.map",
+    "static/js/2.b89bc5a7.chunk.js.LICENSE.txt": "/Worth-It/static/js/2.b89bc5a7.chunk.js.LICENSE.txt",
     "static/media/AmericanNutsShrikhand.jpeg": "/Worth-It/static/media/AmericanNutsShrikhand.862f0789.jpeg",
     "static/media/BlackforestCake.jpg": "/Worth-It/static/media/BlackforestCake.a58eb8a6.jpg",
     "static/media/ButterscotchCake.jpg": "/Worth-It/static/media/ButterscotchCake.08eef0ea.jpg",
@@ -72,6 +72,7 @@
     "static/media/closeup.png": "/Worth-It/static/media/closeup.30cd448b.png",
     "static/media/cocacola.jpg": "/Worth-It/static/media/cocacola.cfd75d16.jpg",
     "static/media/coconutladdu.jpg": "/Worth-It/static/media/coconutladdu.44bc09e4.jpg",
+    "static/media/customer1.png": "/Worth-It/static/media/customer1.00b3ead4.png",
     "static/media/dairy.jpg": "/Worth-It/static/media/dairy.e72536ef.jpg",
     "static/media/dairyad.jpg": "/Worth-It/static/media/dairyad.f28927f1.jpg",
     "static/media/dairymilk_oreo80_60g.jpg": "/Worth-It/static/media/dairymilk_oreo80_60g.b39902e1.jpg",
@@ -101,6 +102,7 @@
     "static/media/haldi.jpg": "/Worth-It/static/media/haldi.09d5c8d7.jpg",
     "static/media/hariElaichi.jpg": "/Worth-It/static/media/hariElaichi.1de807d5.jpg",
     "static/media/hideandseek30.jpg": "/Worth-It/static/media/hideandseek30.a5a7288c.jpg",
+    "static/media/homeworth2.jpg": "/Worth-It/static/media/homeworth2.943d4fb9.jpg",
     "static/media/horlicks220.jpg": "/Worth-It/static/media/horlicks220.d0abce12.jpg",
     "static/media/idliMix.png": "/Worth-It/static/media/idliMix.38c5ce36.png",
     "static/media/ig.jpg": "/Worth-It/static/media/ig.6b908334.jpg",
@@ -468,15 +470,14 @@
     "static/media/wildStone.jpg": "/Worth-It/static/media/wildStone.0b1e5f23.jpg",
     "static/media/worth.jpg": "/Worth-It/static/media/worth.0efb5662.jpg",
     "static/media/worth1.jpg": "/Worth-It/static/media/worth1.1b113a81.jpg",
-    "static/media/worth2.jpg": "/Worth-It/static/media/worth2.25b7ac7f.jpg",
     "static/media/yippee.jpg": "/Worth-It/static/media/yippee.7bd46239.jpg",
     "static/media/zanduBalm.jpg": "/Worth-It/static/media/zanduBalm.68658055.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d684b042.js",
     "static/css/2.8d80afaa.chunk.css",
-    "static/js/2.83d1e976.chunk.js",
-    "static/css/main.6c692726.chunk.css",
-    "static/js/main.f44ef58a.chunk.js"
+    "static/js/2.b89bc5a7.chunk.js",
+    "static/css/main.4241c3e4.chunk.css",
+    "static/js/main.1d5c39c9.chunk.js"
   ]
 }
